@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import BackgroundImage from "../../images/background.png";
 import { Button } from "../ButtonElement";
 import {
   HeroContainer,
@@ -8,8 +7,10 @@ import {
   HeroP,
   HeroBg,
   HeroBtnWrapper,
+  HeroLogo,
 } from "./HeroElements";
 import background from "../../images/background.png";
+import logo from "../../images/logo.png";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -25,6 +26,10 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContainer>
         <HeroContent>
+          <HeroLogo>
+            <img src={logo} alt="logo" />
+          </HeroLogo>
+
           <HeroH1>Devicist Design Works</HeroH1>
           <HeroP>
             Engineering custom hardware and software solutions for creative

@@ -9,13 +9,13 @@ import {
   NavItem,
   NavLinks,
 } from "./NavbarElements";
-
+import logo from "../../images/logo.png";
 const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Devicist</NavLogo>
+          <NavLogo to="/"></NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

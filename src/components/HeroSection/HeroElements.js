@@ -32,6 +32,11 @@ export const HeroContent = styled.div`
   align-items: left;
 `;
 
+export const HeroLogo = styled.image`
+  // width: 30%;
+  margin-bottom: 10px;
+`;
+
 export const HeroH1 = styled.h1`
   color: black;
   font-size: 48px;

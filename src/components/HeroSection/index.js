@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "../ButtonElement";
+import { Button } from "../ButtonElements";
 import {
   HeroContainer,
   HeroContent,
@@ -9,7 +9,7 @@ import {
   HeroBtnWrapper,
   HeroLogo,
 } from "./HeroElements";
-import background from "../../images/background.png";
+//import background from "../../images/background.png";
 import logo from "../../images/logo.png";
 
 const HeroSection = () => {
@@ -21,9 +21,9 @@ const HeroSection = () => {
 
   return (
     <>
-      <HeroBg>
-        <img src={background} alt="background" />
-      </HeroBg>
+      {/* <HeroBg>
+         <img src={background} alt="background" />
+      </HeroBg> */}
       <HeroContainer>
         <HeroContent>
           <HeroLogo>

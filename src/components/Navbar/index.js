@@ -9,7 +9,7 @@ import {
   NavItem,
   NavLinks,
 } from "./NavbarElements";
-import logo from "../../images/logo.png";
+
 const Navbar = ({ toggle }) => {
   return (
     <>

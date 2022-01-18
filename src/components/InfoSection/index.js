@@ -10,8 +10,8 @@ import {
   Subtitle,
   Img,
   ImgWrap,
-  infoLogo,
-  logoWrap,
+  InfoLogo,
+  LogoWrap,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -32,9 +32,9 @@ const InfoSection = ({
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
-              <logoWrap>
-                <infoLogo src={infoLogo} />
-              </logoWrap>
+              <LogoWrap>
+                <InfoLogo src={infoLogo} />
+              </LogoWrap>
               <TextWrapper>
                 <Heading lightText={lightText}> {headLine}</Heading>
                 <Subtitle darkText={darkText}> {description} </Subtitle>

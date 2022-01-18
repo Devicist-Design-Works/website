@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 600px;
+  height: 500px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -51,11 +51,11 @@ export const TextWrapper = styled.div`
   padding-top: 0;
   padding-bottom: 60px;
 `;
-export const logoWrap = styled.div`
-  max-width: 555px;
+export const LogoWrap = styled.div`
+  max-width: 46px;
   height: 100%;
 `;
-export const infoLogo = styled.img`
+export const InfoLogo = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
 `;

@@ -8,7 +8,7 @@ export const aboutObjOne = {
   headLine: "Design",
   description:
     "Whether you have a concrete plan or just want to explore opportunities, let's talk. We work closely with our clients to deliver the right solution, providing options, estimates and prototypes along the way. We perform interaction design, engineering, and project management according to your needs.",
-  imgStart: false,
+  imgStart: true,
   img: require("../../images/design.jpg"),
   alt: "CAD Model of design",
 };
@@ -38,7 +38,7 @@ export const aboutObjThree = {
   headLine: "Build",
   description:
     "Whether you have a concrete plan or just want to explore opportunities, let's talk. We work closely with our clients to deliver the right solution, providing options, estimates and prototypes along the way. We perform interaction design, engineering, and project management according to your needs.",
-  imgStart: false,
+  imgStart: true,
   img: require("../../images/build.jpg"),
   alt: "CAD Model of design",
 };

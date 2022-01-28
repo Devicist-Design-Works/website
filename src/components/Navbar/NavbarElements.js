@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: black;
-  height: 80px;
+  background: transparent;
+  height: 120px;
   margin-top: -80px;
   display: flex;
   justify-content: center;
@@ -13,6 +13,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  padding-top: 60px;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;

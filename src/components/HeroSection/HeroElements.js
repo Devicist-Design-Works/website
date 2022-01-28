@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  background: black;
+  background: transparent;
+
+  background-size: cover;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -9,7 +11,7 @@ export const HeroContainer = styled.div`
   position: relative;
   z-index: 1;
   padding: 0;
-  margin-top: -px;
+  margin-top: -60px;
 `;
 
 export const HeroBg = styled.div`

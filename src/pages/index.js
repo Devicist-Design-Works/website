@@ -3,6 +3,8 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
+import background from "../images/background.png";
+
 import {
   aboutObjOne,
   aboutObjTwo,
@@ -17,7 +19,14 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundColor: "black",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+      }}
+    >
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
@@ -25,7 +34,7 @@ const Home = () => {
       <InfoSection {...aboutObjOne} />
       <InfoSection {...aboutObjTwo} />
       <InfoSection {...aboutObjThree} />
-    </>
+    </div>
   );
 };
 

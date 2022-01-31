@@ -6,13 +6,11 @@ import {
   HeroContent,
   HeroH1,
   HeroP,
-  HeroBtnWrapper,
   HeroLogo,
   VideoWrapper,
   InfoRow,
   Column1,
   Column2,
-  HeroBg,
 } from "./HeroElements";
 import background from "../../images/background.png";
 import logo from "../../images/logoW.png";

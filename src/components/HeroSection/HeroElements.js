@@ -102,7 +102,7 @@ export const HeroBtnWrapper = styled.div`
 export const VideoWrapper = styled.div`
   width: 100%;
   height: 60vh;
-  margin-top: 60px;
+  //margin-top: 60px;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;

@@ -1,45 +1,39 @@
 import React from "react";
-import { FaBars } from "react-icons/fa";
+
 import {
-  Nav,
-  NavbarContainer,
+  NavContainer,
   NavLogo,
-  MobileIcon,
-  NavMenu,
-  NavItem,
-  NavLinks,
+  Logo,
+  NavTitle,
+  NavContact,
+  NavLink
 } from "./NavbarElements";
 
-const Navbar = ({ toggle }) => {
+import logo from "../../images/logoW.png"
+
+const Navbar = () => {
   return (
     <>
-      <Nav>
-        <NavbarContainer>
-          <NavLogo to="/"></NavLogo>
-          <MobileIcon onClick={toggle}>
-            <FaBars />
-          </MobileIcon>
-          <NavMenu>
-            <NavItem>
-              <NavLinks
-                to="about"
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
-              >
-                About
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="services">Services</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="contact">Contact</NavLinks>
-            </NavItem>
-          </NavMenu>
-        </NavbarContainer>
-      </Nav>
+      <NavContainer>
+
+        <NavLogo>
+          <Logo src = {logo}/>
+        </NavLogo>
+        <NavTitle>
+          <h1>Devicist Design Works</h1>
+        </NavTitle>
+        <NavContact>
+        <NavLink
+        to="about"
+        smooth={true}
+        duration={500}
+        spy={true}>
+          <h1>Contact Us</h1>
+        </NavLink>
+        </NavContact>
+        
+      </NavContainer>
+        
     </>
   );
 };

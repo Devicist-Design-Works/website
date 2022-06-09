@@ -10,34 +10,31 @@ export const HeroContainer = styled.div`
   align-items: center;
 `;
 
-export const HeroBg = styled.div`
+export const HeroBg = styled.img`
   position: absolute;
-  top: 0;
+  top: 80px;
   bottom: 0;
   right: 0;
-  left: 0;
+  left: -50px;
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
 `;
 export const HeroText1 = styled.div`
-
   display: flex;
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 20px;
   flex: 1;
-`
+`;
 
 export const HeroText2 = styled.div`
   display: flex;
   justify-content: center;
   flex: 1;
-`
+`;
 export const HeroH1 = styled.h1`
   color: white;
   font-size: 48px;
   text-align: center;
-
 `;
-

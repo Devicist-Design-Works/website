@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "http://Devicist-Design-Works.github.io/website",
+  "homepage": "http://Devicist-Design-Works.github.io/",
   "private": false,
   "dependencies": {
     "classnames": "^2.2.6",

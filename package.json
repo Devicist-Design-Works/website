@@ -1,9 +1,11 @@
 {
   "name": "open-react-template",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "http://Devicist-Design-Works.github.io/website",
+  "private": false,
   "dependencies": {
     "classnames": "^2.2.6",
+    "gh-pages": "^4.0.0",
     "lodash": "^4.17.15",
     "postcss-nesting": "^10.1.8",
     "react": "^16.13.1",
@@ -16,9 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cruip/open-react-template.git"
+    "url": "https://github.com/Devicist-Design-Works/website"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

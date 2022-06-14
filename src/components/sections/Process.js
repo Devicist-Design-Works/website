@@ -55,93 +55,120 @@ const FeaturesSplit = ({
   };
 
   return (
-    <section
-      {...props}
-      className={outerClasses}
-    >
+    <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={splitClasses}>
-
             <div className="split-item">
-              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+              <div
+                className="split-item-content center-content-mobile reveal-from-left"
+                data-reveal-container=".split-item"
+              >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  design
-                  </div>
-                <h3 className="mt-0 mb-12">
-                  Gotta start somewhere
-                  </h3>
+                  <Image
+                    src={require("./../../assets/images/DesignIcon-white.png")}
+                    alt="design icon"
+                    width={50}
+                    height={50}
+                  />
+                
+                </div>
+                <h3 className="mt-0 mb-12">Design</h3>
                 <p className="m-0">
-                  Our initial process invloves CAD models, research, and lots and lots of googling.
-                  </p>
+                  Gotta start somewhere. Our initial process invloves CAD models, research, and lots
+                  and lots of googling.
+                </p>
               </div>
-              <div className={
-                classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill'
+              <div
+                className={classNames(
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
                 )}
-                data-reveal-container=".split-item">
+                data-reveal-container=".split-item"
+              >
                 <Image
-                  src={require('./../../assets/images/features-split-image-01.png')}
+                  src={require("./../../assets/images/process-design.png")}
                   alt="Features split 01"
                   width={528}
-                  height={396} />
+                  height={396}
+                />
               </div>
             </div>
 
             <div className="split-item">
-              <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
+              <div
+                className="split-item-content center-content-mobile reveal-from-right"
+                data-reveal-container=".split-item"
+              >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  prototype
-                  </div>
-                <h3 className="mt-0 mb-12">
-                  Practice makes perfect
-                  </h3>
+                  <Image
+                    src={require("./../../assets/images/PrototypeIcon-white.png")}
+                    alt="design icon"
+                    width={50}
+                    height={32}
+                  />
+                  
+                </div>
+                <h3 className="mt-0 mb-12">Prototype</h3>
                 <p className="m-0">
-                We've got a fast-paced, iterative protoyping process. This allows us to make mistakes early, and make sure everyone involved is excited about the finished product!
-                  </p>
+                  Practice makes perfect. We've got a fast-paced, iterative protoyping process. This
+                  allows us to make mistakes early, and make sure everyone
+                  involved is excited about the finished product!
+                </p>
               </div>
-              <div className={
-                classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill'
+              <div
+                className={classNames(
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
                 )}
-                data-reveal-container=".split-item">
+                data-reveal-container=".split-item"
+              >
                 <Image
-                  src={require('./../../assets/images/features-split-image-02.png')}
+                  src={require("./../../assets/images/process-prototype.png")}
                   alt="Features split 02"
                   width={528}
-                  height={396} />
+                  height={396}
+                />
               </div>
             </div>
 
             <div className="split-item">
-              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+              <div
+                className="split-item-content center-content-mobile reveal-from-left"
+                data-reveal-container=".split-item"
+              >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  build
-                  </div>
-                <h3 className="mt-0 mb-12">
-                  It's alive!
-                  </h3>
+                  <Image
+                    src={require("./../../assets/images/BuildIcon-white.png")}
+                    alt="design icon"
+                    width={50}
+                    height={32}
+                  />
+                  
+                </div>
+                <h3 className="mt-0 mb-12">Build</h3>
                 <p className="m-0">
-                The most exciting part - bringing it to life, in the real world! We take pride in not only delivering on the idea, but also providing support and maintenance for the lifetime of the project.
-                  </p>
+                  It's alive! We take pride in not only delivering on the idea, but
+                  also providing support and maintenance for the lifetime of the
+                  project.
+                </p>
               </div>
-              <div className={
-                classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill'
+              <div
+                className={classNames(
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
                 )}
-                data-reveal-container=".split-item">
+                data-reveal-container=".split-item"
+              >
                 <Image
-                  src={require('./../../assets/images/features-split-image-03.png')}
+                  src={require("./../../assets/images/process-build.png")}
                   alt="Features split 03"
                   width={528}
-                  height={396} />
+                  height={396}
+                />
               </div>
             </div>
-
           </div>
         </div>
       </div>

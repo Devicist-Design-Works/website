@@ -47,7 +47,7 @@ const GenericSection = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          {children}
+          
         </div>
       </div>
     </section>

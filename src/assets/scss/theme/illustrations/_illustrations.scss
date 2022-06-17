@@ -17,7 +17,7 @@
 
 // Hero illustration
 .illustration-section-01::after {
-	@include illustration('bg.gif', 100%, 100%, top);
+	@include illustration('heroBgVid.gif', 100%, 100%, top);
 }
 
 // Features illustration 02

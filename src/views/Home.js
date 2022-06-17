@@ -6,13 +6,15 @@ import Process from '../components/sections/Process';
 import Portfolio from '../components/sections/Portfolio';
 import Cta from '../components/sections/Cta';
 import Generic from '../components/sections/GenericSection';
+import videoBg from "../assets/videos/videoBg.mp4";
 
 const Home = () => {
 
   return (
     <>
+      
       <Hero className="illustration-section-01" />
-      <Generic/>
+
       <Portfolio topDivider id="portfolio" />
       {/* <FeaturesTiles /> */}
       <Process
@@ -23,7 +25,7 @@ const Home = () => {
         id="process"
       />
 
-      <Cta split id="contact" />
+      {/*<Cta split id="contact" />*/}
     </>
   );
 }

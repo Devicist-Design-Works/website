@@ -1,0 +1,108 @@
+.portfolio {
+
+	.section-inner {
+		padding-top: $portfolio--padding-t__mobile;
+		padding-bottom: $portfolio--padding-b__mobile;
+	}
+
+	.section-header {
+		padding-bottom: $portfolio-header--padding__mobile;
+	}
+
+	.tiles-wrap {
+		@if ( $portfolio-items--padding__mobile != null ) {
+			margin-right: -($portfolio-items--padding__mobile * 0.5);
+			margin-left: -($portfolio-items--padding__mobile * 0.5);
+			margin-top: -($portfolio-items--padding__mobile * 0.5);
+
+			&:last-of-type {
+				margin-bottom: -($portfolio-items--padding__mobile * 0.5);
+			}
+
+			&:not(:last-of-type) {
+				margin-bottom: ($portfolio-items--padding__mobile * 0.5);
+			}
+		}
+
+		&.push-left {
+
+			&::after {
+				flex-basis: $portfolio-item--width;
+				max-width: $portfolio-item--width;
+				@if ( $portfolio-items--padding__mobile != null ) {
+					padding-left: $portfolio-items--padding__mobile * 0.5;
+					padding-right: $portfolio-items--padding__mobile * 0.5;
+				}
+			}
+		}
+	}
+
+	.tiles-item {
+		flex-basis: $portfolio-item--width;
+		max-width: $portfolio-item--width;
+		@if ( $portfolio-items--padding__mobile != null ) {
+			padding: $portfolio-items--padding__mobile * 0.5;
+		}
+	}
+
+	.tiles-item-inner {
+		padding-top: $portfolio-item--inner-padding-v;
+		padding-bottom: $portfolio-item--inner-padding-v;
+		padding-left: $portfolio-item--inner-padding-h;
+		padding-right: $portfolio-item--inner-padding-h;
+	}
+}
+
+.portfolio-item-content {
+	flex-grow: 1;
+}
+
+.portfolio-item-source {
+	display: inline-flex; // to allow centering when using .content-center on a parent tag
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+@include media( '>medium' ) {
+
+	.portfolio {
+
+		.section-inner {
+			padding-top: $portfolio--padding-t__desktop;
+			padding-bottom: $portfolio--padding-b__desktop;
+		}
+
+		.section-header {
+			padding-bottom: $portfolio-header--padding__desktop;
+		}
+
+		@if ( $portfolio-items--padding__desktop != null ) {
+
+			.tiles-wrap {
+				margin-right: -($portfolio-items--padding__desktop * 0.5);
+				margin-left: -($portfolio-items--padding__desktop * 0.5);
+				margin-top: -($portfolio-items--padding__desktop * 0.5);
+
+				&:last-of-type {
+					margin-bottom: -($portfolio-items--padding__desktop * 0.5);
+				}
+
+				&:not(:last-of-type) {
+					margin-bottom: ($portfolio-items--padding__desktop * 0.5);
+				}
+
+				&.push-left {
+
+					&::after {
+						padding-left: $portfolio-items--padding__desktop * 0.5;
+						padding-right: $portfolio-items--padding__desktop * 0.5;
+					}
+				}
+			}
+
+			.tiles-item {
+				padding: $portfolio-items--padding__desktop * 0.5;
+			}
+		}
+	}
+}

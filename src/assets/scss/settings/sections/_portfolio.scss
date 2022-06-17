@@ -1,0 +1,12 @@
+// portfolio (core/sections/_portfolio.scss) ---------------
+$portfolio--padding-t__mobile: 		null;		// portfolio, top padding (mobile)
+$portfolio--padding-b__mobile: 		null;		// portfolio, bottom padding (mobile)
+$portfolio--padding-t__desktop: 		null;		// portfolio, top padding (desktop)
+$portfolio--padding-b__desktop: 		null;		// portfolio, bottom padding (desktop)
+$portfolio-header--padding__mobile: 	null;		// portfolio header, bottom padding (mobile)
+$portfolio-header--padding__desktop:	null;		// portfolio header, bottom padding (desktop)
+$portfolio-items--padding__mobile: 	null;		// padding between portfolio items (mobile)
+$portfolio-items--padding__desktop: 	null;		// padding between portfolio items (desktop)
+$portfolio-item--width: 				344px;		// portfolio item, width
+$portfolio-item--inner-padding-v: 	24px;		// portfolio item, inner top and bottom padding (it inherits $tiles-item--inner-padding-v unless you replace null with a new value)
+$portfolio-item--inner-padding-h: 	32px;		// testimonial item, inner left and right padding (it inherits $tiles-item--inner-padding-h unless you replace null with a new value)

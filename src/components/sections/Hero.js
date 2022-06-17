@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
-import ButtonGroup from "../elements/ButtonGroup";
-import Button from "../elements/Button";
+import videoBg from "../../assets/videos/videoBg.mp4";
 import Image from "../elements/Image";
-import Modal from "../elements/Modal";
+
 
 const propTypes = {
   ...SectionProps.types,
@@ -13,6 +12,12 @@ const propTypes = {
 const defaultProps = {
   ...SectionProps.defaults,
 };
+
+const videoBgStyle = {
+  position: "fixed",
+  width: "100%", 
+  height: "100%",
+  };
 
 const Hero = ({
   className,
@@ -24,17 +29,7 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
-  const [videoModalActive, setVideomodalactive] = useState(false);
 
-  const openModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(true);
-  };
-
-  const closeModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(false);
-  };
 
   const outerClasses = classNames(
     "hero section center-content",
@@ -55,7 +50,7 @@ const Hero = ({
     <section {...props} className={outerClasses}>
       <div className="container-sm">
         <div className={innerClasses}>
-          <div style={{padding: 30}}>
+          <div style={{ padding: 30 }}>
             <Image
               src={require("./../../assets/images/logo.svg")}
               alt="Open"
@@ -72,47 +67,38 @@ const Hero = ({
               The built world brought to life
             </h1>
             <div className="container-s">
-           
               <p
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                Whether it's a reactive LED light show, a custom game controller, a kinetic sculpture, or anything in between. We can make it happen!
+                Whether it's a reactive LED light show, a custom game
+                controller, a kinetic sculpture, or anything in between. We can
+                make it happen!
               </p>
-          
+
               <div className="reveal-from-bottom" data-reveal-delay="600"></div>
             </div>
           </div>
-          
-          <div
-            className="hero-figure reveal-from-bottom illustration-element-01"
-            data-reveal-value="20px"
-            data-reveal-delay="800"
-          >
-            <a
-              data-video="https://player.vimeo.com/video/174002812"
-              href="#0"
-              aria-controls="video-modal"
-              onClick={openModal}
-            >
-              <Image
-                className="has-shadow"
-                src={require("./../../assets/images/build.jpg")}
-                alt="Hero"
-                width={896}
-                height={504}
-              />
-            </a>
-          </div>
-          <Modal
-            id="video-modal"
-            show={videoModalActive}
-            handleClose={closeModal}
-            video="https://player.vimeo.com/video/174002812"
-            videoTag="iframe"
-          />
         </div>
       </div>
+      <video
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          left: "0",
+          right: "0",
+          top: "0",
+          zIndex: "-1",
+          objectFit: "cover",
+        }}
+        autoPlay
+        loop
+        muted
+        id="videoBg"
+      >
+        <source src={videoBg} type="video/mp4" />
+      </video>
     </section>
   );
 };

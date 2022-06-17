@@ -1,15 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
-import Image from "../elements/Image";
 import Card from 'react-bootstrap/Card';
-import Modal from 'react-bootstrap/Modal';
 import Button from '../elements/Button';
 import snowflake from '../../assets/images/portfolio/snowflake.png';
 import powercube from "../../assets/images/portfolio/powercube.png";
 import nfc from "../../assets/images/portfolio/nfc.png";
-import { TRUE } from 'sass';
+
 
 
 const propTypes = {
@@ -84,6 +82,7 @@ const Portfolio = ({
                   <a
                     href="https://hackaday.io/project/3431-christmas-snowflake-sculpture"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Button variant="primary">Learn more</Button>
                   </a>
@@ -103,6 +102,7 @@ const Portfolio = ({
                   <a
                     href="https://hackaday.io/project/16727-powercube-vr"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Button variant="primary">Learn more</Button>
                   </a>
@@ -126,6 +126,7 @@ const Portfolio = ({
                   <a
                     href="https://hackaday.io/project/5483-nfc-scanners"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Button variant="primary">Learn more</Button>
                   </a>

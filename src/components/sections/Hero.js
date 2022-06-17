@@ -13,11 +13,6 @@ const defaultProps = {
   ...SectionProps.defaults,
 };
 
-const videoBgStyle = {
-  position: "fixed",
-  width: "100%", 
-  height: "100%",
-  };
 
 const Hero = ({
   className,

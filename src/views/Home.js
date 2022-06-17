@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       
-      <Hero className="illustration-section-01" />
+      <Hero/>
 
       <Portfolio topDivider id="portfolio" />
       {/* <FeaturesTiles /> */}

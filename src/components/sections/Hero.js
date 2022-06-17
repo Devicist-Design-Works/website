@@ -28,8 +28,8 @@ const Hero = ({
 
   const outerClasses = classNames(
     "hero section center-content",
-    topOuterDivider && "has-top-divider",
-    bottomOuterDivider && "has-bottom-divider",
+   // topOuterDivider && "has-top-divider",
+   // bottomOuterDivider && "has-bottom-divider",
     hasBgColor && "has-bg-color",
     invertColor && "invert-color",
     className
@@ -37,12 +37,15 @@ const Hero = ({
 
   const innerClasses = classNames(
     "hero-inner section-inner",
-    topDivider && "has-top-divider",
+   // topDivider && "has-top-divider",
     bottomDivider && "has-bottom-divider"
   );
 
   return (
     <section {...props} className={outerClasses}>
+      <video className="videoBg" autoPlay loop muted>
+        <source src={videoBg} type="video/mp4" />
+      </video>
       <div className="container-sm">
         <div className={innerClasses}>
           <div style={{ padding: 30 }}>
@@ -76,24 +79,6 @@ const Hero = ({
           </div>
         </div>
       </div>
-      <video
-        style={{
-          width: "100%",
-          height: "100%",
-          position: "absolute",
-          left: "0",
-          right: "0",
-          top: "0",
-          zIndex: "-1",
-          objectFit: "cover",
-        }}
-        autoPlay
-        loop
-        muted
-        id="videoBg"
-      >
-        <source src={videoBg} type="video/mp4" />
-      </video>
     </section>
   );
 };

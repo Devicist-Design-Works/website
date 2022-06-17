@@ -2,12 +2,14 @@ import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
+//import Image from "../elements/Image";
 import Card from 'react-bootstrap/Card';
+//import Modal from 'react-bootstrap/Modal';
 import Button from '../elements/Button';
 import snowflake from '../../assets/images/portfolio/snowflake.png';
 import powercube from "../../assets/images/portfolio/powercube.png";
 import nfc from "../../assets/images/portfolio/nfc.png";
-
+//import { TRUE } from 'sass';
 
 
 const propTypes = {
@@ -36,7 +38,6 @@ const Portfolio = ({
   
   const outerClasses = classNames(
     'portfolio section',
-    topOuterDivider && 'has-top-divider',
     bottomOuterDivider && 'has-bottom-divider',
     hasBgColor && 'has-bg-color',
     invertColor && 'invert-color',
@@ -45,7 +46,6 @@ const Portfolio = ({
 
   const innerClasses = classNames(
     'portfolio-inner section-inner',
-    topDivider && 'has-top-divider',
     bottomDivider && 'has-bottom-divider'
   );
 
@@ -124,7 +124,7 @@ const Portfolio = ({
                   </Card.Text>
 
                   <a
-                    href="https://hackaday.io/project/5483-nfc-scanners"
+                    href="https://hackaday.io/project/3431-christmas-snowflake-sculpture"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

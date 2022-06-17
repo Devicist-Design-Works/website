@@ -6,6 +6,8 @@
 	}
 }
 
+
+
 .hero-inner {
 
 	// Affects only hero full
@@ -26,16 +28,10 @@
 	}
 }
 
-#videoBg {
-	position: fixed;
-	z-index: -1;
-	width: 100;
-}
-
 @include media( '<=medium' ) {
 
 	.hero {
-
+		height: 100vh;
 		.split-wrap {
 
 			.split-item {
@@ -55,13 +51,26 @@
 				}
 			}
 		}
+
+				.videoBg {
+					width: 100%;
+					height: 100vh;
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					z-index: -1;
+					overflow: hidden;
+					object-fit: cover;
+					padding: none;
+				}
 	}
 }
 
 @include media( '>medium' ) {
 
 	.hero {
-
+		height: 100vh;
 		.section-inner {
 			padding-top: $hero--padding-t__desktop;
 			padding-bottom: $hero--padding-b__desktop;
@@ -76,4 +85,17 @@
 			margin-top: $hero--inner-padding-v_desktop;
 		}
 	}
+
+		.videoBg {
+			width: 100%;
+			height: 100vh;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			z-index: -1;
+			overflow: hidden;
+			object-fit: cover;
+			padding: none;
+		}
 }

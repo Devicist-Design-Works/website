@@ -3,6 +3,7 @@ import React from 'react';
 import Hero from '../components/sections/Hero';
 import Process from '../components/sections/Process';
 import Portfolio from '../components/sections/Portfolio';
+import Cta from '../components/sections/Cta';
 
 /*
 import Cta from '../components/sections/Cta';
@@ -26,8 +27,7 @@ const Home = () => {
         className="illustration-section-02"
         id="process"
       />
-
-      {/*<Cta split id="contact" />*/}
+      <Cta id="contact"/>
     </>
   );
 }

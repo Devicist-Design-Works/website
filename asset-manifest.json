@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/devicist/static/css/main.982a61a8.chunk.css",
+    "main.js": "/devicist/static/js/main.35108169.chunk.js",
+    "main.js.map": "/devicist/static/js/main.35108169.chunk.js.map",
+    "runtime-main.js": "/devicist/static/js/runtime-main.15a6a4f2.js",
+    "runtime-main.js.map": "/devicist/static/js/runtime-main.15a6a4f2.js.map",
+    "static/js/2.b896751a.chunk.js": "/devicist/static/js/2.b896751a.chunk.js",
+    "static/js/2.b896751a.chunk.js.map": "/devicist/static/js/2.b896751a.chunk.js.map",
+    "index.html": "/devicist/index.html",
+    "precache-manifest.191308aa574054fee6f38a7831bbbd20.js": "/devicist/precache-manifest.191308aa574054fee6f38a7831bbbd20.js",
+    "service-worker.js": "/devicist/service-worker.js",
+    "static/css/main.982a61a8.chunk.css.map": "/devicist/static/css/main.982a61a8.chunk.css.map",
+    "static/js/2.b896751a.chunk.js.LICENSE.txt": "/devicist/static/js/2.b896751a.chunk.js.LICENSE.txt",
+    "static/media/BuildIcon-white.svg": "/devicist/static/media/BuildIcon-white.cd1479ca.svg",
+    "static/media/DesignIcon-white.svg": "/devicist/static/media/DesignIcon-white.835b723b.svg",
+    "static/media/PrototypeIcon-white.svg": "/devicist/static/media/PrototypeIcon-white.761bc67a.svg",
+    "static/media/SupportIcon-white.svg": "/devicist/static/media/SupportIcon-white.ed68cc99.svg",
+    "static/media/logo.svg": "/devicist/static/media/logo.47fbacad.svg",
+    "static/media/nfc.png": "/devicist/static/media/nfc.2356967d.png",
+    "static/media/powercube.png": "/devicist/static/media/powercube.d4987787.png",
+    "static/media/process-build.png": "/devicist/static/media/process-build.44f52e87.png",
+    "static/media/process-design.png": "/devicist/static/media/process-design.63991be1.png",
+    "static/media/process-prototype.png": "/devicist/static/media/process-prototype.f090e177.png",
+    "static/media/process-support.png": "/devicist/static/media/process-support.73111816.png",
+    "static/media/snowflake.png": "/devicist/static/media/snowflake.4a503d51.png",
+    "static/media/videoBg.mp4": "/devicist/static/media/videoBg.d7665f4a.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.15a6a4f2.js",
+    "static/js/2.b896751a.chunk.js",
+    "static/css/main.982a61a8.chunk.css",
+    "static/js/main.35108169.chunk.js"
+  ]
+}

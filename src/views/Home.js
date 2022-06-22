@@ -20,16 +20,12 @@ const Home = () => {
       <Hero/>
 
       <Portfolio topDivider id="work" />
-      {/* <FeaturesTiles /> */}
       <Process
         invertMobile
         topDivider
-        imageFill
-        className="illustration-section-02"
         id="process"
       />
       <Cta id="contact"/>
-
     </>
   );
 }

@@ -4,7 +4,7 @@ Each section of the website has its own .js file found in
 ```
 src > components > sections
 ```
-All the sites content can be edited from those files. 
+All the sites content can be edited from those files (The navbar and footer can be found in components > layout > Header.js or Footer.js)
 
 If you want to add a section to the site, navigate to
 ```

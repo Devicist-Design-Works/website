@@ -53,7 +53,8 @@ const Portfolio = ({
     'tiles-wrap',
     pushLeft && 'push-left'
   );
-
+  
+  //edit section header content here
   const sectionHeader = {
     title: 'Our Work',
     paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
@@ -61,9 +62,10 @@ const Portfolio = ({
 
 
   return (
-    <section id="portfolio" {...props} className={outerClasses}>
+    <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
+          {/*this is a seperate .js file found in sections > partials*/}
           <SectionHeader data={sectionHeader} className="center-content" />
 
           <div className={tilesClasses}>

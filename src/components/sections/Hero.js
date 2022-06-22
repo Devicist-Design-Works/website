@@ -28,8 +28,6 @@ const Hero = ({
 
   const outerClasses = classNames(
     "hero section center-content",
-   // topOuterDivider && "has-top-divider",
-   // bottomOuterDivider && "has-bottom-divider",
     hasBgColor && "has-bg-color",
     invertColor && "invert-color",
     className

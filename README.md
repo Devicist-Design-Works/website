@@ -3,7 +3,7 @@
 Each section of the website has its own .js file found in
 ```
 src > components > sections
-
+```
 All the sites content can be edited from those files. 
 
 If you want to add a section to the site, navigate to

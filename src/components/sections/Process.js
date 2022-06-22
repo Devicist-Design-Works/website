@@ -67,17 +67,16 @@ const FeaturesSplit = ({
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   <Image
-                    src={require("./../../assets/images/DesignIcon-white.png")}
+                    src={require("./../../assets/images/DesignIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={50}
                   />
-                
                 </div>
                 <h3 className="mt-0 mb-12">Design</h3>
                 <p className="m-0">
-                  Gotta start somewhere. Our initial process invloves CAD models, research, and lots
-                  and lots of googling.
+                  Gotta start somewhere. Our initial process invloves CAD
+                  models, research, and lots and lots of googling.
                 </p>
               </div>
               <div
@@ -103,18 +102,18 @@ const FeaturesSplit = ({
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   <Image
-                    src={require("./../../assets/images/PrototypeIcon-white.png")}
+                    src={require("./../../assets/images/PrototypeIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={32}
                   />
-                  
                 </div>
                 <h3 className="mt-0 mb-12">Prototype</h3>
                 <p className="m-0">
-                  Practice makes perfect. We've got a fast-paced, iterative protoyping process. This
-                  allows us to make mistakes early, and make sure everyone
-                  involved is excited about the finished product!
+                  Practice makes perfect. We've got a fast-paced, iterative
+                  protoyping process. This allows us to make mistakes early, and
+                  make sure everyone involved is excited about the finished
+                  product!
                 </p>
               </div>
               <div
@@ -140,18 +139,17 @@ const FeaturesSplit = ({
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   <Image
-                    src={require("./../../assets/images/BuildIcon-white.png")}
+                    src={require("./../../assets/images/BuildIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={32}
                   />
-                  
                 </div>
                 <h3 className="mt-0 mb-12">Build</h3>
                 <p className="m-0">
-                  It's alive! We take pride in not only delivering on the idea, but
-                  also providing support and maintenance for the lifetime of the
-                  project.
+                  It's alive! We take pride in not only delivering on the idea,
+                  but also providing support and maintenance for the lifetime of
+                  the project.
                 </p>
               </div>
               <div
@@ -164,6 +162,41 @@ const FeaturesSplit = ({
                 <Image
                   src={require("./../../assets/images/process-build.png")}
                   alt="Features split 03"
+                  width={528}
+                  height={396}
+                />
+              </div>
+            </div>
+            <div className="split-item">
+              <div
+                className="split-item-content center-content-mobile reveal-from-right"
+                data-reveal-container=".split-item"
+              >
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  <Image
+                    src={require("./../../assets/images/SupportIcon-white.svg")}
+                    alt="design icon"
+                    width={50}
+                    height={32}
+                  />
+                </div>
+                <h3 className="mt-0 mb-12">Support</h3>
+                <p className="m-0">
+                  Vitae aliquet nec ullamcorper sit amet risus nullam eget felis
+                  semper quis lectus nulla at volutpat diam ut venenatis
+                  tellus—in ornare.
+                </p>
+              </div>
+              <div
+                className={classNames(
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
+                )}
+                data-reveal-container=".split-item"
+              >
+                <Image
+                  src={require("./../../assets/images/process-support.png")}
+                  alt="Features split 02"
                   width={528}
                   height={396}
                 />

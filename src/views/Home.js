@@ -5,6 +5,7 @@ import Process from '../components/sections/Process';
 import Portfolio from '../components/sections/Portfolio';
 import Cta from '../components/sections/Cta';
 
+
 /*
 import Cta from '../components/sections/Cta';
 import Generic from '../components/sections/GenericSection';
@@ -18,7 +19,7 @@ const Home = () => {
       
       <Hero/>
 
-      <Portfolio topDivider id="portfolio" />
+      <Portfolio topDivider id="work" />
       {/* <FeaturesTiles /> */}
       <Process
         invertMobile
@@ -28,6 +29,7 @@ const Home = () => {
         id="process"
       />
       <Cta id="contact"/>
+
     </>
   );
 }

@@ -115,12 +115,12 @@ const Header = ({
                     <li>
                       <Link
                 
-                        to="portfolio"
+                        to="work"
                         smooth={true}
                         duration={500}
                         onClick={closeMenu}
                       >
-                        Portfolio
+                        Work
                       </Link>
                     </li>
 

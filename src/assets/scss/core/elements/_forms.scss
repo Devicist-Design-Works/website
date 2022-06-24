@@ -17,7 +17,54 @@ fieldset {
 	@include font-size(label);
 }
 
-.form-input,
+.cta-input {
+	background-color: color-bg(input);
+	border-width: $button-form--border-width;
+	border-style: $button-form--border-style;
+	border-color: color-border(input);
+	
+	&:hover {
+		border-color: color-border(input-hover);
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+		border-color: color-border(input-focus);
+		background-color: color-bg(input-focus);
+	}
+	
+	&[disabled] {
+		cursor: not-allowed;
+		background-color: color-bg(input-disabled);
+		border-color: color-border(input-disabled);
+	}
+	
+	&.form-error {
+		border-color: get-color(alert, error);
+	}
+
+	&.form-warning {
+		border-color: get-color(alert, warning);
+		}
+	
+		&.form-success {
+			border-color: get-color(alert, success);
+		}
+		
+		display: block;
+		@include font-size(input);
+		@include font-weight(input);
+		padding: (($button-form--height - get-line-height(input) - ($button-form--border-width * 2)) * 0.5) ($form--padding-h - $button-form--border-width);
+		height: $button-form--height;
+		border-radius: $form--radius;
+		color: color(input);
+		box-shadow: none;
+		max-width: 100%;
+		width: 25%;
+}
+
+.form-input input,
 .form-select,
 .form-checkbox input,
 .form-radio input {
@@ -58,7 +105,7 @@ fieldset {
 	}
 }
 
-.form-input,
+.form-input input,
 .form-select {
 	display: block;
 	@include font-size(input);
@@ -70,6 +117,77 @@ fieldset {
 	box-shadow: none;
     max-width: 100%;
     width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.form-input button {
+	display: inline-flex;
+		@include font-size(button);
+		@include font-weight(button);
+		padding: (($button-form--height - get-line-height(button) - ($button-form--border-width * 2)) * 0.5) ($button--padding-h - $button-form--border-width);
+		height: $button-form--height;
+		text-decoration: none !important;
+		text-transform: $button--transform;
+		color: color(button-light);
+		background-color: color-bg(button-light);
+		border-width: $button-form--border-width;
+		border-style: $button-form--border-style;
+		border-color: color-border(button-light);
+		border-radius: $button--radius;
+		cursor: pointer;
+		justify-content: center;
+		text-align: center;
+		letter-spacing: inherit;
+		white-space: nowrap;
+		transition: background .15s ease;
+	
+		&:active {
+			outline: 0;
+		}
+	
+		&:hover {
+			background-color: color-bg(button-light-hover);
+			border-color: color-border(button-light-hover);
+		}
+	
+		&.is-loading {
+			position: relative;
+			color: transparent !important;
+			pointer-events: none;
+	
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+				width: get-line-height(button);
+				height: get-line-height(button);
+				margin-left: -(get-line-height(button) * 0.5);
+				margin-top: -(get-line-height(button) * 0.5);
+				top: 50%;
+				left: 50%;
+				border: $button-loading--thickness solid color(button-light);
+				border-radius: 50%;
+				border-right-color: transparent !important;
+				border-top-color: transparent !important;
+				z-index: 1;
+				animation: button-loading .6s infinite linear;
+			}
+		}
+	
+		&[disabled] {
+			cursor: not-allowed;
+			color: color(button-disabled);
+			background-color: color-bg(button-disabled) !important;
+			border-color: color-border(button-disabled);
+	
+			&.is-loading {
+	
+				&::after {
+					border-color: color(button-disabled);
+				}
+			}
+		}
 }
 
 .form-input {
@@ -453,7 +571,7 @@ textarea.form-input {
 .form-group {
 	display: flex;
 
-	.form-input {
+	.form-input input {
 		flex-grow: 1;
 		flex-shrink: 1;
 		margin-right: $button-form--group-padding;
@@ -491,7 +609,7 @@ textarea.form-input {
 
 	.form-group-desktop {
 
-		.form-input {
+		.form-input input {
 			margin-bottom: $button-form--group-padding;
 
 			@if ( $button-form--group-padding == null ) {
@@ -517,7 +635,7 @@ textarea.form-input {
     .form-group-desktop {
         display: flex;
 
-		.form-input {
+		.form-input input {
 			flex-grow: 1;
 			flex-shrink: 1;
 			margin-right: $button-form--group-padding;

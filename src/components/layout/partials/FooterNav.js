@@ -17,7 +17,7 @@ const FooterNav = ({
       <ul className="list-reset">
         <li>
           <Link to="portfolio" smooth={true} duration={500}>
-            Portfolio
+            Work
           </Link>
         </li>
         <li>

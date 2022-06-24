@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
-import Input from '../elements/Input';
+import Mailchimp from 'react-mailchimp-form';
 
 const propTypes = {
   ...SectionProps.types,
@@ -13,6 +13,7 @@ const defaultProps = {
   ...SectionProps.defaults,
   split: false
 }
+
 
 const Cta = ({
   className,
@@ -53,24 +54,36 @@ const Cta = ({
               Don't have a specific project, but want to stay connected? Join
               our mailing list
             </p>
-            
           </div>
-          <div className="cta-action">
-            <Input
-              id="newsletter"
-              type="email"
-              label="Subscribe"
-              labelHidden
-              hasIcon="right"
-              placeholder="Email"
-            >
-              <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z"
-                  fill="#000"
-                />
-              </svg>
-            </Input>
+          <div>
+          
+            <Mailchimp 
+              action="https://devicist.us14.list-manage.com/subscribe/post?u=1960e060b6a123cf33b617dd7&amp;id=19f122e29b"
+              fields={[
+                {
+                  name: "FNAME",
+                  placeholder: "Name",
+                  type: "text",
+                  require: true,
+                },
+                {
+                  name: "EMAIL",
+                  placeholder: "Email",
+                  type: "email",
+                  require: true,
+                },
+              ]}
+              messages={{
+              sending: "Sending...",
+              success: "Thank you for subscribing!",
+              error: "An unexpected internal error has occurred.",
+              empty: "You must write an e-mail.",
+              duplicate: "Too many subscribe attempts for this email address",
+              button: "Submit"
+              }}
+
+              className='form-input'
+            />
           </div>
         </div>
       </div>

@@ -67,9 +67,11 @@ const Hero = ({
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                Whether it's a reactive LED light show, a custom game
-                controller, a kinetic sculpture, or anything in between. We can
-                make it happen!
+                From hand-held gadgets<br/>
+                to large-scale installations, <br/>
+                we combine art and engineering <br/>
+                to build dynamic in-person <br/>
+                experiences.
               </p>
 
               <div className="reveal-from-bottom" data-reveal-delay="600"></div>

@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+import YoutubeEmbed from "../elements/YoutubeEmbed";
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -51,7 +52,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: 'The Process',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    paragraph: 'Our process is simple. The results stand-out.'
   };
 
   return (
@@ -60,6 +61,43 @@ const FeaturesSplit = ({
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={splitClasses}>
+
+            <div className="split-item">
+              <div
+                className="split-item-content center-content-mobile reveal-from-right"
+                data-reveal-container=".split-item"
+              >
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  <Image
+                    src={require("./../../assets/images/PrototypeIcon-white.svg")}
+                    alt="design icon"
+                    width={50}
+                    height={32}
+                  />
+                </div>
+                <h3 className="mt-0 mb-12">Foundation</h3>
+                <p className="m-0">
+                  With over 20 years' experience combining art, UX, coding, electronics, 
+                  and fabrication, we use our skills to take wild ideas and make them real,
+                  while mitigating risks.
+                </p>
+              </div>
+              <div
+                className={classNames(
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
+                )}
+                data-reveal-container=".split-item"
+              >
+                <Image
+                  src={require("./../../assets/images/emailSketchCropped.png")}
+                  alt="Features split 02"
+                  width={528}
+                  height={396}
+                />
+              </div>
+            </div>
+
             <div className="split-item">
               <div
                 className="split-item-content center-content-mobile reveal-from-left"
@@ -75,8 +113,8 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Design</h3>
                 <p className="m-0">
-                  Gotta start somewhere. Our initial process invloves CAD
-                  models, research, and lots and lots of googling.
+                  We work closely with clients to clarify objectives, and iterate through research, ideation, 
+                  sourcing, modeling and detailing until we arrive at the optimal design.
                 </p>
               </div>
               <div
@@ -87,7 +125,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require("./../../assets/images/process-design.png")}
+                  src={require("./../../assets/images/axle.png")}
                   alt="Features split 01"
                   width={528}
                   height={396}
@@ -108,12 +146,10 @@ const FeaturesSplit = ({
                     height={32}
                   />
                 </div>
-                <h3 className="mt-0 mb-12">Prototype</h3>
+                <h3 className="mt-0 mb-12">Build</h3>
                 <p className="m-0">
-                  Practice makes perfect. We've got a fast-paced, iterative
-                  protoyping process. This allows us to make mistakes early, and
-                  make sure everyone involved is excited about the finished
-                  product!
+                  We develop code, build electronics, fabricate objects, and integrate components into the final pieces.
+                  Along the way, we develop hands-on prototypes, simulations and tools that help stakeholders sort out details. 
                 </p>
               </div>
               <div
@@ -124,7 +160,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require("./../../assets/images/process-prototype.png")}
+                  src={require("./../../assets/images/wheelBuild.jpg")}
                   alt="Features split 02"
                   width={528}
                   height={396}
@@ -145,11 +181,11 @@ const FeaturesSplit = ({
                     height={32}
                   />
                 </div>
-                <h3 className="mt-0 mb-12">Build</h3>
+                <h3 className="mt-0 mb-12">Deploy</h3>
                 <p className="m-0">
-                  It's alive! We take pride in not only delivering on the idea,
-                  but also providing support and maintenance for the lifetime of
-                  the project.
+                  Show time! This is the moment when the project goes live, and public engagement begins. 
+                  We are there to deliver and install the project and ensure it is fully functional. 
+                  We also study the results to measure success.
                 </p>
               </div>
               <div
@@ -159,12 +195,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image
-                  src={require("./../../assets/images/process-build.png")}
-                  alt="Features split 03"
-                  width={528}
-                  height={396}
-                />
+                <YoutubeEmbed embedId="o-eduqKUgx8" />
               </div>
             </div>
             <div className="split-item">
@@ -182,9 +213,9 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Support</h3>
                 <p className="m-0">
-                  Vitae aliquet nec ullamcorper sit amet risus nullam eget felis
-                  semper quis lectus nulla at volutpat diam ut venenatis
-                  tellus—in ornare.
+                Obsessed with reliability, we engineer simple, robust and modular solutions. 
+                We maintain the project over it's lifetime through in-person and remote support,
+                and can push updates to keep the content fresh.
                 </p>
               </div>
               <div
@@ -195,7 +226,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require("./../../assets/images/process-support.png")}
+                  src={require("./../../assets/images/support.jpg")}
                   alt="Features split 02"
                   width={528}
                   height={396}

@@ -43,7 +43,7 @@ const Cta = ({
   );  
 
   return (
-    <section {...props} className={outerClasses}>
+    <section {...props} className={outerClasses} id="contact">
       <div className="container">
         <div className={innerClasses}>
           <div className="cta-slogan">
@@ -51,13 +51,12 @@ const Cta = ({
             <p>info@devicist.com</p>
 
             <p>
-              Occasionally, we release news and articles on <b>interactive objects</b>. Join
-              our mailing list.
+              Occasionally, we release news and articles on{" "}
+              <b>interactive objects</b>. Join our mailing list.
             </p>
           </div>
           <div>
-          
-            <Mailchimp 
+            <Mailchimp
               action="https://devicist.us14.list-manage.com/subscribe/post?u=1960e060b6a123cf33b617dd7&amp;id=19f122e29b"
               fields={[
                 {
@@ -74,15 +73,14 @@ const Cta = ({
                 },
               ]}
               messages={{
-              sending: "Sending...",
-              success: "Thank you for subscribing!",
-              error: "An unexpected internal error has occurred.",
-              empty: "You must write an e-mail.",
-              duplicate: "Too many subscribe attempts for this email address",
-              button: "Submit"
+                sending: "Sending...",
+                success: "Thank you for subscribing!",
+                error: "An unexpected internal error has occurred.",
+                empty: "You must write an e-mail.",
+                duplicate: "Too many subscribe attempts for this email address",
+                button: "Submit",
               }}
-
-              className='form-input'
+              className="form-input"
             />
           </div>
         </div>

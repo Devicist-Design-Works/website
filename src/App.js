@@ -7,11 +7,10 @@ import ReactGA from 'react-ga';
 
 // Layouts
 import HomeLayout from './layouts/HomeLayout';
-import ProjectLayout from "./layouts/ProjectLayout";
 
 // Views 
 import Home from './views/Home';
-import Project1 from './views/Project1'
+
 
 
 // Initialize Google Analytics
@@ -41,7 +40,6 @@ const App = () => {
       children={() => (
         <Switch>
           <AppRoute exact path="/" component={Home} layout={HomeLayout} />
-          <AppRoute exact path="/Project1" component={Project1} layout={ProjectLayout} />
         </Switch>
       )}
     />

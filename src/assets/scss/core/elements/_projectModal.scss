@@ -1,0 +1,13 @@
+.projectOverlay {
+    background: rgba(32, 32, 32, 0.96);
+}
+
+.projectModal {
+    background: #000000;
+    max-width: $container--width;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+

@@ -56,12 +56,11 @@ const FeaturesSplit = ({
   };
 
   return (
-    <section {...props} className={outerClasses}>
+    <section {...props} className={outerClasses} id="process">
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={splitClasses}>
-
             <div className="split-item">
               <div
                 className="split-item-content center-content-mobile reveal-from-right"
@@ -77,9 +76,9 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Foundation</h3>
                 <p className="m-0">
-                  With over 20 years' experience combining art, UX, coding, electronics, 
-                  and fabrication, we use our skills to take wild ideas and make them real,
-                  while mitigating risks.
+                  With over 20 years' experience combining art, UX, coding,
+                  electronics, and fabrication, we use our skills to take wild
+                  ideas and make them real, while mitigating risks.
                 </p>
               </div>
               <div
@@ -113,8 +112,9 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Design</h3>
                 <p className="m-0">
-                  We work closely with clients to clarify objectives, and iterate through research, ideation, 
-                  sourcing, modeling and detailing until we arrive at the optimal design.
+                  We work closely with clients to clarify objectives, and
+                  iterate through research, ideation, sourcing, modeling and
+                  detailing until we arrive at the optimal design.
                 </p>
               </div>
               <div
@@ -148,8 +148,10 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Build</h3>
                 <p className="m-0">
-                  We develop code, build electronics, fabricate objects, and integrate components into the final pieces.
-                  Along the way, we develop hands-on prototypes, simulations and tools that help stakeholders sort out details. 
+                  We develop code, build electronics, fabricate objects, and
+                  integrate components into the final pieces. Along the way, we
+                  develop hands-on prototypes, simulations and tools that help
+                  stakeholders sort out details.
                 </p>
               </div>
               <div
@@ -183,9 +185,10 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Deploy</h3>
                 <p className="m-0">
-                  Show time! This is the moment when the project goes live, and public engagement begins. 
-                  We are there to deliver and install the project and ensure it is fully functional. 
-                  We also study the results to measure success.
+                  Show time! This is the moment when the project goes live, and
+                  public engagement begins. We are there to deliver and install
+                  the project and ensure it is fully functional. We also study
+                  the results to measure success.
                 </p>
               </div>
               <div
@@ -213,9 +216,10 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Support</h3>
                 <p className="m-0">
-                Obsessed with reliability, we engineer simple, robust and modular solutions. 
-                We maintain the project over it's lifetime through in-person and remote support,
-                and can push updates to keep the content fresh.
+                  Obsessed with reliability, we engineer simple, robust and
+                  modular solutions. We maintain the project over it's lifetime
+                  through in-person and remote support, and can push updates to
+                  keep the content fresh.
                 </p>
               </div>
               <div

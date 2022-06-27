@@ -18,13 +18,12 @@ const Home = () => {
   return (
     <>
       <Hero/>
-      <Portfolio topDivider id="work" />
+      <Portfolio topDivider />
       <Process
         invertMobile
         topDivider
-        id="process"
       />
-      <Cta id="contact"/>
+      <Cta/>
 
     </>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
@@ -81,13 +82,13 @@ const Portfolio = ({
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <a
-                    href="https://hackaday.io/project/3431-christmas-snowflake-sculpture"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to="/Project1"
+                    // target="_blank"
+                    // rel="noopener noreferrer"
                   >
                     <Button variant="primary">Learn more</Button>
-                  </a>
+                  </Link>
                 </Card.Body>
               </Card>
             </div>
@@ -101,13 +102,13 @@ const Portfolio = ({
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
-                  <a
-                    href="https://hackaday.io/project/16727-powercube-vr"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to="/Project2"
+                    // target="_blank"
+                    // rel="noopener noreferrer"
                   >
                     <Button variant="primary">Learn more</Button>
-                  </a>
+                  </Link>
                 </Card.Body>
               </Card>
             </div>
@@ -125,13 +126,13 @@ const Portfolio = ({
                     up the bulk of the card's content.
                   </Card.Text>
 
-                  <a
-                    href="https://hackaday.io/project/5483-nfc-scanners"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to="/Project3"
+                    // target="_blank"
+                    // rel="noopener noreferrer"
                   >
                     <Button variant="primary">Learn more</Button>
-                  </a>
+                  </Link>
                 </Card.Body>
               </Card>
             </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 
-const LayoutDefault = ({ children }) => (
+const HomeLayout = ({ children }) => (
   <>
     <Header navPosition="right" className="reveal-from-bottom" />
     <main className="site-content">
@@ -12,4 +12,4 @@ const LayoutDefault = ({ children }) => (
   </>
 );
 
-export default LayoutDefault;  
+export default HomeLayout;  

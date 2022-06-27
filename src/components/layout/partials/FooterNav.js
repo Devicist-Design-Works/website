@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { Link } from "react-scroll";
+//import { Link } from "react-router-dom";
 
 const FooterNav = ({
   className,
@@ -16,7 +17,7 @@ const FooterNav = ({
     <nav {...props} className={classes}>
       <ul className="list-reset">
         <li>
-          <Link to="portfolio" smooth={true} duration={500}>
+          <Link to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>

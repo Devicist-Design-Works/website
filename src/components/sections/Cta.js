@@ -50,8 +50,8 @@ const Cta = ({
             <p>info@devicist.com</p>
 
             <p>
-              Don't have a specific project, but want to stay connected? Join
-              our mailing list
+              Occasionally, we release news and articles on <b>interactive objects</b>. Join
+              our mailing list.
             </p>
             
           </div>

@@ -10,3 +10,55 @@ $portfolio-items--padding__desktop: 	null;		// padding between portfolio items (
 $portfolio-item--width: 				344px;		// portfolio item, width
 $portfolio-item--inner-padding-v: 	24px;		// portfolio item, inner top and bottom padding (it inherits $tiles-item--inner-padding-v unless you replace null with a new value)
 $portfolio-item--inner-padding-h: 	32px;		// testimonial item, inner left and right padding (it inherits $tiles-item--inner-padding-h unless you replace null with a new value)
+
+.portfolio-more {
+
+	a {
+		display: flex;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		white-space: nowrap;
+		margin-bottom: 0;
+	}
+}
+
+.portfolio-more {
+
+	ul {
+		margin-right: -($footer-social--inner-padding + $footer-social--outer-padding-h);
+		margin-left: -($footer-social--inner-padding + $footer-social--outer-padding-h);
+	}
+
+	li {
+		padding: 0 $footer-social--outer-padding-h;
+	}
+
+	a {
+		padding: $footer-social--inner-padding;
+
+		svg {
+			fill: color-icon(social);
+			transition: fill .15s ease;
+
+			.invert-color & {
+				fill: color-icon(social-inverse);
+			}
+		}
+
+		&:hover {
+
+			svg {
+				fill: color-icon(social-hover);
+
+				.invert-color & {
+					fill: color-icon(social-hover-inverse);
+				}
+			}
+		}
+	}
+}

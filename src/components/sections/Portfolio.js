@@ -9,6 +9,7 @@ import Button from '../elements/Button';
 import snowflake from '../../assets/images/portfolio/snowflake.png';
 import powercube from "../../assets/images/portfolio/powercube.png";
 import nfc from "../../assets/images/portfolio/nfc.png";
+import PortfolioMore from '../layout/partials/PortfolioMore';
 //import { TRUE } from 'sass';
 
 
@@ -56,8 +57,8 @@ const Portfolio = ({
   
   //edit section header content here
   const sectionHeader = {
-    title: 'Our Work',
-    paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
+    title: 'Examples',
+    // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
 
@@ -76,10 +77,9 @@ const Portfolio = ({
               <Card style={{ width: "16rem" }}>
                 <Card.Img variant="top" src={snowflake} />
                 <Card.Body>
-                  <Card.Title>Snowflake</Card.Title>
+                  <Card.Title>Frost : Case Study</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  We developed interactive LED lighting for "Frost", a 30 foot touch-reactive sculpture on display at Brookfield Place in Toronto during the winter holidays. 
                   </Card.Text>
                   <a
                     href="https://hackaday.io/project/3431-christmas-snowflake-sculpture"
@@ -136,6 +136,8 @@ const Portfolio = ({
               </Card>
             </div>
           </div>
+          <p/>
+          {/* <PortfolioMore/> */}
         </div>
       </div>
     </section>

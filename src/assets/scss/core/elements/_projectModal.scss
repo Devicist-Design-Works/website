@@ -6,8 +6,35 @@
     background: #000000;
     max-width: $container--width;
     width: 100%;
-    margin: 0 auto;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: auto;
     overflow: hidden;
     border-radius: 15px;
+
 }
 
+
+@keyframes customEnterModalAnimation {
+    0% {
+        margin-top: 400px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 60px;
+        opacity: 1;
+    }
+}
+
+@keyframes customLeaveModalAnimation {
+    0% {
+        margin-top: 60px;
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 400px;
+        opacity: 0;
+    }
+}

@@ -102,7 +102,7 @@ const Portfolio = ({
               className="tiles-item reveal-from-right"
               data-reveal-delay="200"
             >
-              <Card style={{ width: "17rem" }}>
+              <Card style={{ width: "16rem" }}>
                 <Card.Img variant="top" src={snowflake} />
                 <Card.Body>
                   <Card.Title>Frost : Case Study</Card.Title>
@@ -120,7 +120,7 @@ const Portfolio = ({
             </div>
 
             <div className="tiles-item reveal-from-bottom">
-              <Card style={{ width: "17rem" }}>
+              <Card style={{ width: "16rem" }}>
                 <Card.Img variant="top" src={powercube} />
                 <Card.Body>
                   <Card.Title>Powercube</Card.Title>
@@ -140,7 +140,7 @@ const Portfolio = ({
               className="tiles-item reveal-from-left"
               data-reveal-delay="200"
             >
-              <Card style={{ width: "17rem" }}>
+              <Card style={{ width: "16rem" }}>
                 <Card.Img variant="top" src={nfc} />
                 <Card.Body>
                   <Card.Title>NFC System</Card.Title>
@@ -168,7 +168,10 @@ const Portfolio = ({
         classNames={{
           modal: "projectModal",
           overlay: "projectOverlay",
+          modalAnimationIn: "customEnterModalAnimation",
+          modalAnimationOut: "customLeaveModalAnimation",
         }}
+        animationDuration={800}
       >
         <Project1 />
       </Modal>
@@ -180,7 +183,10 @@ const Portfolio = ({
         classNames={{
           modal: "projectModal",
           overlay: "projectOverlay",
+          modalAnimationIn: "customEnterModalAnimation",
+          modalAnimationOut: "customLeaveModalAnimation",
         }}
+        animationDuration={800}
       >
         <Project1 />
       </Modal>
@@ -192,7 +198,10 @@ const Portfolio = ({
         classNames={{
           modal: "projectModal",
           overlay: "projectOverlay",
+          modalAnimationIn: "customEnterModalAnimation",
+          modalAnimationOut: "customLeaveModalAnimation",
         }}
+        animationDuration={800}
       >
         <Project1 />
       </Modal>

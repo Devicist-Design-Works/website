@@ -7,6 +7,7 @@ import snowflake1 from '../../assets/images/portfolio/Snowflake/snowflake1.png';
 import snowflake2 from "../../assets/images/portfolio/Snowflake/snowflake2.png";
 import snowflake3 from "../../assets/images/portfolio/Snowflake/snowflake3.png";
 import snowflake4 from "../../assets/images/portfolio/Snowflake/snowflake4.png";
+import YoutubeEmbed from "../elements/YoutubeEmbed";
 
 const images = [
   {
@@ -54,31 +55,26 @@ const Project1 = ()  => {
   };
   
   return (
-    <section  >
+    <section>
       <div className="container">
-        <div >
+        <SectionHeader data={sectionHeader} className="center-content mt-32" />
 
-          <SectionHeader
-            data={sectionHeader}
-            className="center-content mt-32"
-          />
-
-          <Gallery photos={images} onClick={openLightbox} />
-          <ModalGateway>
-            {viewerIsOpen ? (
-              <Modal onClose={closeLightbox}>
-                <Carousel
-                  currentIndex={currentImage}
-                  views={images.map((x) => ({
-                    ...x,
-                    srcset: x.srcSet,
-                    caption: x.title,
-                  }))}
-                />
-              </Modal>
-            ) : null}
-          </ModalGateway>
-        </div>
+        <Gallery photos={images} onClick={openLightbox} />
+        <ModalGateway>
+          {viewerIsOpen ? (
+            <Modal onClose={closeLightbox}>
+              <Carousel
+                currentIndex={currentImage}
+                views={images.map((x) => ({
+                  ...x,
+                  srcset: x.srcSet,
+                  caption: x.title,
+                }))}
+              />
+            </Modal>
+          ) : null}
+        </ModalGateway>
+        <YoutubeEmbed embedId="mMHe-GRaYqA" className='pt-32' />
       </div>
     </section>
   );

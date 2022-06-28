@@ -14,6 +14,21 @@
 
 }
 
+.carouselWrapper {
+    margin: 20px;
+}
+
+@include media('>=medium') {
+    .carouselWrapper{
+        display:none;
+    }
+}
+
+@include media('<medium') {
+    .gridWrapper {
+        display: none;
+    }
+}
 
 @keyframes customEnterModalAnimation {
     0% {

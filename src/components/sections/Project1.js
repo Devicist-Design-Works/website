@@ -58,8 +58,13 @@ const Project1 = ()  => {
     <section>
       <div className="container">
         <SectionHeader data={sectionHeader} className="center-content mt-32" />
+        <div className="mb-16">
+          <YoutubeEmbed embedId="mMHe-GRaYqA" />
+        </div>
+        <div className="gridWrapper">
+          <Gallery photos={images} onClick={openLightbox} />
+        </div>
 
-        <Gallery photos={images} onClick={openLightbox} />
         <ModalGateway>
           {viewerIsOpen ? (
             <Modal onClose={closeLightbox}>
@@ -74,7 +79,17 @@ const Project1 = ()  => {
             </Modal>
           ) : null}
         </ModalGateway>
-        <YoutubeEmbed embedId="mMHe-GRaYqA" className='pt-32' />
+
+        <div className="carouselWrapper">
+          <Carousel
+            currentIndex={currentImage}
+            views={images.map((x) => ({
+              ...x,
+              srcset: x.srcSet,
+              caption: x.title,
+            }))}
+          />
+        </div>
       </div>
     </section>
   );

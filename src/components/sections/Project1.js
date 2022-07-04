@@ -58,11 +58,15 @@ const Project1 = ()  => {
     <section>
       <div className="container">
         <SectionHeader data={sectionHeader} className="center-content mt-32" />
-        <div className="mb-16">
+        <div className="projectVideo">
           <YoutubeEmbed embedId="mMHe-GRaYqA" />
         </div>
         <div className="gridWrapper">
-          <Gallery photos={images} onClick={openLightbox} />
+          <Gallery
+            photos={images}
+            onClick={openLightbox}
+            targetRowHeight={100}
+          />
         </div>
 
         <ModalGateway>
@@ -70,6 +74,7 @@ const Project1 = ()  => {
             <Modal onClose={closeLightbox}>
               <Carousel
                 currentIndex={currentImage}
+                showNavigationOnTouchDevice={true}
                 views={images.map((x) => ({
                   ...x,
                   srcset: x.srcSet,
@@ -82,6 +87,7 @@ const Project1 = ()  => {
 
         <div className="carouselWrapper">
           <Carousel
+            showNavigationOnTouchDevice={true}
             currentIndex={currentImage}
             views={images.map((x) => ({
               ...x,
@@ -89,6 +95,7 @@ const Project1 = ()  => {
               caption: x.title,
             }))}
           />
+          
         </div>
       </div>
     </section>

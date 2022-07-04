@@ -41,7 +41,7 @@ const Hero = ({
 
   return (
     <section {...props} className={outerClasses}>
-      <video className="videoBg" autoPlay loop muted>
+      <video className="videoBg" autoPlay loop muted playsInline>
         <source src={videoBg} type="video/mp4" />
       </video>
       <div className="container-sm">
@@ -67,10 +67,11 @@ const Hero = ({
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                From hand-held gadgets<br/>
-                to large-scale installations, <br/>
-                we combine art and engineering <br/>
-                to build dynamic in-person <br/>
+                From hand-held gadgets
+                <br />
+                to large-scale installations, <br />
+                we combine art and engineering <br />
+                to build dynamic in-person <br />
                 experiences.
               </p>
 

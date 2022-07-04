@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
+import React, {useState} from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
+import {Link} from 'react-router-dom';
 //import Image from "../elements/Image";
 import Card from 'react-bootstrap/Card';
 //import Modal from 'react-bootstrap/Modal';
@@ -12,7 +12,7 @@ import powercube from "../../assets/images/portfolio/powercube.png";
 import nfc from "../../assets/images/portfolio/nfc.png";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
-import PortfolioMore from '../layout/partials/PortfolioMore';
+//import PortfolioMore from '../layout/partials/PortfolioMore';
 import Project1 from './Project1';
 //import { TRUE } from 'sass';
 
@@ -111,10 +111,11 @@ const Portfolio = ({
                     touch-reactive sculpture on display at Brookfield Place in
                     Toronto during the winter holidays.
                   </Card.Text>
-
+                  <Link to='/CaseStudy'>
                   <Button onClick={onOpenModalP1} variant="primary">
                     Learn more
                   </Button>
+                  </Link>
                 </Card.Body>
               </Card>
             </div>
@@ -168,8 +169,8 @@ const Portfolio = ({
         classNames={{
           modal: "projectModal",
           overlay: "projectOverlay",
-          modalAnimationIn: "customEnterModalAnimation",
-          modalAnimationOut: "customLeaveModalAnimation",
+          // modalAnimationIn: "customEnterModalAnimation",
+          // modalAnimationOut: "customLeaveModalAnimation",
         }}
         animationDuration={800}
       >
@@ -183,8 +184,8 @@ const Portfolio = ({
         classNames={{
           modal: "projectModal",
           overlay: "projectOverlay",
-          modalAnimationIn: "customEnterModalAnimation",
-          modalAnimationOut: "customLeaveModalAnimation",
+          // modalAnimationIn: "customEnterModalAnimation",
+          //modalAnimationOut: "customLeaveModalAnimation",
         }}
         animationDuration={800}
       >
@@ -198,8 +199,8 @@ const Portfolio = ({
         classNames={{
           modal: "projectModal",
           overlay: "projectOverlay",
-          modalAnimationIn: "customEnterModalAnimation",
-          modalAnimationOut: "customLeaveModalAnimation",
+          //modalAnimationIn: "customEnterModalAnimation",
+          //modalAnimationOut: "customLeaveModalAnimation",
         }}
         animationDuration={800}
       >

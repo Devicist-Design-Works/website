@@ -7,9 +7,11 @@ import ReactGA from 'react-ga';
 
 // Layouts
 import HomeLayout from './layouts/HomeLayout';
+import CaseStudyLayout from "./layouts/CaseStudyLayout";
 
 // Views 
 import Home from './views/Home';
+import CaseStudy from "./views/CaseStudy";
 
 
 
@@ -40,6 +42,7 @@ const App = () => {
       children={() => (
         <Switch>
           <AppRoute exact path="/" component={Home} layout={HomeLayout} />
+          <AppRoute exact path="/CaseStudy" component={CaseStudy} layout={CaseStudyLayout} />
         </Switch>
       )}
     />

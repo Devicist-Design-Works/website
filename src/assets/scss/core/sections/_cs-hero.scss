@@ -1,0 +1,30 @@
+.cs-hero-bg {
+	position: fixed;
+	z-index: -1;
+	margin-left: 20px;
+}
+
+@include media( '<=medium' ) {
+
+	
+}
+
+@include media( '>medium' ) {
+
+	.cs-hero {
+		
+		.section-inner {
+			padding-top: $hero--padding-t__desktop;
+			padding-bottom: $hero--padding-b__desktop;
+		}
+	}
+
+	.cs-hero-inner {
+
+		// Affects only cs-hero full
+		> .cs-hero-content + .cs-hero-figure,
+		> .cs-hero-figure + .cs-hero-content {
+			margin-top: $hero--inner-padding-v_desktop;
+		}
+	}
+}

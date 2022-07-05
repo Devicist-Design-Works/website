@@ -1,4 +1,6 @@
-
+.design{
+	margin-top: 10vh;
+}
 @include media( '<medium' ) {
 .cs-gridWrapper {
 		display: none;

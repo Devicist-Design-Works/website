@@ -50,14 +50,14 @@ const Design = () => {
 
   return (
     <section>
-      <div className="container-sm mt-32">
+      <div className="container-sm design">
         <div className="" style={{}}>
           <h3 className="reveal-from-bottom" data-reveal-delay="200">
             <img
               src={axle}
               alt="outline of axle design"
               width={175}
-              className="ft-l mr-32 cs-bgImage"
+              className="ft-r ml-32 cs-bgImage"
             />
             <img
               src={designIcon}

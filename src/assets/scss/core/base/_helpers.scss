@@ -103,6 +103,11 @@
 	text-transform: uppercase;
 }
 
+//fixes float left and right height issues
+.clearing {
+	clear: both;
+}
+
 // Images
 .image-full {
 	width: 100%;
@@ -334,6 +339,21 @@ img.has-shadow {
 .ml-32 {
 	margin-left: 32px;
 }
+.mt-64 {
+	margin-top: 64px;
+}
+
+.mr-64 {
+	margin-right: 64px;
+}
+
+.mb-64 {
+	margin-bottom: 64px;
+}
+
+.ml-64 {
+	margin-left: 64px;
+}
 
 // Spacing, padding
 .p-0 {
@@ -508,6 +528,7 @@ img.has-shadow {
 .spacer-64 {
 	padding-top: 64px;
 }
+
 
 @include media( '<=medium' ) {
 

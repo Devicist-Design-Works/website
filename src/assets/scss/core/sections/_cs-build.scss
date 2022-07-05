@@ -1,0 +1,38 @@
+.build{
+	margin-top: 10vh;
+}
+
+.buildContent{
+	text-align: left;
+	float: right;
+	padding-left: 32px;
+	width: $container--width-xxs
+}
+
+.buildCarousel{
+	float: left;
+	width: $container--width-xxs
+}
+
+
+@include media( '<medium' ) {
+.buildContent {
+		text-align: left;
+		float: left;
+		padding-left: 0px;
+		width: 100%;
+		
+	}
+
+.buildCarousel {
+	float: none;
+	 width: 100%;
+}
+
+
+	
+}
+
+@include media( '>=medium' ) {
+
+}

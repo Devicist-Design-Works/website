@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import Logo from "./partials/Logo";
+//import { HashLink as Link } from "react-router-hash-link";
 import { Link } from "react-scroll";
 
 const propTypes = {
@@ -113,7 +114,6 @@ const Header = ({
                   >
                     <li>
                       <Link
-                        //the "work" id is set in the Home.js file
                         to="work"
                         smooth={true}
                         duration={500}
@@ -125,7 +125,6 @@ const Header = ({
 
                     <li>
                       <Link
-                        //the "process" id is set in the Home.js file
                         to="process"
                         smooth={true}
                         duration={500}
@@ -139,7 +138,6 @@ const Header = ({
                     <ul className="list-reset header-nav-right">
                       <li>
                         <Link
-                          //the "contact" id is set in the Home.js file
                           to="contact"
                           smooth={true}
                           duration={500}

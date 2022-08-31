@@ -4,7 +4,6 @@ import { SectionProps } from "../../utils/SectionProps";
 import videoBg from "../../assets/videos/videoBg.mp4";
 import Image from "../elements/Image";
 
-
 const propTypes = {
   ...SectionProps.types,
 };
@@ -12,7 +11,6 @@ const propTypes = {
 const defaultProps = {
   ...SectionProps.defaults,
 };
-
 
 const Hero = ({
   className,
@@ -24,8 +22,6 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
-
-
   const outerClasses = classNames(
     "hero section center-content",
     hasBgColor && "has-bg-color",
@@ -35,7 +31,7 @@ const Hero = ({
 
   const innerClasses = classNames(
     "hero-inner section-inner",
-   // topDivider && "has-top-divider",
+    // topDivider && "has-top-divider",
     bottomDivider && "has-bottom-divider"
   );
 

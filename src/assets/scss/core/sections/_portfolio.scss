@@ -106,3 +106,19 @@
 		}
 	}
 }
+
+.projectCard{
+	display: inline-block;
+	width: 25%;
+	margin-top: 30px;
+	@include media('<medium') {
+		width: 70%;
+
+	}
+	
+}
+
+.projectButton{
+	background-color: transparent;
+	cursor: pointer;
+}

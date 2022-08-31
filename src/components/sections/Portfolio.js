@@ -1,31 +1,26 @@
-import React, {useState} from 'react';
-import classNames from 'classnames';
-import { SectionTilesProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
-import {Link} from 'react-router-dom';
-//import Image from "../elements/Image";
-import Card from 'react-bootstrap/Card';
-//import Modal from 'react-bootstrap/Modal';
-import Button from '../elements/Button';
-import snowflake from '../../assets/images/portfolio/snowflake.png';
-import powercube from "../../assets/images/portfolio/powercube.png";
-import nfc from "../../assets/images/portfolio/nfc.png";
+import React, { useState } from "react";
+import classNames from "classnames";
+import { SectionTilesProps } from "../../utils/SectionProps";
+import SectionHeader from "./partials/SectionHeader";
+import { Link } from "react-router-dom";
+import Card from "react-bootstrap/Card";
+import Button from "../elements/Button";
+import flux from "./../../assets/images/fluxCover.png";
+import wheel from "../../assets/images/wheelBuild.jpg";
+import nfc from "./../../assets/images/portfolio/nfc.png";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 //import PortfolioMore from '../layout/partials/PortfolioMore';
-import Project1 from './Project1';
-//import { TRUE } from 'sass';
-
+import ProjectModal from "./ProjectModal";
+import { CardGroup } from "react-bootstrap";
 
 const propTypes = {
-  ...SectionTilesProps.types
-}
+  ...SectionTilesProps.types,
+};
 
 const defaultProps = {
-  ...SectionTilesProps.defaults
-}
-
-
+  ...SectionTilesProps.defaults,
+};
 
 const Portfolio = ({
   className,
@@ -38,30 +33,108 @@ const Portfolio = ({
   pushLeft,
   ...props
 }) => {
-
-
-  
   const outerClasses = classNames(
-    'portfolio section',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
+    "portfolio section",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
     className
   );
 
   const innerClasses = classNames(
-    'portfolio-inner section-inner',
-    bottomDivider && 'has-bottom-divider'
+    "portfolio-inner section-inner",
+    bottomDivider && "has-bottom-divider"
   );
 
-  const tilesClasses = classNames(
-    'tiles-wrap',
-    pushLeft && 'push-left'
-  );
-  
+  const tilesClasses = classNames("tiles-wrap", pushLeft && "push-left");
+
+  const Project1ModalContent = {
+    title: "Project 1",
+    body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+    youtubeUrl: "mMHe-GRaYqA",
+    images: [
+      {
+        src: require("./../../assets/images/placeholder.jpg"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/placeholder.jpg"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/placeholder.jpg"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/placeholder.jpg"),
+        width: 1,
+        height: 1,
+      },
+    ],
+  };
+
+  const Project2ModalContent = {
+    title: "Project 2",
+    body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+    youtubeUrl: "mMHe-GRaYqA",
+    images: [
+      {
+        src: require("./../../assets/images/placeholder.jpg"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/placeholder.jpg"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/placeholder.jpg"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/placeholder.jpg"),
+        width: 1,
+        height: 1,
+      },
+    ],
+  };
+
+  const Project3ModalContent = {
+    title: "Project 3",
+    body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+    youtubeUrl: "mMHe-GRaYqA",
+    images: [
+      {
+        src: require("./../../assets/images/placeholder.jpg"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/placeholder.jpg"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/placeholder.jpg"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/placeholder.jpg"),
+        width: 1,
+        height: 1,
+      },
+    ],
+  };
+
   //edit section header content here
   const sectionHeader = {
-    title: 'Examples',
+    title: "Examples",
     // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
@@ -76,7 +149,7 @@ const Portfolio = ({
     setOpenP1(false);
     setOpenP2(false);
     setOpenP3(false);
-  }
+  };
   const closeIcon = (
     <svg
       fill="#FFFFFF"
@@ -89,78 +162,107 @@ const Portfolio = ({
     </svg>
   );
 
-
   return (
-    <section {...props} className={outerClasses} id="work">
-      <div className="container">
-        <div className={innerClasses}>
+    <section id="work">
+      <div className={innerClasses}>
+        <div className="container">
           {/*this is a seperate .js file found in sections > partials*/}
           <SectionHeader data={sectionHeader} className="center-content" />
 
           <div className={tilesClasses}>
-            <div
-              className="tiles-item reveal-from-right"
-              data-reveal-delay="200"
-            >
+            <div className="tiles-item reveal-from-right">
               <Card style={{ width: "16rem" }}>
-                <Card.Img variant="top" src={snowflake} />
+                <Card.Img variant="top" src={flux} />
                 <Card.Body>
-                  <Card.Title>Frost : Case Study</Card.Title>
+                  <Card.Title>
+                    Flux:
+                    <br /> Case Study
+                  </Card.Title>
                   <Card.Text>
                     We developed interactive LED lighting for "Frost", a 30 foot
                     touch-reactive sculpture on display at Brookfield Place in
                     Toronto during the winter holidays.
                   </Card.Text>
-                  <Link to='/CaseStudy'>
-                  <Button onClick={onOpenModalP1} variant="primary">
-                    Learn more
-                  </Button>
+                  <Link to="/CaseStudyFrost">
+                    <Button variant="primary" onClick={onOpenModalP2}>
+                      Learn more
+                    </Button>
                   </Link>
                 </Card.Body>
               </Card>
             </div>
-
-            <div className="tiles-item reveal-from-bottom">
-              <Card style={{ width: "16rem" }}>
-                <Card.Img variant="top" src={powercube} />
-                <Card.Body>
-                  <Card.Title>Powercube</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-
-                  <Button variant="primary" onClick={onOpenModalP2}>
-                    Learn more
-                  </Button>
-                </Card.Body>
-              </Card>
-            </div>
-
             <div
               className="tiles-item reveal-from-left"
               data-reveal-delay="200"
             >
               <Card style={{ width: "16rem" }}>
-                <Card.Img variant="top" src={nfc} />
+                <Card.Img variant="top" src={wheel} />
                 <Card.Body>
-                  <Card.Title>NFC System</Card.Title>
+                  <Card.Title>
+                    Regenerative Braking Booth: Case Study
+                  </Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    We designed and built a Spinning Wheel Display to demo
+                    regenerative braking for KIA at the Auto Show. The wheel's
+                    speed is controlled by accelerator and brake pedals.
                   </Card.Text>
-
-                  <Button variant="primary" onClick={onOpenModalP3}>
-                    Learn more
-                  </Button>
+                  <Link to="/CaseStudyBraking">
+                    <Button variant="primary">Learn more</Button>
+                  </Link>
                 </Card.Body>
               </Card>
             </div>
           </div>
-          <p />
-          {/* <PortfolioMore/> */}
+
+          <div className={tilesClasses}>
+            <div className="reveal-from-right projectCard">
+              <Card>
+                <button className="projectButton" onClick={onOpenModalP1}>
+                  <Card.Img
+                    variant="top"
+                    src={require("./../../assets/images/placeholder.jpg")}
+                  />
+
+                  <Card.Body>
+                    <Card.Title>Project Title</Card.Title>
+                  </Card.Body>
+                </button>
+              </Card>
+            </div>
+
+            <div className="reveal-from-bottom projectCard">
+              <Card>
+                <button className="projectButton" onClick={onOpenModalP2}>
+                  <Card.Img
+                    variant="top"
+                    src={require("./../../assets/images/placeholder.jpg")}
+                  />
+
+                  <Card.Body>
+                    <Card.Title>Project Title</Card.Title>
+                  </Card.Body>
+                </button>
+              </Card>
+            </div>
+
+            <div className="reveal-from-left projectCard">
+              <Card>
+                <button className="projectButton" onClick={onOpenModalP3}>
+                  <Card.Img
+                    variant="top"
+                    src={require("./../../assets/images/placeholder.jpg")}
+                  />
+
+                  <Card.Body>
+                    <Card.Title>Project Title</Card.Title>
+                  </Card.Body>
+                </button>
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
+
       <Modal
         open={openP1}
         onClose={onCloseModal}
@@ -174,7 +276,7 @@ const Portfolio = ({
         }}
         animationDuration={800}
       >
-        <Project1 />
+        <ProjectModal {...Project1ModalContent} />
       </Modal>
       <Modal
         open={openP2}
@@ -189,7 +291,7 @@ const Portfolio = ({
         }}
         animationDuration={800}
       >
-        <Project1 />
+        <ProjectModal {...Project2ModalContent} />
       </Modal>
       <Modal
         open={openP3}
@@ -204,17 +306,11 @@ const Portfolio = ({
         }}
         animationDuration={800}
       >
-        <Project1 />
+        <ProjectModal {...Project3ModalContent} />
       </Modal>
     </section>
   );
-
-  
-}
-
-
-
-
+};
 
 Portfolio.propTypes = propTypes;
 Portfolio.defaultProps = defaultProps;

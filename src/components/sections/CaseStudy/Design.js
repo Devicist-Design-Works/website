@@ -1,39 +1,11 @@
 import React, {useState, useCallback}from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import snowflake1 from "../../../assets/images/portfolio/Snowflake/snowflake1.png";
-import snowflake2 from "../../../assets/images/portfolio/Snowflake/snowflake2.png";
-import snowflake3 from "../../../assets/images/portfolio/Snowflake/snowflake3.png";
-import snowflake4 from "../../../assets/images/portfolio/Snowflake/snowflake4.png";
-import axle from"../../../assets/images/axleOutline.png";
 import designIcon from "../../../assets/images/DesignIcon-white.svg"
 
 
-const images = [
-  {
-    src: snowflake1,
-    width: 1,
-    height: 1,
-  },
-  {
-    src: snowflake2,
-    width: 1,
-    height: 1,
-  },
-  {
-    src: snowflake3,
-    width: 1,
-    height: 1,
-  },
-  {
-    src: snowflake4,
-    width: 1,
-    height: 1,
-  },
-];
 
-
-const Design = () => {
+const Design = (DesignContent) => {
 
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
@@ -52,9 +24,9 @@ const Design = () => {
     <section>
       <div className="container-sm design">
         <div className="" style={{}}>
-          <h3 className="reveal-from-bottom" data-reveal-delay="200">
+          <h3 className="reveal-from-bottom">
             <img
-              src={axle}
+              src={DesignContent.bgImage}
               alt="outline of axle design"
               width={175}
               className="ft-r ml-32 cs-bgImage"
@@ -67,22 +39,19 @@ const Design = () => {
             />
             Design
           </h3>
-          <p className="reveal-from-bottom" data-reveal-delay="400">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-            velit esse molestie consequat.
+          <p className="reveal-from-bottom">
+            {DesignContent.body}
+            {DesignContent.image1}
           </p>
         </div>
       </div>
 
-      <div
-        className=" container-sm cs-gridWrapper reveal-from-bottom"
-        data-reveal-delay="600"
-      >
-        <Gallery photos={images} onClick={openLightbox} targetRowHeight={200} />
+      <div className=" container-sm cs-gridWrapper reveal-from-bottom">
+        <Gallery
+          photos={DesignContent.images}
+          onClick={openLightbox}
+          targetRowHeight={200}
+        />
       </div>
 
       <ModalGateway>
@@ -91,7 +60,7 @@ const Design = () => {
             <Carousel
               currentIndex={currentImage}
               showNavigationOnTouchDevice={true}
-              views={images.map((x) => ({
+              views={DesignContent.images.map((x) => ({
                 ...x,
                 srcset: x.srcSet,
                 caption: x.title,
@@ -105,7 +74,7 @@ const Design = () => {
         <Carousel
           showNavigationOnTouchDevice={true}
           currentIndex={currentImage}
-          views={images.map((x) => ({
+          views={DesignContent.images.map((x) => ({
             ...x,
             srcset: x.srcSet,
             caption: x.title,

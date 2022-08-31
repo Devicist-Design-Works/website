@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { useLocation, Switch } from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
+import ScrollToTop from './utils/ScrollToTop';
 import ReactGA from 'react-ga';
 
 
@@ -11,7 +12,8 @@ import CaseStudyLayout from "./layouts/CaseStudyLayout";
 
 // Views 
 import Home from './views/Home';
-import CaseStudy from "./views/CaseStudy";
+import CaseStudyBraking from "./views/CaseStudyBraking";
+import CaseStudyFrost from "./views/CaseStudyFrost";
 
 
 
@@ -37,15 +39,28 @@ const App = () => {
   }, [location]);
 
   return (
-    <ScrollReveal
-      ref={childRef}
-      children={() => (
-        <Switch>
-          <AppRoute exact path="/" component={Home} layout={HomeLayout} />
-          <AppRoute exact path="/CaseStudy" component={CaseStudy} layout={CaseStudyLayout} />
-        </Switch>
-      )}
-    />
+    <ScrollToTop>
+      <ScrollReveal
+        ref={childRef}
+        children={() => (
+          <Switch>
+            <AppRoute exact path="/" component={Home} layout={HomeLayout} />
+            <AppRoute
+              exact
+              path="/CaseStudyBraking"
+              component={CaseStudyBraking}
+              layout={CaseStudyLayout}
+            />
+            <AppRoute
+              exact
+              path="/CaseStudyFrost"
+              component={CaseStudyFrost}
+              layout={CaseStudyLayout}
+            />
+          </Switch>
+        )}
+      />
+    </ScrollToTop>
   );
 }
 

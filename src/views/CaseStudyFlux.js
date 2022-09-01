@@ -43,7 +43,7 @@ const DesignContent = {
 };
 
 const BuildContent = {
-  body: "We prototyped the rotating modules, and distributed to the fabricator for testing and integration. We provided a report to the ESA for certification. We sourced and acquired parts and assembled the pieces into fully functional units, then we tested full rig remotely for weeks before deployment.",
+  body: "A prototype of the rotating module was engineered, and distributed to the fabricator for testing and integration. We provided a report to the ESA for certification. We sourced and acquired parts and assembled the pieces into fully functional units, then we tested full rig remotely for weeks before deployment.",
   images: [
     {
       src: require("./../assets/images/portfolio/flux/1.jpg"),
@@ -68,7 +68,7 @@ const DeployContent = {
   // youtubeUrl: "o-eduqKUgx8",
 };
 
-const CaseStudyFrost = () => {
+const CaseStudyFlux = () => {
   return (
     <>
       <Intro {...IntroContent} />
@@ -80,4 +80,4 @@ const CaseStudyFrost = () => {
   );
 };
 
-export default CaseStudyFrost;
+export default CaseStudyFlux;

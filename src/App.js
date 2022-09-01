@@ -13,7 +13,7 @@ import CaseStudyLayout from "./layouts/CaseStudyLayout";
 // Views 
 import Home from './views/Home';
 import CaseStudyBraking from "./views/CaseStudyBraking";
-import CaseStudyFrost from "./views/CaseStudyFrost";
+import CaseStudyFlux from "./views/CaseStudyFlux";
 
 
 
@@ -53,8 +53,8 @@ const App = () => {
             />
             <AppRoute
               exact
-              path="/CaseStudyFrost"
-              component={CaseStudyFrost}
+              path="/CaseStudyFlux"
+              component={CaseStudyFlux}
               layout={CaseStudyLayout}
             />
           </Switch>

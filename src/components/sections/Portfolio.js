@@ -134,7 +134,7 @@ const Portfolio = ({
 
   //edit section header content here
   const sectionHeader = {
-    title: "Examples",
+    title: "Our Work",
     // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
@@ -171,19 +171,16 @@ const Portfolio = ({
 
           <div className={tilesClasses}>
             <div className="tiles-item reveal-from-right">
-              <Card style={{ width: "16rem" }}>
-                <Card.Img variant="top" src={flux} />
+              <Card style={{ width: "16rem"}}>
+                <Card.Img variant="top" src={flux}/>
                 <Card.Body>
                   <Card.Title>
-                    Flux:
-                    <br /> Case Study
+                    Flux
                   </Card.Title>
                   <Card.Text>
-                    We developed interactive LED lighting for "Frost", a 30 foot
-                    touch-reactive sculpture on display at Brookfield Place in
-                    Toronto during the winter holidays.
+                    A large kinetic installation for Shopify. 40 metalic prisms are rotated in coordinated patterns to create waves of refracted light.
                   </Card.Text>
-                  <Link to="/CaseStudyFrost">
+                  <Link to="/CaseStudyFlux">
                     <Button variant="primary" onClick={onOpenModalP2}>
                       Learn more
                     </Button>
@@ -199,12 +196,10 @@ const Portfolio = ({
                 <Card.Img variant="top" src={wheel} />
                 <Card.Body>
                   <Card.Title>
-                    Regenerative Braking Booth: Case Study
+                    Regenerative Braking Demo
                   </Card.Title>
                   <Card.Text>
-                    We designed and built a Spinning Wheel Display to demo
-                    regenerative braking for KIA at the Auto Show. The wheel's
-                    speed is controlled by accelerator and brake pedals.
+                    Created for KIA, car pedals control the wheel while battery-level is displayed on a simulated dashboard.
                   </Card.Text>
                   <Link to="/CaseStudyBraking">
                     <Button variant="primary">Learn more</Button>

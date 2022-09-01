@@ -67,17 +67,17 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  <Image
+                  {/* <Image
                     src={require("./../../assets/images/PrototypeIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={32}
-                  />
+                  /> */}
                 </div>
                 <h3 className="mt-0 mb-12">Foundation</h3>
                 <p className="m-0">
                   With over 20 years' experience combining art, UX, coding,
-                  electronics, and fabrication, we use our skills to take wild
+                  electronics, and fabrication, we use our skills to take big
                   ideas and make them real, while mitigating risks.
                 </p>
               </div>
@@ -88,12 +88,12 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image
+                {/* <Image
                   src={require("./../../assets/images/emailSketchCropped.png")}
                   alt="Features split 02"
                   width={528}
                   height={396}
-                />
+                /> */}
               </div>
             </div>
 
@@ -103,12 +103,12 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  <Image
+                  {/* <Image
                     src={require("./../../assets/images/DesignIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={50}
-                  />
+                  /> */}
                 </div>
                 <h3 className="mt-0 mb-12">Design</h3>
                 <p className="m-0">
@@ -124,12 +124,12 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image
+                {/* <Image
                   src={require("./../../assets/images/axle.png")}
                   alt="Features split 01"
                   width={528}
                   height={396}
-                />
+                /> */}
               </div>
             </div>
 
@@ -139,12 +139,12 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  <Image
+                  {/* <Image
                     src={require("./../../assets/images/PrototypeIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={32}
-                  />
+                  /> */}
                 </div>
                 <h3 className="mt-0 mb-12">Build</h3>
                 <p className="m-0">
@@ -161,12 +161,12 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image
+                {/* <Image
                   src={require("./../../assets/images/wheelBuild.jpg")}
                   alt="Features split 02"
                   width={528}
                   height={396}
-                />
+                /> */}
               </div>
             </div>
 
@@ -176,19 +176,18 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  <Image
+                  {/* <Image
                     src={require("./../../assets/images/BuildIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={32}
-                  />
+                  /> */}
                 </div>
                 <h3 className="mt-0 mb-12">Deploy</h3>
                 <p className="m-0">
-                  Show time! This is the moment when the project goes live, and
-                  public engagement begins. We are there to deliver and install
-                  the project and ensure it is fully functional. We also study
-                  the results to measure success.
+                  Show time! We are there to deliver and install
+                  the project, ensuring it surpasses expectactions. 
+                  We also study the results to measure success.
                 </p>
               </div>
               <div
@@ -198,7 +197,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <YoutubeEmbed embedId="o-eduqKUgx8" />
+                {/* <YoutubeEmbed embedId="o-eduqKUgx8" /> */}
               </div>
             </div>
             <div className="split-item">
@@ -207,12 +206,12 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  <Image
+                  {/* <Image
                     src={require("./../../assets/images/SupportIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={32}
-                  />
+                  /> */}
                 </div>
                 <h3 className="mt-0 mb-12">Support</h3>
                 <p className="m-0">
@@ -229,12 +228,12 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image
+                {/* <Image
                   src={require("./../../assets/images/support.jpg")}
                   alt="Features split 02"
                   width={528}
                   height={396}
-                />
+                /> */}
               </div>
             </div>
           </div>

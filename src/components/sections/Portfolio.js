@@ -105,27 +105,27 @@ const Portfolio = ({
   };
 
   const Project3ModalContent = {
-    title: "Project 3",
-    body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+    title: "NFC",
+    body: "We built 30 networked NFC scanning stations for Intel at MWC. Visitors scan wristbands to collect coins that unlock prizes in a video game, a fun way to collect information about interests.",
     youtubeUrl: "mMHe-GRaYqA",
     images: [
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/nfc/feature_nfc_cropped.jpg"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/nfc/booth_cropped.jpg"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/nfc/register_cropped.jpg"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/nfc/feature_nfc2_cropped.jpg"),
         width: 1,
         height: 1,
       },

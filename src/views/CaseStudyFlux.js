@@ -7,40 +7,35 @@ import Build from "../components/sections/CaseStudy/Build";
 import Deploy from "../components/sections/CaseStudy/Deploy";
 
 const IntroContent = {
-  title: "Spinning Units",
+  title: "Flux",
   description:
-    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.",
+    "A large kinetic installation for Shopify's Offices in Toronto. 40 metalic prisms are rotated in coordinated patterns to create waves of refracted light.",
   imgSrc: require("./../assets/images/fluxOutline.png"),
   youtubeUrl: "u4LGvZfYVF0",
 };
 
 const FirstContactContent = {
-  subject: "Project Proposal",
+  subject: "New Project",
   greeting: "Hi Nick",
-  body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eratvolutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tationullamcorper suscipit lobortis nisl ut aliquip ex ea commodoconsequat. Duis autem vel eum iriure dolor in hendrerit in vulputatevelit esse molestie consequat.",
+  body: "Long time no chat! There's an an opp we have coming down the line that I think would be in your wheelhouse...As you walk down the main path, an overhead canopy creates waves and casts light, providing surprise and delight.",
 };
 
 const DesignContent = {
-  body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eratvolutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tationullamcorper suscipit lobortis nisl ut aliquip ex ea commodoconsequat. Duis autem vel eum iriure dolor in hendrerit in vulputatevelit esse molestie consequat.",
-  bgImage: require("./../assets/images/motorOutline.png"),
+  body: "We created a set of mood boards drawing inspiration from other kinetic artworks and local lakes. We proposed a design that fit the parameters of the space, and fleshed it out into a detailed 3D model, and ultimately an animated simulation.",
+  bgImage: require("./../assets/images/axleOutline.png"),
   images: [
     {
-      src: require("./../assets/images/portfolio/Snowflake/snowflake1.png"),
+      src: require("./../assets/images/portfolio/flux/16.png"),
       width: 1,
       height: 1,
     },
     {
-      src: require("./../assets/images/portfolio/Snowflake/snowflake2.png"),
+      src: require("./../assets/images/portfolio/flux/14b.png"),
       width: 1,
       height: 1,
     },
     {
-      src: require("./../assets/images/portfolio/Snowflake/snowflake3.png"),
-      width: 1,
-      height: 1,
-    },
-    {
-      src: require("./../assets/images/portfolio/Snowflake/snowflake4.png"),
+      src: require("./../assets/images/portfolio/flux/13.png"),
       width: 1,
       height: 1,
     },
@@ -48,25 +43,21 @@ const DesignContent = {
 };
 
 const BuildContent = {
-  body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eratvolutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tationullamcorper suscipit lobortis nisl ut aliquip ex ea commodoconsequat. Duis autem vel eum iriure dolor in hendrerit in vulputatevelit esse molestie consequat.",
+  body: "A prototype of the rotating module was engineered, and distributed to the fabricator for testing and integration. We provided a report to the ESA for certification. We sourced and acquired parts and assembled the pieces into fully functional units, then we tested full rig remotely for weeks before deployment.",
+
   images: [
     {
-      src: require("./../assets/images/portfolio/Snowflake/snowflake1.png"),
+      src: require("./../assets/images/portfolio/flux/1.jpg"),
       width: 1,
       height: 1,
     },
     {
-      src: require("./../assets/images/portfolio/Snowflake/snowflake2.png"),
+      src: require("./../assets/images/portfolio/flux/8.jpg"),
       width: 1,
       height: 1,
     },
     {
-      src: require("./../assets/images/portfolio/Snowflake/snowflake3.png"),
-      width: 1,
-      height: 1,
-    },
-    {
-      src: require("./../assets/images/portfolio/Snowflake/snowflake4.png"),
+      src: require("./../assets/images/portfolio/flux/6.jpg"),
       width: 1,
       height: 1,
     },
@@ -74,8 +65,8 @@ const BuildContent = {
 };
 
 const DeployContent = {
-  body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eratvolutpat.",
-  youtubeUrl: "o-eduqKUgx8",
+  body: "The complete work refracts the ambient light of the room and to create shifting patterns that approximate the surface waves of a lake. Like a body of water it creates a calming atmosphere. It can draw in and transfix viewers, or it can melt into the background rather than demanding attention.",
+  // youtubeUrl: "o-eduqKUgx8",
 };
 
 const CaseStudyFlux = () => {

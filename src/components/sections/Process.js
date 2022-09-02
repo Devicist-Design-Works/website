@@ -66,17 +66,17 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  <Image
+                  {/* <Image
                     src={require("./../../assets/images/PrototypeIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={32}
-                  />
+                  /> */}
                 </div>
                 <h3 className="mt-0 mb-12">Foundation</h3>
                 <p className="m-0">
                   With over 20 years' experience combining art, UX, coding,
-                  electronics, and fabrication, we use our skills to take wild
+                  electronics, and fabrication, we use our skills to take big
                   ideas and make them real, while mitigating risks.
                 </p>
               </div>
@@ -181,7 +181,9 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
-              ></div>
+              >
+                {" "}
+              </div>
             </div>
             <div className="split-item">
               <div

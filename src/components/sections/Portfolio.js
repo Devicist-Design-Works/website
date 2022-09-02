@@ -7,12 +7,10 @@ import Card from "react-bootstrap/Card";
 import Button from "../elements/Button";
 import flux from "./../../assets/images/fluxCover.png";
 import wheel from "../../assets/images/brakingCover.png";
-import nfc from "./../../assets/images/portfolio/nfc.png";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 //import PortfolioMore from '../layout/partials/PortfolioMore';
 import ProjectModal from "./ProjectModal";
-import { CardGroup } from "react-bootstrap";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -178,9 +176,9 @@ const Portfolio = ({
                     <h2 className="mb-0">Flux</h2>
                   </Card.Title>
                   <Card.Text>
-                    We developed interactive LED lighting for "Frost", a 30 foot
-                    touch-reactive sculpture on display at Brookfield Place in
-                    Toronto during the winter holidays.
+                    A large kinetic installation for Shopify. 40 metalic prisms
+                    are rotated in coordinated patterns to create waves of
+                    refracted light.
                   </Card.Text>
                   <Link to="/CaseStudyFlux">
                     <Button variant="primary" onClick={onOpenModalP2}>
@@ -201,9 +199,8 @@ const Portfolio = ({
                     <h2 className="mb-0">Regenerative Braking Demo</h2>
                   </Card.Title>
                   <Card.Text>
-                    We designed and built a Spinning Wheel Display to demo
-                    regenerative braking for KIA at the Auto Show. The wheel's
-                    speed is controlled by accelerator and brake pedals.
+                    Created for KIA, car pedals control the wheel while
+                    battery-level is displayed on a simulated dashboard.
                   </Card.Text>
                   <Link to="/CaseStudyBraking">
                     <Button variant="primary" onClick={onOpenModalP2}>

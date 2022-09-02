@@ -5,14 +5,12 @@ import SectionHeader from "./partials/SectionHeader";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "../elements/Button";
-import flux from "./../../assets/images/fluxCover.jpg";
-import wheel from "../../assets/images/wheelBuild.jpg";
-import nfc from "./../../assets/images/portfolio/nfc.png";
+import flux from "./../../assets/images/fluxCover.png";
+import wheel from "../../assets/images/brakingCover.png";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 //import PortfolioMore from '../layout/partials/PortfolioMore';
 import ProjectModal from "./ProjectModal";
-import { CardGroup } from "react-bootstrap";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -33,20 +31,15 @@ const Portfolio = ({
   pushLeft,
   ...props
 }) => {
-  const outerClasses = classNames(
-    "portfolio section",
-    bottomOuterDivider && "has-bottom-divider",
-    hasBgColor && "has-bg-color",
-    invertColor && "invert-color",
-    className
-  );
-
   const innerClasses = classNames(
     "portfolio-inner section-inner",
     bottomDivider && "has-bottom-divider"
   );
 
-  const tilesClasses = classNames("tiles-wrap", pushLeft && "push-left");
+  const tilesClasses = classNames(
+    "center-content mt-16 container",
+    pushLeft && "push-left"
+  );
 
   const Project1ModalContent = {
     title: "Frost",
@@ -134,7 +127,12 @@ const Portfolio = ({
 
   //edit section header content here
   const sectionHeader = {
-    title: "Our Work",
+    title: "Case Studies",
+    // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
+  };
+
+  const subHeader = {
+    title: "Projects",
     // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
@@ -169,50 +167,62 @@ const Portfolio = ({
           {/*this is a seperate .js file found in sections > partials*/}
           <SectionHeader data={sectionHeader} className="center-content" />
 
-          <div className={tilesClasses}>
-            <div className="tiles-item reveal-from-right">
-              <Card style={{ width: "16rem"}}>
-                  <Link to="/CaseStudyFlux">
-                <Card.Img variant="top" src={flux}/>
-                <Card.Body>
-                  <Card.Title>
-                    Flux
-                  </Card.Title>
-                  {/* <Card.Text>
-                    A large kinetic installation for Shopify. 40 metalic prisms are rotated in coordinated patterns to create waves of refracted light.
-                  </Card.Text> */}
-                    {/* <Button variant="primary" onClick={onOpenModalP2}>
-                      Learn more
-                    </Button> */}
-                </Card.Body>
-                  </Link>
-              </Card>
-            </div>
-            {/* <div
-              className="tiles-item reveal-from-left"
-              data-reveal-delay="200"
-            >
-              <Card style={{ width: "16rem" }}>
-                <Card.Img variant="top" src={wheel} />
-                <Card.Body>
-                  <Card.Title>
-                    Regenerative Braking Demo
+          <Link to="/CaseStudyFlux">
+            <div className="reveal-from-bottom">
+              <Card className="bg-dark" style={{ width: "100%" }}>
+                <Card.Img src={flux} alt="Flux Cover Image" />
+                <Card.ImgOverlay className=" d-flex flex-column">
+                  <Card.Title className="mt-auto">
+                    <h2 className="mb-0">Flux</h2>
                   </Card.Title>
                   <Card.Text>
-                    Created for KIA, car pedals control the wheel while battery-level is displayed on a simulated dashboard.
+                    A large kinetic installation for Shopify. 40 metalic prisms
+                    are rotated in coordinated patterns to create waves of
+                    refracted light.
+                  </Card.Text>
+                  <Link to="/CaseStudyFlux">
+                    <Button variant="primary" onClick={onOpenModalP2}>
+                      Learn more
+                    </Button>
+                  </Link>
+                </Card.ImgOverlay>
+              </Card>
+            </div>
+          </Link>
+
+          <Link to="/CaseStudyBraking">
+            <div className="reveal-from-bottom mt-32">
+              <Card className="bg-dark" style={{ width: "100%" }}>
+                <Card.Img src={wheel} alt="Flux Cover Image" />
+                <Card.ImgOverlay className=" d-flex flex-column">
+                  <Card.Title className="mt-auto">
+                    <h2 className="mb-0">Regenerative Braking Demo</h2>
+                  </Card.Title>
+                  <Card.Text>
+                    Created for KIA, car pedals control the wheel while
+                    battery-level is displayed on a simulated dashboard.
                   </Card.Text>
                   <Link to="/CaseStudyBraking">
-                    <Button variant="primary">Learn more</Button>
+                    <Button variant="primary" onClick={onOpenModalP2}>
+                      Learn more
+                    </Button>
                   </Link>
-                </Card.Body>
+                </Card.ImgOverlay>
               </Card>
-            </div> */}
-          </div>
+            </div>
+          </Link>
 
+          <SectionHeader
+            data={subHeader}
+            className="center-content pb-0 mt-32"
+          />
           <div className={tilesClasses}>
             <div className="reveal-from-right projectCard">
-              <Card>
-                <button className="projectButton" onClick={onOpenModalP1}>
+              <Card className="bg-black ">
+                <button
+                  className="projectButton border-0"
+                  onClick={onOpenModalP1}
+                >
                   <Card.Img
                     variant="top"
                     src={require("./../../assets/images/portfolio/Snowflake/snowflake1.png")}
@@ -226,83 +236,89 @@ const Portfolio = ({
             </div>
 
             <div className="reveal-from-bottom projectCard">
-              <Card>
-                <button className="projectButton" onClick={onOpenModalP2}>
+              <Card className="bg-black ">
+                <button
+                  className="projectButton border-0"
+                  onClick={onOpenModalP2}
+                >
                   <Card.Img
                     variant="top"
                     src={require("./../../assets/images/portfolio/braking/wheelBuild.jpg")}
                   />
 
                   <Card.Body>
-                    <Card.Title>Regen</Card.Title>
+                    <Card.Title>PowerCube VR</Card.Title>
                   </Card.Body>
                 </button>
               </Card>
             </div>
 
-            {/* <div className="reveal-from-left projectCard">
-              <Card>
-                <button className="projectButton" onClick={onOpenModalP3}>
+            <div className="reveal-from-left projectCard">
+              <Card className="bg-black ">
+                <button
+                  className="projectButton border-0"
+                  onClick={onOpenModalP3}
+                >
                   <Card.Img
                     variant="top"
                     src={require("./../../assets/images/placeholder.jpg")}
                   />
 
                   <Card.Body>
-                    <Card.Title>Project Title</Card.Title>
+                    <Card.Title>Grapple</Card.Title>
                   </Card.Body>
                 </button>
               </Card>
-            </div> */}
+            </div>
+
+            <Modal
+              open={openP1}
+              onClose={onCloseModal}
+              center
+              closeIcon={closeIcon}
+              classNames={{
+                modal: "projectModal",
+                overlay: "projectOverlay",
+                // modalAnimationIn: "customEnterModalAnimation",
+                // modalAnimationOut: "customLeaveModalAnimation",
+              }}
+              animationDuration={800}
+            >
+              <ProjectModal {...Project1ModalContent} />
+            </Modal>
+            <Modal
+              open={openP2}
+              onClose={onCloseModal}
+              center
+              closeIcon={closeIcon}
+              classNames={{
+                modal: "projectModal",
+                overlay: "projectOverlay",
+                // modalAnimationIn: "customEnterModalAnimation",
+                //modalAnimationOut: "customLeaveModalAnimation",
+              }}
+              animationDuration={800}
+            >
+              <ProjectModal {...Project2ModalContent} />
+            </Modal>
+            <Modal
+              open={openP3}
+              onClose={onCloseModal}
+              center
+              closeIcon={closeIcon}
+              classNames={{
+                modal: "projectModal",
+                overlay: "projectOverlay",
+                //modalAnimationIn: "customEnterModalAnimation",
+                //modalAnimationOut: "customLeaveModalAnimation",
+              }}
+              animationDuration={800}
+            >
+              <ProjectModal {...Project3ModalContent} />
+            </Modal>
           </div>
         </div>
       </div>
-
-      <Modal
-        open={openP1}
-        onClose={onCloseModal}
-        center
-        closeIcon={closeIcon}
-        classNames={{
-          modal: "projectModal",
-          overlay: "projectOverlay",
-          // modalAnimationIn: "customEnterModalAnimation",
-          // modalAnimationOut: "customLeaveModalAnimation",
-        }}
-        animationDuration={800}
-      >
-        <ProjectModal {...Project1ModalContent} />
-      </Modal>
-      <Modal
-        open={openP2}
-        onClose={onCloseModal}
-        center
-        closeIcon={closeIcon}
-        classNames={{
-          modal: "projectModal",
-          overlay: "projectOverlay",
-          // modalAnimationIn: "customEnterModalAnimation",
-          //modalAnimationOut: "customLeaveModalAnimation",
-        }}
-        animationDuration={800}
-      >
-        <ProjectModal {...Project2ModalContent} />
-      </Modal>
-      <Modal
-        open={openP3}
-        onClose={onCloseModal}
-        center
-        closeIcon={closeIcon}
-        classNames={{
-          modal: "projectModal",
-          overlay: "projectOverlay",
-          //modalAnimationIn: "customEnterModalAnimation",
-          //modalAnimationOut: "customLeaveModalAnimation",
-        }}
-        animationDuration={800}
-      >
-        <ProjectModal {...Project3ModalContent} />
-      </Modal>
     </section>
   );
 };

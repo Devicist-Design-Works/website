@@ -1,17 +1,17 @@
-import React from 'react';
-import classNames from 'classnames';
-import { SectionSplitProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
-import Image from '../elements/Image';
+import React from "react";
+import classNames from "classnames";
+import { SectionSplitProps } from "../../utils/SectionProps";
+import SectionHeader from "./partials/SectionHeader";
+import Image from "../elements/Image";
 import YoutubeEmbed from "../elements/YoutubeEmbed";
 
 const propTypes = {
-  ...SectionSplitProps.types
-}
+  ...SectionSplitProps.types,
+};
 
 const defaultProps = {
-  ...SectionSplitProps.defaults
-}
+  ...SectionSplitProps.defaults,
+};
 
 const FeaturesSplit = ({
   className,
@@ -27,32 +27,31 @@ const FeaturesSplit = ({
   imageFill,
   ...props
 }) => {
-
   const outerClasses = classNames(
-    'features-split section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
+    "features-split section",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
     className
   );
 
   const innerClasses = classNames(
-    'features-split-inner section-inner',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider'
+    "features-split-inner section-inner",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider"
   );
 
   const splitClasses = classNames(
-    'split-wrap',
-    invertMobile && 'invert-mobile',
-    invertDesktop && 'invert-desktop',
-    alignTop && 'align-top'
+    "split-wrap",
+    invertMobile && "invert-mobile",
+    invertDesktop && "invert-desktop",
+    alignTop && "align-top"
   );
 
   const sectionHeader = {
-    title: 'The Process',
-    paragraph: 'Our process is simple. The results stand-out.'
+    title: "The Process",
+    paragraph: "Our process is simple. The results stand-out.",
   };
 
   return (
@@ -88,12 +87,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                {/* <Image
-                  src={require("./../../assets/images/emailSketchCropped.png")}
-                  alt="Features split 02"
-                  width={528}
-                  height={396}
-                /> */}
+                <Image alt="Features split 02" width={528} height={396} />
               </div>
             </div>
 
@@ -103,12 +97,12 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  {/* <Image
+                  <Image
                     src={require("./../../assets/images/DesignIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={50}
-                  /> */}
+                  />
                 </div>
                 <h3 className="mt-0 mb-12">Design</h3>
                 <p className="m-0">
@@ -124,12 +118,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                {/* <Image
-                  src={require("./../../assets/images/axle.png")}
-                  alt="Features split 01"
-                  width={528}
-                  height={396}
-                /> */}
+                <Image alt="Features split 01" width={528} height={396} />
               </div>
             </div>
 
@@ -139,12 +128,12 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  {/* <Image
+                  <Image
                     src={require("./../../assets/images/PrototypeIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={32}
-                  /> */}
+                  />
                 </div>
                 <h3 className="mt-0 mb-12">Build</h3>
                 <p className="m-0">
@@ -161,12 +150,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                {/* <Image
-                  src={require("./../../assets/images/wheelBuild.jpg")}
-                  alt="Features split 02"
-                  width={528}
-                  height={396}
-                /> */}
+                <Image alt="Features split 02" width={528} height={396} />
               </div>
             </div>
 
@@ -176,18 +160,19 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  {/* <Image
+                  <Image
                     src={require("./../../assets/images/BuildIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={32}
-                  /> */}
+                  />
                 </div>
                 <h3 className="mt-0 mb-12">Deploy</h3>
                 <p className="m-0">
-                  Show time! We are there to deliver and install
-                  the project, ensuring it surpasses expectactions. 
-                  We also study the results to measure success.
+                  Show time! This is the moment when the project goes live, and
+                  public engagement begins. We are there to deliver and install
+                  the project and ensure it is fully functional. We also study
+                  the results to measure success.
                 </p>
               </div>
               <div
@@ -197,7 +182,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                {/* <YoutubeEmbed embedId="o-eduqKUgx8" /> */}
+                {" "}
               </div>
             </div>
             <div className="split-item">
@@ -206,12 +191,12 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  {/* <Image
+                  <Image
                     src={require("./../../assets/images/SupportIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={32}
-                  /> */}
+                  />
                 </div>
                 <h3 className="mt-0 mb-12">Support</h3>
                 <p className="m-0">
@@ -228,12 +213,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                {/* <Image
-                  src={require("./../../assets/images/support.jpg")}
-                  alt="Features split 02"
-                  width={528}
-                  height={396}
-                /> */}
+                <Image alt="Features split 02" width={528} height={396} />
               </div>
             </div>
           </div>
@@ -241,7 +221,7 @@ const FeaturesSplit = ({
       </div>
     </section>
   );
-}
+};
 
 FeaturesSplit.propTypes = propTypes;
 FeaturesSplit.defaultProps = defaultProps;

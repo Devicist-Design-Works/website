@@ -44,6 +44,7 @@ const DesignContent = {
 
 const BuildContent = {
   body: "A prototype of the rotating module was engineered, and distributed to the fabricator for testing and integration. We provided a report to the ESA for certification. We sourced and acquired parts and assembled the pieces into fully functional units, then we tested full rig remotely for weeks before deployment.",
+
   images: [
     {
       src: require("./../assets/images/portfolio/flux/1.jpg"),

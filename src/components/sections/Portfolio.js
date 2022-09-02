@@ -212,6 +212,7 @@ const Portfolio = ({
             </div>
           </Link>
 
+          <SectionHeader data={subHeader} className="center-content" />
           <div className={tilesClasses}>
             <div className="reveal-from-right projectCard">
               <Card className="bg-black ">

@@ -22,7 +22,7 @@ const FirstContactContent = {
 
 const DesignContent = {
   body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eratvolutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tationullamcorper suscipit lobortis nisl ut aliquip ex ea commodoconsequat. Duis autem vel eum iriure dolor in hendrerit in vulputatevelit esse molestie consequat.",
-  bgImage: require("./../assets/images/axleOutline.png"),
+  bgImage: require("./../assets/images/motorOutline.png"),
   images: [
     {
       src: require("./../assets/images/portfolio/Snowflake/snowflake1.png"),
@@ -78,7 +78,7 @@ const DeployContent = {
   youtubeUrl: "o-eduqKUgx8",
 };
 
-const CaseStudyFrost = () => {
+const CaseStudyFlux = () => {
   return (
     <>
       <Intro {...IntroContent} />
@@ -90,4 +90,4 @@ const CaseStudyFrost = () => {
   );
 };
 
-export default CaseStudyFrost;
+export default CaseStudyFlux;

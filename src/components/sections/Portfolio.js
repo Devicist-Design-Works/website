@@ -127,7 +127,7 @@ const Portfolio = ({
 
   //edit section header content here
   const sectionHeader = {
-    title: "Case Study",
+    title: "Case Studies",
     // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 

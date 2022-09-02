@@ -63,12 +63,11 @@ const Hero = ({
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                From hand-held devices
-                <br />
-                to large-scale installations, <br />
-                we combine art, UX and engineering <br />
-                to build dynamic in-person <br />
-                experiences.
+                From hand-held devices<br />
+                to large-scale installations,<br />
+                we combine art, UX and engineering<br />
+                to build dynamic interactive <br />
+                exhibits.
               </p>
 
               <div className="reveal-from-bottom" data-reveal-delay="600"></div>

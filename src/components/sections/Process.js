@@ -51,7 +51,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: "The Process",
-    paragraph: "Our process is simple. The results stand-out.",
+    // paragraph: "We make interactive exhibits.",
   };
 
   return (
@@ -75,9 +75,8 @@ const FeaturesSplit = ({
                 </div>
                 <h3 className="mt-0 mb-12">Foundation</h3>
                 <p className="m-0">
-                  With over 20 years' experience combining art, UX, coding,
-                  electronics, and fabrication, we use our skills to take big
-                  ideas and make them real, while mitigating risks.
+                  With over 20 years' experience combining art, UX, and engineering, we use our skills to take big
+                  ideas and make them tangible, while mitigating risks.
                 </p>
               </div>
               <div

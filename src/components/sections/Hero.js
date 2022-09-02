@@ -63,7 +63,7 @@ const Hero = ({
                 className="m-0 mb-32 reveal-from-bottom"
                 data-reveal-delay="400"
               >
-                From hand-held gadgets
+                From hand-held devices
                 <br />
                 to large-scale installations, <br />
                 we combine art, UX and engineering <br />

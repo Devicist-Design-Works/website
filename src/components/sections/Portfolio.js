@@ -127,12 +127,12 @@ const Portfolio = ({
 
   //edit section header content here
   const sectionHeader = {
-    title: "Case Studies",
+    title: "Case Study",
     // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
   const subHeader = {
-    title: "Projects",
+    title: "More Projects",
     // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
@@ -218,7 +218,7 @@ const Portfolio = ({
           />
           <div className={tilesClasses}>
             <div className="reveal-from-right projectCard">
-              <Card className="bg-black ">
+            <Card className="bg-black ">
                 <button
                   className="projectButton border-0"
                   onClick={onOpenModalP1}
@@ -247,7 +247,7 @@ const Portfolio = ({
                   />
 
                   <Card.Body>
-                    <Card.Title>PowerCube VR</Card.Title>
+                    <Card.Title>Braking</Card.Title>
                   </Card.Body>
                 </button>
               </Card>
@@ -261,11 +261,11 @@ const Portfolio = ({
                 >
                   <Card.Img
                     variant="top"
-                    src={require("./../../assets/images/placeholder.jpg")}
+                    src={require("./../../assets/images/portfolio/nfc/feature_nfc_cropped.jpg")}
                   />
 
                   <Card.Body>
-                    <Card.Title>Grapple</Card.Title>
+                    <Card.Title>Scanners</Card.Title>
                   </Card.Body>
                 </button>
               </Card>

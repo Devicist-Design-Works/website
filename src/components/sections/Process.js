@@ -66,12 +66,12 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  {/* <Image
-                    src={require("./../../assets/images/PrototypeIcon-white.svg")}
+                  <Image
+                    src={require("./../../assets/images/FoundationIcon-white.svg")}
                     alt="design icon"
                     width={50}
                     height={32}
-                  /> */}
+                  />
                 </div>
                 <h3 className="mt-0 mb-12">Foundation</h3>
                 <p className="m-0">
@@ -87,7 +87,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image alt="Features split 02" width={528} height={396} />
+                {/* <Image alt="Features split 02" width={528} height={396} /> */}
               </div>
             </div>
 
@@ -118,7 +118,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image alt="Features split 01" width={528} height={396} />
+                {/* <Image alt="Features split 01" width={528} height={396} /> */}
               </div>
             </div>
 
@@ -150,7 +150,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image alt="Features split 02" width={528} height={396} />
+                {/* <Image alt="Features split 02" width={528} height={396} /> */}
               </div>
             </div>
 
@@ -213,7 +213,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image alt="Features split 02" width={528} height={396} />
+                {/* <Image alt="Features split 02" width={528} height={396} /> */}
               </div>
             </div>
           </div>

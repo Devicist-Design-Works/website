@@ -10,6 +10,7 @@ const IntroContent = {
   title: "Regenerative Braking Demo",
   description: "In order to profile KIA's regenerative braking technology, we developed a working demo of the system. Users pressed an accelerator pedal to drive a full size car wheel mounted in the kiosk. Pressing the brake both stopped the wheel and recharged the battery represented on the vivrtual dashboard.",
   imgSrc: require("./../assets/images/wheelOutlineBG.png"),
+  youtubeUrl: "o-eduqKUgx8",
 };
 
 const FirstContactContent = {

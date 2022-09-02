@@ -1,17 +1,17 @@
-import React from 'react';
-import classNames from 'classnames';
-import { SectionSplitProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
-import Image from '../elements/Image';
+import React from "react";
+import classNames from "classnames";
+import { SectionSplitProps } from "../../utils/SectionProps";
+import SectionHeader from "./partials/SectionHeader";
+import Image from "../elements/Image";
 import YoutubeEmbed from "../elements/YoutubeEmbed";
 
 const propTypes = {
-  ...SectionSplitProps.types
-}
+  ...SectionSplitProps.types,
+};
 
 const defaultProps = {
-  ...SectionSplitProps.defaults
-}
+  ...SectionSplitProps.defaults,
+};
 
 const FeaturesSplit = ({
   className,
@@ -27,32 +27,31 @@ const FeaturesSplit = ({
   imageFill,
   ...props
 }) => {
-
   const outerClasses = classNames(
-    'features-split section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
+    "features-split section",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
     className
   );
 
   const innerClasses = classNames(
-    'features-split-inner section-inner',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider'
+    "features-split-inner section-inner",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider"
   );
 
   const splitClasses = classNames(
-    'split-wrap',
-    invertMobile && 'invert-mobile',
-    invertDesktop && 'invert-desktop',
-    alignTop && 'align-top'
+    "split-wrap",
+    invertMobile && "invert-mobile",
+    invertDesktop && "invert-desktop",
+    alignTop && "align-top"
   );
 
   const sectionHeader = {
-    title: 'The Process',
-    paragraph: 'Our process is simple. The results stand-out.'
+    title: "The Process",
+    paragraph: "Our process is simple. The results stand-out.",
   };
 
   return (
@@ -88,12 +87,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image
-                  src={require("./../../assets/images/emailSketchCropped.png")}
-                  alt="Features split 02"
-                  width={528}
-                  height={396}
-                />
+                <Image alt="Features split 02" width={528} height={396} />
               </div>
             </div>
 
@@ -124,12 +118,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image
-                  src={require("./../../assets/images/axle.png")}
-                  alt="Features split 01"
-                  width={528}
-                  height={396}
-                />
+                <Image alt="Features split 01" width={528} height={396} />
               </div>
             </div>
 
@@ -161,12 +150,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image
-                  src={require("./../../assets/images/wheelBuild.jpg")}
-                  alt="Features split 02"
-                  width={528}
-                  height={396}
-                />
+                <Image alt="Features split 02" width={528} height={396} />
               </div>
             </div>
 
@@ -197,9 +181,7 @@ const FeaturesSplit = ({
                   imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
-              >
-                <YoutubeEmbed embedId="o-eduqKUgx8" />
-              </div>
+              ></div>
             </div>
             <div className="split-item">
               <div
@@ -229,12 +211,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image
-                  src={require("./../../assets/images/support.jpg")}
-                  alt="Features split 02"
-                  width={528}
-                  height={396}
-                />
+                <Image alt="Features split 02" width={528} height={396} />
               </div>
             </div>
           </div>
@@ -242,7 +219,7 @@ const FeaturesSplit = ({
       </div>
     </section>
   );
-}
+};
 
 FeaturesSplit.propTypes = propTypes;
 FeaturesSplit.defaultProps = defaultProps;

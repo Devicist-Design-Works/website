@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "../elements/Button";
 import flux from "./../../assets/images/fluxCover.png";
-import wheel from "../../assets/images/wheelBuild.jpg";
+import wheel from "../../assets/images/brakingCover.png";
 import nfc from "./../../assets/images/portfolio/nfc.png";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
@@ -33,23 +33,18 @@ const Portfolio = ({
   pushLeft,
   ...props
 }) => {
-  const outerClasses = classNames(
-    "portfolio section",
-    bottomOuterDivider && "has-bottom-divider",
-    hasBgColor && "has-bg-color",
-    invertColor && "invert-color",
-    className
-  );
-
   const innerClasses = classNames(
     "portfolio-inner section-inner",
     bottomDivider && "has-bottom-divider"
   );
 
-  const tilesClasses = classNames("tiles-wrap", pushLeft && "push-left");
+  const tilesClasses = classNames(
+    "center-content mt-16 container",
+    pushLeft && "push-left"
+  );
 
   const Project1ModalContent = {
-    title: "Project 1",
+    title: "Frost",
     body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
     youtubeUrl: "mMHe-GRaYqA",
     images: [
@@ -77,7 +72,7 @@ const Portfolio = ({
   };
 
   const Project2ModalContent = {
-    title: "Project 2",
+    title: "PowerCube VR",
     body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
     youtubeUrl: "mMHe-GRaYqA",
     images: [
@@ -105,7 +100,7 @@ const Portfolio = ({
   };
 
   const Project3ModalContent = {
-    title: "Project 3",
+    title: "Grapple",
     body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
     youtubeUrl: "mMHe-GRaYqA",
     images: [
@@ -134,7 +129,12 @@ const Portfolio = ({
 
   //edit section header content here
   const sectionHeader = {
-    title: "Examples",
+    title: "Case Studies",
+    // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
+  };
+
+  const subHeader = {
+    title: "Projects",
     // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
@@ -169,37 +169,36 @@ const Portfolio = ({
           {/*this is a seperate .js file found in sections > partials*/}
           <SectionHeader data={sectionHeader} className="center-content" />
 
-          <div className={tilesClasses}>
-            <div className="tiles-item reveal-from-right">
-              <Card style={{ width: "16rem" }}>
-                <Card.Img variant="top" src={flux} />
-                <Card.Body>
-                  <Card.Title>
-                    Flux:
-                    <br /> Case Study
+          <Link to="/CaseStudyFlux">
+            <div className="reveal-from-bottom">
+              <Card className="bg-dark" style={{ width: "100%" }}>
+                <Card.Img src={flux} alt="Flux Cover Image" />
+                <Card.ImgOverlay className=" d-flex flex-column">
+                  <Card.Title className="mt-auto">
+                    <h2 className="mb-0">Flux</h2>
                   </Card.Title>
                   <Card.Text>
                     We developed interactive LED lighting for "Frost", a 30 foot
                     touch-reactive sculpture on display at Brookfield Place in
                     Toronto during the winter holidays.
                   </Card.Text>
-                  <Link to="/CaseStudyFrost">
+                  <Link to="/CaseStudyFlux">
                     <Button variant="primary" onClick={onOpenModalP2}>
                       Learn more
                     </Button>
                   </Link>
-                </Card.Body>
+                </Card.ImgOverlay>
               </Card>
             </div>
-            <div
-              className="tiles-item reveal-from-left"
-              data-reveal-delay="200"
-            >
-              <Card style={{ width: "16rem" }}>
-                <Card.Img variant="top" src={wheel} />
-                <Card.Body>
-                  <Card.Title>
-                    Regenerative Braking Booth: Case Study
+          </Link>
+
+          <Link to="/CaseStudyBraking">
+            <div className="reveal-from-bottom mt-32">
+              <Card className="bg-dark" style={{ width: "100%" }}>
+                <Card.Img src={wheel} alt="Flux Cover Image" />
+                <Card.ImgOverlay className=" d-flex flex-column">
+                  <Card.Title className="mt-auto">
+                    <h2 className="mb-0">Regenerative Braking Demo</h2>
                   </Card.Title>
                   <Card.Text>
                     We designed and built a Spinning Wheel Display to demo
@@ -207,54 +206,70 @@ const Portfolio = ({
                     speed is controlled by accelerator and brake pedals.
                   </Card.Text>
                   <Link to="/CaseStudyBraking">
-                    <Button variant="primary">Learn more</Button>
+                    <Button variant="primary" onClick={onOpenModalP2}>
+                      Learn more
+                    </Button>
                   </Link>
-                </Card.Body>
+                </Card.ImgOverlay>
               </Card>
             </div>
-          </div>
+          </Link>
+
+          <SectionHeader
+            data={subHeader}
+            className="center-content mt-64 pb-0"
+          />
 
           <div className={tilesClasses}>
             <div className="reveal-from-right projectCard">
-              <Card>
-                <button className="projectButton" onClick={onOpenModalP1}>
+              <Card className="bg-black ">
+                <button
+                  className="projectButton border-0"
+                  onClick={onOpenModalP1}
+                >
                   <Card.Img
                     variant="top"
                     src={require("./../../assets/images/placeholder.jpg")}
                   />
 
                   <Card.Body>
-                    <Card.Title>Project Title</Card.Title>
+                    <Card.Title>Frost</Card.Title>
                   </Card.Body>
                 </button>
               </Card>
             </div>
 
             <div className="reveal-from-bottom projectCard">
-              <Card>
-                <button className="projectButton" onClick={onOpenModalP2}>
+              <Card className="bg-black ">
+                <button
+                  className="projectButton border-0"
+                  onClick={onOpenModalP2}
+                >
                   <Card.Img
                     variant="top"
                     src={require("./../../assets/images/placeholder.jpg")}
                   />
 
                   <Card.Body>
-                    <Card.Title>Project Title</Card.Title>
+                    <Card.Title>PowerCube VR</Card.Title>
                   </Card.Body>
                 </button>
               </Card>
             </div>
 
             <div className="reveal-from-left projectCard">
-              <Card>
-                <button className="projectButton" onClick={onOpenModalP3}>
+              <Card className="bg-black ">
+                <button
+                  className="projectButton border-0"
+                  onClick={onOpenModalP3}
+                >
                   <Card.Img
                     variant="top"
                     src={require("./../../assets/images/placeholder.jpg")}
                   />
 
                   <Card.Body>
-                    <Card.Title>Project Title</Card.Title>
+                    <Card.Title>Grapple</Card.Title>
                   </Card.Body>
                 </button>
               </Card>

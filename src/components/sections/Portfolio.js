@@ -172,16 +172,20 @@ const Portfolio = ({
               <Card className="bg-dark" style={{ width: "100%" }}>
                 <Card.Img src={flux} alt="Flux Cover Image" />
                 <Card.ImgOverlay className=" d-flex flex-column">
-                  <Card.Title className="mt-auto">
-                    <h2 className="mb-0">Flux</h2>
+                  <Card.Title className="mt-auto caseStudyTitle">
+                    Flux
                   </Card.Title>
-                  <Card.Text>
+                  <Card.Text className="caseStudyText">
                     A large kinetic installation for Shopify. 40 metalic prisms
                     are rotated in coordinated patterns to create waves of
                     refracted light.
                   </Card.Text>
                   <Link to="/CaseStudyFlux">
-                    <Button variant="primary" onClick={onOpenModalP2}>
+                    <Button
+                      className="caseStudyButton"
+                      variant="primary"
+                      onClick={onOpenModalP2}
+                    >
                       Learn more
                     </Button>
                   </Link>
@@ -195,15 +199,19 @@ const Portfolio = ({
               <Card className="bg-dark" style={{ width: "100%" }}>
                 <Card.Img src={wheel} alt="Flux Cover Image" />
                 <Card.ImgOverlay className=" d-flex flex-column">
-                  <Card.Title className="mt-auto">
-                    <h2 className="mb-0">Regenerative Braking Demo</h2>
+                  <Card.Title className="mt-auto caseStudyTitle">
+                    Braking Demo
                   </Card.Title>
-                  <Card.Text>
+                  <Card.Text className="caseStudyText">
                     Created for KIA, car pedals control the wheel while
                     battery-level is displayed on a simulated dashboard.
                   </Card.Text>
                   <Link to="/CaseStudyBraking">
-                    <Button variant="primary" onClick={onOpenModalP2}>
+                    <Button
+                      className="caseStudyButton"
+                      variant="primary"
+                      onClick={onOpenModalP2}
+                    >
                       Learn more
                     </Button>
                   </Link>

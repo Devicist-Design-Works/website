@@ -121,3 +121,28 @@
 	background-color: transparent;
 	cursor: pointer;
 }
+
+.caseStudyTitle{
+	font-weight: bold;
+	font-size: 48px;
+	@include media('<medium') {
+			font-size: 36px;
+			
+			
+		}
+}
+.caseStudyText{
+	@include media('<medium') {
+			font-size: 12px;
+			margin-bottom: 0;
+		
+			
+		}
+}
+
+.caseStudyButton{
+	@include media('<medium') {
+			display: none;
+			
+	}
+}

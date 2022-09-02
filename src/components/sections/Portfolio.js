@@ -5,7 +5,7 @@ import SectionHeader from "./partials/SectionHeader";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "../elements/Button";
-import flux from "./../../assets/images/fluxCover.png";
+import flux from "./../../assets/images/fluxCover.jpg";
 import wheel from "../../assets/images/wheelBuild.jpg";
 import nfc from "./../../assets/images/portfolio/nfc.png";
 import { Modal } from "react-responsive-modal";
@@ -49,27 +49,27 @@ const Portfolio = ({
   const tilesClasses = classNames("tiles-wrap", pushLeft && "push-left");
 
   const Project1ModalContent = {
-    title: "Project 1",
-    body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+    title: "Frost",
+    body: "We developed interactive LED lighting for F-Minus studio's 30 foot sculpture. A large illuminated snowflake occupies the atrium of Brookfield Place in Toronto. Viewer's touch causes the colors to shift",
     youtubeUrl: "mMHe-GRaYqA",
     images: [
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake1.png"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake2.png"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake3.png"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake4.png"),
         width: 1,
         height: 1,
       },
@@ -77,27 +77,27 @@ const Portfolio = ({
   };
 
   const Project2ModalContent = {
-    title: "Project 2",
-    body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
-    youtubeUrl: "mMHe-GRaYqA",
+    title: "Regenerative Braking Demo",
+    body: "To profile KIA's regenerative braking technology, we developed a working demo. Users press an accelerator pedal to drive a full size car wheel mounted in a kiosk. The brake both stops the wheel and recharges the battery represented on the virtual dashboard.",
+    youtubeUrl: "o-eduqKUgx8",
     images: [
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/braking/emailSketch.png"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/braking/braking3.png"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/braking/wheelBuild2cropped.jpg"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/braking/wheelBuild.jpg"),
         width: 1,
         height: 1,
       },
@@ -172,23 +172,23 @@ const Portfolio = ({
           <div className={tilesClasses}>
             <div className="tiles-item reveal-from-right">
               <Card style={{ width: "16rem"}}>
+                  <Link to="/CaseStudyFlux">
                 <Card.Img variant="top" src={flux}/>
                 <Card.Body>
                   <Card.Title>
                     Flux
                   </Card.Title>
-                  <Card.Text>
+                  {/* <Card.Text>
                     A large kinetic installation for Shopify. 40 metalic prisms are rotated in coordinated patterns to create waves of refracted light.
-                  </Card.Text>
-                  <Link to="/CaseStudyFlux">
-                    <Button variant="primary" onClick={onOpenModalP2}>
+                  </Card.Text> */}
+                    {/* <Button variant="primary" onClick={onOpenModalP2}>
                       Learn more
-                    </Button>
-                  </Link>
+                    </Button> */}
                 </Card.Body>
+                  </Link>
               </Card>
             </div>
-            <div
+            {/* <div
               className="tiles-item reveal-from-left"
               data-reveal-delay="200"
             >
@@ -206,7 +206,7 @@ const Portfolio = ({
                   </Link>
                 </Card.Body>
               </Card>
-            </div>
+            </div> */}
           </div>
 
           <div className={tilesClasses}>
@@ -215,11 +215,11 @@ const Portfolio = ({
                 <button className="projectButton" onClick={onOpenModalP1}>
                   <Card.Img
                     variant="top"
-                    src={require("./../../assets/images/placeholder.jpg")}
+                    src={require("./../../assets/images/portfolio/Snowflake/snowflake1.png")}
                   />
 
                   <Card.Body>
-                    <Card.Title>Project Title</Card.Title>
+                    <Card.Title>Frost</Card.Title>
                   </Card.Body>
                 </button>
               </Card>
@@ -230,17 +230,17 @@ const Portfolio = ({
                 <button className="projectButton" onClick={onOpenModalP2}>
                   <Card.Img
                     variant="top"
-                    src={require("./../../assets/images/placeholder.jpg")}
+                    src={require("./../../assets/images/portfolio/braking/wheelBuild.jpg")}
                   />
 
                   <Card.Body>
-                    <Card.Title>Project Title</Card.Title>
+                    <Card.Title>Regen</Card.Title>
                   </Card.Body>
                 </button>
               </Card>
             </div>
 
-            <div className="reveal-from-left projectCard">
+            {/* <div className="reveal-from-left projectCard">
               <Card>
                 <button className="projectButton" onClick={onOpenModalP3}>
                   <Card.Img
@@ -253,7 +253,7 @@ const Portfolio = ({
                   </Card.Body>
                 </button>
               </Card>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -66,7 +66,7 @@ const Hero = ({
                 From hand-held gadgets
                 <br />
                 to large-scale installations, <br />
-                we combine art and engineering <br />
+                we combine art, UX and engineering <br />
                 to build dynamic in-person <br />
                 experiences.
               </p>

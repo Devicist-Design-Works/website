@@ -43,26 +43,26 @@ const Portfolio = ({
 
   const Project1ModalContent = {
     title: "Frost",
-    body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+    body: "We developed interactive LED lighting for F-Minus studio's 30 foot sculpture. A large illuminated snowflake occupies the atrium of Brookfield Place in Toronto. Viewer's touch causes the colors to shift",
     youtubeUrl: "mMHe-GRaYqA",
     images: [
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake1.png"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake2.png"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake3.png"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake4.png"),
         width: 1,
         height: 1,
       },
@@ -70,27 +70,27 @@ const Portfolio = ({
   };
 
   const Project2ModalContent = {
-    title: "PowerCube VR",
-    body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
-    youtubeUrl: "mMHe-GRaYqA",
+    title: "Regenerative Braking Demo",
+    body: "To profile KIA's regenerative braking technology, we developed a working demo. Users press an accelerator pedal to drive a full size car wheel mounted in a kiosk. The brake both stops the wheel and recharges the battery represented on the virtual dashboard.",
+    youtubeUrl: "o-eduqKUgx8",
     images: [
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/braking/emailSketch.png"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/braking/braking3.png"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/braking/wheelBuild2cropped.jpg"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/placeholder.jpg"),
+        src: require("./../../assets/images/portfolio/braking/wheelBuild.jpg"),
         width: 1,
         height: 1,
       },
@@ -212,11 +212,6 @@ const Portfolio = ({
             </div>
           </Link>
 
-          <SectionHeader
-            data={subHeader}
-            className="center-content mt-64 pb-0"
-          />
-
           <div className={tilesClasses}>
             <div className="reveal-from-right projectCard">
               <Card className="bg-black ">
@@ -226,7 +221,7 @@ const Portfolio = ({
                 >
                   <Card.Img
                     variant="top"
-                    src={require("./../../assets/images/placeholder.jpg")}
+                    src={require("./../../assets/images/portfolio/Snowflake/snowflake1.png")}
                   />
 
                   <Card.Body>
@@ -244,7 +239,7 @@ const Portfolio = ({
                 >
                   <Card.Img
                     variant="top"
-                    src={require("./../../assets/images/placeholder.jpg")}
+                    src={require("./../../assets/images/portfolio/braking/wheelBuild.jpg")}
                   />
 
                   <Card.Body>
@@ -271,55 +266,55 @@ const Portfolio = ({
                 </button>
               </Card>
             </div>
+
+            <Modal
+              open={openP1}
+              onClose={onCloseModal}
+              center
+              closeIcon={closeIcon}
+              classNames={{
+                modal: "projectModal",
+                overlay: "projectOverlay",
+                // modalAnimationIn: "customEnterModalAnimation",
+                // modalAnimationOut: "customLeaveModalAnimation",
+              }}
+              animationDuration={800}
+            >
+              <ProjectModal {...Project1ModalContent} />
+            </Modal>
+            <Modal
+              open={openP2}
+              onClose={onCloseModal}
+              center
+              closeIcon={closeIcon}
+              classNames={{
+                modal: "projectModal",
+                overlay: "projectOverlay",
+                // modalAnimationIn: "customEnterModalAnimation",
+                //modalAnimationOut: "customLeaveModalAnimation",
+              }}
+              animationDuration={800}
+            >
+              <ProjectModal {...Project2ModalContent} />
+            </Modal>
+            <Modal
+              open={openP3}
+              onClose={onCloseModal}
+              center
+              closeIcon={closeIcon}
+              classNames={{
+                modal: "projectModal",
+                overlay: "projectOverlay",
+                //modalAnimationIn: "customEnterModalAnimation",
+                //modalAnimationOut: "customLeaveModalAnimation",
+              }}
+              animationDuration={800}
+            >
+              <ProjectModal {...Project3ModalContent} />
+            </Modal>
           </div>
         </div>
       </div>
-
-      <Modal
-        open={openP1}
-        onClose={onCloseModal}
-        center
-        closeIcon={closeIcon}
-        classNames={{
-          modal: "projectModal",
-          overlay: "projectOverlay",
-          // modalAnimationIn: "customEnterModalAnimation",
-          // modalAnimationOut: "customLeaveModalAnimation",
-        }}
-        animationDuration={800}
-      >
-        <ProjectModal {...Project1ModalContent} />
-      </Modal>
-      <Modal
-        open={openP2}
-        onClose={onCloseModal}
-        center
-        closeIcon={closeIcon}
-        classNames={{
-          modal: "projectModal",
-          overlay: "projectOverlay",
-          // modalAnimationIn: "customEnterModalAnimation",
-          //modalAnimationOut: "customLeaveModalAnimation",
-        }}
-        animationDuration={800}
-      >
-        <ProjectModal {...Project2ModalContent} />
-      </Modal>
-      <Modal
-        open={openP3}
-        onClose={onCloseModal}
-        center
-        closeIcon={closeIcon}
-        classNames={{
-          modal: "projectModal",
-          overlay: "projectOverlay",
-          //modalAnimationIn: "customEnterModalAnimation",
-          //modalAnimationOut: "customLeaveModalAnimation",
-        }}
-        animationDuration={800}
-      >
-        <ProjectModal {...Project3ModalContent} />
-      </Modal>
     </section>
   );
 };

@@ -51,8 +51,8 @@ const Cta = ({
             <p>info@devicist.com</p>
 
             <p>
-              Occasionally, we release news and articles on{" "}
-              <b>interactive objects</b>. Join our mailing list.
+              On ocasion, we release news about the studio and articles on{" "}
+              <b>interaction design</b> and <b>fabrication</b>.<br/> Join our mailing list.
             </p>
           </div>
           <div>

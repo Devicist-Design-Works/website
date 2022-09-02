@@ -111,11 +111,10 @@
 	display: inline-block;
 	width: 25%;
 	margin-top: 30px;
+	border: none;
 	@include media('<medium') {
 		width: 70%;
-
 	}
-	
 }
 
 .projectButton{

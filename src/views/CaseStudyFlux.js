@@ -22,7 +22,7 @@ const FirstContactContent = {
 
 const DesignContent = {
   body: "We created a set of mood boards drawing inspiration from other kinetic artworks and local lakes. We proposed a design that fit the parameters of the space, and fleshed it out into a detailed 3D model, and ultimately an animated simulation.",
-  bgImage: require("./../assets/images/axleOutline.png"),
+  bgImage: require("./../assets/images/portfolio/flux/prismGraphic.png"),
   images: [
     {
       src: require("./../assets/images/portfolio/flux/16.png"),

@@ -35,7 +35,7 @@ const DesignContent = {
       height: 1,
     },
     {
-      src: require("./../assets/images/portfolio/flux/13.png"),
+      src: require("./../assets/images/portfolio/flux/ceilingSim.gif"),
       width: 1,
       height: 1,
     },

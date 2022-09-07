@@ -11,6 +11,7 @@ import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 //import PortfolioMore from '../layout/partials/PortfolioMore';
 import ProjectModal from "./ProjectModal";
+import CaseStudyFlux from "../../views/CaseStudyFlux";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -136,14 +137,20 @@ const Portfolio = ({
     // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
+  const [openCS1, setOpenCS1] = useState(false);
+  const [openCS2, setOpenCS2] = useState(false);
   const [openP1, setOpenP1] = useState(false);
   const [openP2, setOpenP2] = useState(false);
   const [openP3, setOpenP3] = useState(false);
 
+  const onOpenModalCS1 = () => setOpenCS1(true);
+  const onOpenModalCS2 = () => setOpenCS2(true);
   const onOpenModalP1 = () => setOpenP1(true);
   const onOpenModalP2 = () => setOpenP2(true);
   const onOpenModalP3 = () => setOpenP3(true);
   const onCloseModal = () => {
+    setOpenCS1(false);
+    setOpenCS1(false);
     setOpenP1(false);
     setOpenP2(false);
     setOpenP3(false);
@@ -169,7 +176,7 @@ const Portfolio = ({
 
           <Link to="/CaseStudyFlux">
             <div className="reveal-from-bottom">
-              <Card className="bg-dark" style={{ width: "100%" }}>
+              <Card className="caseStudyCard" style={{ width: "100%" }}>
                 <Card.Img src={flux} alt="Flux Cover Image" />
                 <Card.ImgOverlay className=" d-flex flex-column">
                   <Card.Title className="mt-auto caseStudyTitle">
@@ -196,7 +203,7 @@ const Portfolio = ({
 
           <Link to="/CaseStudyBraking">
             <div className="reveal-from-bottom mt-32">
-              <Card className="bg-dark" style={{ width: "100%" }}>
+              <Card className="caseStudyCard" style={{ width: "100%" }}>
                 <Card.Img src={wheel} alt="Flux Cover Image" />
                 <Card.ImgOverlay className=" d-flex flex-column">
                   <Card.Title className="mt-auto caseStudyTitle">
@@ -225,12 +232,12 @@ const Portfolio = ({
             className="center-content pb-0 mt-32"
           />
           <div className={tilesClasses}>
-            <div className="reveal-from-right projectCard">
+            <div className="reveal-from-right projectGrid">
               <button
                 className="projectButton border-0"
                 onClick={onOpenModalP1}
               >
-                <Card className="bg-black ">
+                <Card className="bg-black projectCard">
                   <Card.Img
                     src={require("./../../assets/images/portfolio/Snowflake/snowflake1.png")}
                   />
@@ -243,12 +250,12 @@ const Portfolio = ({
               </button>
             </div>
 
-            <div className="reveal-from-bottom projectCard">
+            <div className="reveal-from-bottom projectGrid">
               <button
                 className="projectButton border-0"
                 onClick={onOpenModalP2}
               >
-                <Card className="bg-black ">
+                <Card className="bg-black projectCard ">
                   <Card.Img
                     src={require("./../../assets/images/portfolio/braking/wheelBuild.jpg")}
                   />
@@ -261,12 +268,12 @@ const Portfolio = ({
               </button>
             </div>
 
-            <div className="reveal-from-left projectCard">
+            <div className="reveal-from-left projectGrid">
               <button
                 className="projectButton border-0"
                 onClick={onOpenModalP3}
               >
-                <Card className="bg-black ">
+                <Card className="bg-black projectCard">
                   <Card.Img
                     src={require("./../../assets/images/portfolio/nfc/feature_nfc_cropped.jpg")}
                   />
@@ -278,6 +285,22 @@ const Portfolio = ({
                 </Card>
               </button>
             </div>
+
+            <Modal
+              open={openCS1}
+              onClose={onCloseModal}
+              center
+              closeIcon={closeIcon}
+              classNames={{
+                modal: "projectModal",
+                overlay: "projectOverlay",
+                // modalAnimationIn: "customEnterModalAnimation",
+                // modalAnimationOut: "customLeaveModalAnimation",
+              }}
+              animationDuration={800}
+            >
+              <CaseStudyFlux />
+            </Modal>
 
             <Modal
               open={openP1}

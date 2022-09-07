@@ -146,3 +146,18 @@
 			
 	}
 }
+
+.projectTitle{
+	font-weight: bold;
+	font-size: 1rem;
+	margin-top: 40%;
+		@include media('>large') {
+			font-size: 1.4rem;
+		}
+		@include media('<=large') {
+			font-size: .7rem;
+		}
+				@include media('<=medium') {
+					font-size: 2rem;
+				}
+}

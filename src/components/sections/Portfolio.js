@@ -226,57 +226,57 @@ const Portfolio = ({
           />
           <div className={tilesClasses}>
             <div className="reveal-from-right projectCard">
-            <Card className="bg-black ">
-                <button
-                  className="projectButton border-0"
-                  onClick={onOpenModalP1}
-                >
+              <button
+                className="projectButton border-0"
+                onClick={onOpenModalP1}
+              >
+                <Card className="bg-black ">
                   <Card.Img
-                    variant="top"
                     src={require("./../../assets/images/portfolio/Snowflake/snowflake1.png")}
                   />
-
-                  <Card.Body>
-                    <Card.Title>Frost</Card.Title>
-                  </Card.Body>
-                </button>
-              </Card>
+                  <Card.ImgOverlay className=" d-flex flex-column">
+                    <Card.Body>
+                      <Card.Title className="projectTitle">Frost</Card.Title>
+                    </Card.Body>
+                  </Card.ImgOverlay>
+                </Card>
+              </button>
             </div>
 
             <div className="reveal-from-bottom projectCard">
-              <Card className="bg-black ">
-                <button
-                  className="projectButton border-0"
-                  onClick={onOpenModalP2}
-                >
+              <button
+                className="projectButton border-0"
+                onClick={onOpenModalP2}
+              >
+                <Card className="bg-black ">
                   <Card.Img
-                    variant="top"
                     src={require("./../../assets/images/portfolio/braking/wheelBuild.jpg")}
                   />
-
-                  <Card.Body>
-                    <Card.Title>Braking</Card.Title>
-                  </Card.Body>
-                </button>
-              </Card>
+                  <Card.ImgOverlay>
+                    <Card.Body>
+                      <Card.Title className="projectTitle">Braking</Card.Title>
+                    </Card.Body>
+                  </Card.ImgOverlay>
+                </Card>
+              </button>
             </div>
 
             <div className="reveal-from-left projectCard">
-              <Card className="bg-black ">
-                <button
-                  className="projectButton border-0"
-                  onClick={onOpenModalP3}
-                >
+              <button
+                className="projectButton border-0"
+                onClick={onOpenModalP3}
+              >
+                <Card className="bg-black ">
                   <Card.Img
-                    variant="top"
                     src={require("./../../assets/images/portfolio/nfc/feature_nfc_cropped.jpg")}
                   />
-
-                  <Card.Body>
-                    <Card.Title>Scanners</Card.Title>
-                  </Card.Body>
-                </button>
-              </Card>
+                  <Card.ImgOverlay>
+                    <Card.Body>
+                      <Card.Title className="projectTitle">Scanners</Card.Title>
+                    </Card.Body>
+                  </Card.ImgOverlay>
+                </Card>
+              </button>
             </div>
 
             <Modal

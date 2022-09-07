@@ -6,7 +6,7 @@ import { createBrowserHistory } from "history";
 import App from "./App";
 
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./assets/scss/style.scss";
 
 import { render, hydrate } from "react-dom";

@@ -115,6 +115,7 @@ const Header = ({
                     <li>
                       <Link
                         to="work"
+                        spy={true}
                         smooth={true}
                         duration={500}
                         onClick={closeMenu}
@@ -126,6 +127,7 @@ const Header = ({
                     <li>
                       <Link
                         to="process"
+                        spy={true}
                         smooth={true}
                         duration={500}
                         onClick={closeMenu}
@@ -139,6 +141,7 @@ const Header = ({
                       <li>
                         <Link
                           to="contact"
+                          spy={true}
                           smooth={true}
                           duration={500}
                           className="button button-primary button-wide-mobile button-sm"

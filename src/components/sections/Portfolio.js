@@ -7,6 +7,7 @@ import Card from "react-bootstrap/Card";
 import Button from "../elements/Button";
 import flux from "./../../assets/images/fluxCover.png";
 import wheel from "../../assets/images/brakingCover.png";
+import grapple from "../../assets/images/grappleCover.png"
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 //import PortfolioMore from '../layout/partials/PortfolioMore';
@@ -244,25 +245,7 @@ const Portfolio = ({
             </div>
 
             <div className="reveal-from-bottom projectCard">
-              <Card className="bg-black ">
-                <button
-                  className="projectButton border-0"
-                  onClick={onOpenModalP2}
-                >
-                  <Card.Img
-                    variant="top"
-                    src={require("./../../assets/images/portfolio/braking/wheelBuild.jpg")}
-                  />
-
-                  <Card.Body>
-                    <Card.Title>Braking</Card.Title>
-                  </Card.Body>
-                </button>
-              </Card>
-            </div>
-
-            <div className="reveal-from-left projectCard">
-              <Card className="bg-black ">
+             <Card className="bg-black ">
                 <button
                   className="projectButton border-0"
                   onClick={onOpenModalP3}
@@ -274,6 +257,24 @@ const Portfolio = ({
 
                   <Card.Body>
                     <Card.Title>Scanners</Card.Title>
+                  </Card.Body>
+                </button>
+              </Card>
+            </div>
+
+            <div className="reveal-from-left projectCard">
+              <Card className="bg-black ">
+                <button
+                  className="projectButton border-0"
+                  onClick={onOpenModalP2}
+                >
+                  <Card.Img
+                    variant="top"
+                    src={require("./../../assets/images/portfolio/grapple/IMG_4422_cropped.png")}
+                  />
+
+                  <Card.Body>
+                    <Card.Title>Grapple</Card.Title>
                   </Card.Body>
                 </button>
               </Card>

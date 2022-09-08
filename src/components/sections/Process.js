@@ -51,7 +51,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: "The Process",
-    // paragraph: "We make interactive exhibits.",
+    // paragraph: "We",
   };
 
   return (

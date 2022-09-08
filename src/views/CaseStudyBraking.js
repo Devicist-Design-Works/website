@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 // import sections
-import Intro from '../components/sections/CaseStudy/Intro';
+import Intro from "../components/sections/CaseStudy/Intro";
 import FirstContact from "../components/sections/CaseStudy/FirstContact";
 import Design from "../components/sections/CaseStudy/Design";
 import Build from "../components/sections/CaseStudy/Build";
@@ -8,7 +8,8 @@ import Deploy from "../components/sections/CaseStudy/Deploy";
 
 const IntroContent = {
   title: "Regenerative Braking Demo",
-  description: "In order to profile KIA's regenerative braking technology, we developed a working demo of the system. Users pressed an accelerator pedal to drive a full size car wheel mounted in the kiosk. Pressing the brake both stopped the wheel and recharged the battery represented on the vivrtual dashboard.",
+  description:
+    "In order to profile KIA's regenerative braking technology, we developed a working demo of the system. Users pressed an accelerator pedal to drive a full size car wheel mounted in the kiosk. Pressing the brake both stopped the wheel and recharged the battery represented on the vivrtual dashboard.",
   imgSrc: require("./../assets/images/wheelOutlineBG.png"),
   youtubeUrl: "o-eduqKUgx8",
 };
@@ -16,8 +17,8 @@ const IntroContent = {
 const FirstContactContent = {
   subject: "Project Proposal",
   greeting: "Hi Nick",
-  body: "It keeps coming...KIA is looking to create an experience to demonstrate regenerative braking. Idea is that a wheel spins and you press a brake pedal which stops it and watch as a battery display lights up, showing you're braking. Timeline: 6 weeks."
-}
+  body: "It keeps coming...KIA is looking to create an experience to demonstrate regenerative braking. Idea is that a wheel spins and you press a brake pedal which stops it and watch as a battery display lights up, showing you're braking. Timeline: 6 weeks.",
+};
 
 const DesignContent = {
   body: "Our initial research ...",
@@ -64,13 +65,31 @@ const BuildContent = {
 
 const DeployContent = {
   body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eratvolutpat.",
-  youtubeUrl: "o-eduqKUgx8",
+  images: [
+    {
+      src: require("./../assets/images/portfolio/flux/deployImage1.jpg"),
+      width: 2,
+      height: 1,
+    },
+    {
+      src: require("./../assets/images/portfolio/flux/deployImage2.jpg"),
+      width: 1,
+      height: 1,
+    },
+    {
+      src: require("./../assets/images/portfolio/flux/deployImage3.jpg"),
+      width: 1,
+      height: 1,
+    },
+    {
+      src: require("./../assets/images/portfolio/flux/deployImage4.jpg"),
+      width: 3,
+      height: 1,
+    },
+  ],
 };
 
-
-
 const CaseStudyBraking = () => {
-
   return (
     <>
       <Intro {...IntroContent} />
@@ -80,6 +99,6 @@ const CaseStudyBraking = () => {
       <Deploy {...DeployContent} />
     </>
   );
-}
+};
 
 export default CaseStudyBraking;

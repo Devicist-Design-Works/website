@@ -108,10 +108,14 @@
 }
 
 .projectCard{
+	border: none !important;
+	background-color: transparent !important;
+}
+.projectGrid{
 	display: inline-block;
 	width: 25%;
 	margin-top: 30px;
-	border: none;
+	
 	@include media('<medium') {
 		width: 70%;
 	}
@@ -119,12 +123,24 @@
 
 .projectButton{
 	background-color: transparent;
+	
 	cursor: pointer;
 }
+
+.caseStudyCard{
+	border: none !important;
+	background-color: black;
+}
+
+.caseStudyBody{
+
+}
+
 
 .caseStudyTitle{
 	font-weight: bold;
 	font-size: 48px;
+	
 	@include media('<medium') {
 			font-size: 36px;
 			
@@ -141,8 +157,24 @@
 }
 
 .caseStudyButton{
+	margin-bottom: 0px !important;
 	@include media('<medium') {
 			display: none;
 			
 	}
+}
+
+.projectTitle{
+	font-weight: bold;
+	font-size: 1rem;
+	margin-top: 40%;
+		@include media('>large') {
+			font-size: 1.4rem;
+		}
+		@include media('<=large') {
+			font-size: .7rem;
+		}
+				@include media('<=medium') {
+					font-size: 1rem;
+				}
 }

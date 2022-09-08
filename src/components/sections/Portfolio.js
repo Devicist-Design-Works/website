@@ -176,8 +176,12 @@ const Portfolio = ({
 
           <Link to="/CaseStudyFlux">
             <div className="reveal-from-bottom">
-              <Card className="caseStudyCard" style={{ width: "100%" }}>
-                <Card.Img src={flux} alt="Flux Cover Image" />
+              <Card className="caseStudyCard">
+                <Card.Img
+                  className="caseStudyImg"
+                  src={flux}
+                  alt="Flux Cover Image"
+                />
                 <Card.ImgOverlay className=" d-flex flex-column">
                   <Card.Title className="mt-auto caseStudyTitle">
                     Flux
@@ -204,7 +208,11 @@ const Portfolio = ({
           <Link to="/CaseStudyBraking">
             <div className="reveal-from-bottom mt-32">
               <Card className="caseStudyCard" style={{ width: "100%" }}>
-                <Card.Img src={wheel} alt="Flux Cover Image" />
+                <Card.Img
+                  src={wheel}
+                  alt="Braking Cover Image"
+                  className="caseStudyImg"
+                />
                 <Card.ImgOverlay className=" d-flex flex-column">
                   <Card.Title className="mt-auto caseStudyTitle">
                     Braking Demo

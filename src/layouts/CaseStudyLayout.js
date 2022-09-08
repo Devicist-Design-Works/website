@@ -1,15 +1,11 @@
-import React from 'react';
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
+import React from "react";
+import FooterCS from "./../components/sections/CaseStudy/FooterCS";
 
-const HomeLayout = ({ children }) => (
+const CaseStudyLayout = ({ children }) => (
   <>
-
-    <main className="site-content">
-      {children}
-    </main>
-    <Footer />
+    <main className="site-content">{children}</main>
+    <FooterCS />
   </>
 );
 
-export default HomeLayout;  
+export default CaseStudyLayout;

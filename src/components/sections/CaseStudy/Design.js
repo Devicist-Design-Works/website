@@ -1,12 +1,9 @@
-import React, {useState, useCallback}from "react";
+import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import designIcon from "../../../assets/images/DesignIcon-white.svg"
-
-
+import designIcon from "../../../assets/images/DesignIcon-white.svg";
 
 const Design = (DesignContent) => {
-
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 

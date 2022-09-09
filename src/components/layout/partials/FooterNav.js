@@ -1,17 +1,9 @@
-import React from 'react';
-import classNames from 'classnames';
+import React from "react";
+import classNames from "classnames";
 import { Link } from "react-scroll";
 
-
-const FooterNav = ({
-  className,
-  ...props
-}) => {
-
-  const classes = classNames(
-    'footer-nav',
-    className
-  );
+const FooterNav = ({ className, ...props }) => {
+  const classes = classNames("footer-nav", className);
 
   return (
     <nav {...props} className={classes}>
@@ -34,6 +26,6 @@ const FooterNav = ({
       </ul>
     </nav>
   );
-}
+};
 
 export default FooterNav;

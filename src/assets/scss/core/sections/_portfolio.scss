@@ -130,10 +130,21 @@
 .caseStudyCard{
 	border: none !important;
 	background-color: black;
+	width: 100%;
+	
+	@include media('<medium') {
+			height: 400px;
+		}
 }
 
-.caseStudyBody{
-
+.caseStudyImg{
+	object-fit: cover;
+	width: 100%;
+	@include media('<medium') {
+			height: 100%;
+			
+			
+		}
 }
 
 
@@ -143,23 +154,19 @@
 	
 	@include media('<medium') {
 			font-size: 36px;
-			
-			
 		}
 }
 .caseStudyText{
 	@include media('<medium') {
 			font-size: 12px;
 			margin-bottom: 0;
-		
-			
 		}
 }
 
 .caseStudyButton{
 	margin-bottom: 0px !important;
 	@include media('<medium') {
-			display: none;
+			margin-top: 16px;
 			
 	}
 }

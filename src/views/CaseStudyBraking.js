@@ -9,7 +9,7 @@ import Deploy from "../components/sections/CaseStudy/Deploy";
 const IntroContent = {
   title: "Regenerative Braking Demo",
   description:
-    "To promote KIA's regenerative braking technology, we developed an interactive demo. Pressing an accelerator pedal drives a full size car wheel mounted in the kiosk. The brake both stops the wheel and recharges the virtual battery displayed on the dashboard. LED light accents reinforce the user interactions.",
+    "To promote KIA's regenerative braking technology, we developed an interactive demo. Pressing an accelerator pedal drives a full size car wheel mounted in a kiosk. The brake both stops the wheel and recharges the virtual battery displayed on the dashboard. LED light accents reinforce the user interactions.",
   imgSrc: require("./../assets/images/wheelOutlineBG.png"),
   youtubeUrl: "o-eduqKUgx8",
 };
@@ -35,7 +35,7 @@ const DesignContent = {
       height: 1,
     },
     {
-      src: require("./../assets/images/portfolio/braking/braking3.png"),
+      src: require("./../assets/images/portfolio/braking/model.png"),
       width: 1,
       height: 1,
     },

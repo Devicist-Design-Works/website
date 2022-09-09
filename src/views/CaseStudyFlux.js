@@ -9,7 +9,7 @@ import Deploy from "../components/sections/CaseStudy/Deploy";
 const IntroContent = {
   title: "Flux",
   description:
-    "A large kinetic installation for Shopify's Offices in Toronto. 40 metalic prisms are rotated in coordinated patterns to create waves of refracted light.",
+    "We designed and built a 50 foot kinetic installation for Shopify's Offices in Toronto. 40 metalic prisms are rotated in coordinated patterns to create rolling waves of refracted light.",
   imgSrc: require("./../assets/images/fluxOutline.png"),
   youtubeUrl: "u4LGvZfYVF0",
 };
@@ -51,6 +51,16 @@ const BuildContent = {
       width: 1,
       height: 1,
     },
+    {
+      src: require("./../assets/images/portfolio/flux/many_in_progress.jpg"),
+      width: 1,
+      height: 1,
+    },
+    {
+      src: require("./../assets/images/portfolio/flux/prism_prototype.jpg"),
+      width: 1,
+      height: 1,
+    },    
     {
       src: require("./../assets/images/portfolio/flux/8.jpg"),
       width: 1,

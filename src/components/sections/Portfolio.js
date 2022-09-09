@@ -44,7 +44,7 @@ const Portfolio = ({
 
   const Project1ModalContent = {
     title: "Frost",
-    body: "We developed interactive LED lighting for F-Minus studio's 30 foot sculpture. A large illuminated snowflake occupies the atrium of Brookfield Place in Toronto. Viewer's touch causes the colors to shift",
+    body: "We developed interactive LED lighting for studio F-Minus' 30 foot holiday sculpture. A large illuminated snowflake occupies the atrium of Brookfield Place in Toronto. Touching the surface causes the colors to shift",
     youtubeUrl: "mMHe-GRaYqA",
     images: [
       {
@@ -53,17 +53,17 @@ const Portfolio = ({
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/Snowflake/snowflake2.png"),
+        src: require("./../../assets/images/portfolio/Snowflake/circuit.jpg"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/Snowflake/snowflake3.png"),
+        src: require("./../../assets/images/portfolio/Snowflake/inShop.jpg"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/Snowflake/snowflake4.png"),
+        src: require("./../../assets/images/portfolio/Snowflake/handsOn.jpg"),
         width: 1,
         height: 1,
       },
@@ -109,12 +109,12 @@ const Portfolio = ({
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/nfc/booth_cropped.jpg"),
+        src: require("./../../assets/images/portfolio/nfc/register_cropped.jpg"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/nfc/register_cropped.jpg"),
+        src: require("./../../assets/images/portfolio/nfc/booth_cropped.jpg"),
         width: 1,
         height: 1,
       },

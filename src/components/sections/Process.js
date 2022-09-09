@@ -2,8 +2,11 @@ import React from "react";
 import classNames from "classnames";
 import { SectionSplitProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
-import Image from "../elements/Image";
-import YoutubeEmbed from "../elements/YoutubeEmbed";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 const propTypes = {
   ...SectionSplitProps.types,
@@ -42,23 +45,201 @@ const FeaturesSplit = ({
     bottomDivider && "has-bottom-divider"
   );
 
-  const splitClasses = classNames(
-    "split-wrap",
-    invertMobile && "invert-mobile",
-    invertDesktop && "invert-desktop",
-    alignTop && "align-top"
-  );
-
   const sectionHeader = {
     title: "The Process",
     // paragraph: "We",
   };
 
   return (
-    <section {...props} className={outerClasses} id="process">
+    <section className={outerClasses} id="process">
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
+
+          <VerticalTimeline lineColor="#adb5bd8f">
+            <VerticalTimelineElement
+              className="timeline-element"
+              contentStyle={{
+                background: "none",
+                color: "#fff",
+                borderRadius: "0px",
+                boxShadow: "none",
+              }}
+              contentArrowStyle={{
+                borderRight: "none",
+                background: "none",
+              }}
+              iconStyle={{
+                background: "#000",
+                color: "#fff",
+                boxShadow: "none",
+                height: " 90px",
+                top: "60px",
+              }}
+              icon={
+                <img
+                  src={require("./../../assets/images/FoundationIcon-white.svg")}
+                  alt="design icon"
+                  width="60px"
+                  className="mt-12 processIcon"
+                />
+              }
+            >
+              <h3 className="vertical-timeline-element-title">Foundation</h3>
+              <p>
+                With over 20 years' experience combining art, UX, and
+                engineering, we use our skills to take big ideas and make them
+                tangible, while mitigating risks.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="timeline-element"
+              contentStyle={{
+                background: "none",
+                color: "#fff",
+                borderRadius: "0px",
+                boxShadow: "none",
+              }}
+              contentArrowStyle={{
+                borderRight: "none",
+                background: "none",
+              }}
+              iconStyle={{
+                background: "#000",
+                color: "#fff",
+                boxShadow: "none",
+                height: " 90px",
+                top: "60px",
+              }}
+              icon={
+                <img
+                  src={require("./../../assets/images/DesignIcon-white.svg")}
+                  alt="design icon"
+                  width="60px"
+                  className="mt-12 processIcon"
+                />
+              }
+            >
+              <h3 className="vertical-timeline-element-title">Design</h3>
+              <p>
+                We work closely with clients to clarify objectives, and iterate
+                through research, ideation, sourcing, modeling and detailing
+                until we arrive at the optimal design.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="timeline-element"
+              contentStyle={{
+                background: "none",
+                color: "#fff",
+                borderRadius: "0px",
+                boxShadow: "none",
+              }}
+              contentArrowStyle={{
+                borderRight: "none",
+                background: "none",
+              }}
+              iconStyle={{
+                background: "#000",
+                color: "#fff",
+                boxShadow: "none",
+                height: " 90px",
+                top: "60px",
+              }}
+              icon={
+                <img
+                  src={require("./../../assets/images/BuildIcon-white.svg")}
+                  alt="design icon"
+                  width="60px"
+                  className="mt-12 processIcon"
+                />
+              }
+            >
+              <h3 className="vertical-timeline-element-title">Build</h3>
+              <p>
+                We develop code, build electronics, fabricate objects, and
+                integrate components into the final pieces. Along the way, we
+                develop hands-on prototypes, simulations and tools that help
+                stakeholders sort out details.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="timeline-element"
+              contentStyle={{
+                background: "none",
+                color: "#fff",
+                borderRadius: "0px",
+                boxShadow: "none",
+              }}
+              contentArrowStyle={{
+                borderRight: "none",
+                background: "none",
+              }}
+              iconStyle={{
+                background: "#000",
+                color: "#fff",
+                boxShadow: "none",
+                height: " 90px",
+                top: "60px",
+              }}
+              icon={
+                <img
+                  src={require("./../../assets/images/DeployIcon-white.svg")}
+                  alt="design icon"
+                  width="60px"
+                  className="mt-12 processIcon"
+                />
+              }
+            >
+              <h3 className="vertical-timeline-element-title">Deploy</h3>
+              <p>
+                Show time! This is the moment when the project goes live, and
+                public engagement begins. We are there to deliver and install
+                the project and ensure it is fully functional. We also study the
+                results to measure success.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="timeline-element"
+              contentStyle={{
+                background: "none",
+                color: "#fff",
+                borderRadius: "0px",
+                boxShadow: "none",
+              }}
+              contentArrowStyle={{
+                borderRight: "none",
+                background: "none",
+              }}
+              iconStyle={{
+                background: "#000",
+                color: "#fff",
+                boxShadow: "none",
+                height: " 90px",
+                top: "60px",
+              }}
+              icon={
+                <img
+                  src={require("./../../assets/images/SupportIcon-white.svg")}
+                  alt="design icon"
+                  width="60px"
+                  className="mt-12 processIcon"
+                />
+              }
+            >
+              <h3 className="vertical-timeline-element-title">Support</h3>
+              <p>
+                Obsessed with reliability, we engineer simple, robust and
+                modular solutions. We maintain the project over it's lifetime
+                through in-person and remote support, and can push updates to
+                keep the content fresh.
+              </p>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
+
+          {/*
+          
+          
           <div className={splitClasses}>
             <div className="split-item">
               <div
@@ -79,15 +260,6 @@ const FeaturesSplit = ({
                   engineering, we use our skills to take big ideas and make them
                   tangible, while mitigating risks.
                 </p>
-              </div>
-              <div
-                className={classNames(
-                  "split-item-image center-content-mobile reveal-from-bottom",
-                  imageFill && "split-item-image-fill"
-                )}
-                data-reveal-container=".split-item"
-              >
-                {/* <Image alt="Features split 02" width={528} height={396} /> */}
               </div>
             </div>
 
@@ -110,15 +282,6 @@ const FeaturesSplit = ({
                   iterate through research, ideation, sourcing, modeling and
                   detailing until we arrive at the optimal design.
                 </p>
-              </div>
-              <div
-                className={classNames(
-                  "split-item-image center-content-mobile reveal-from-bottom",
-                  imageFill && "split-item-image-fill"
-                )}
-                data-reveal-container=".split-item"
-              >
-                {/* <Image alt="Features split 01" width={528} height={396} /> */}
               </div>
             </div>
 
@@ -150,7 +313,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                {/* <Image alt="Features split 02" width={528} height={396} /> */}
+
               </div>
             </div>
 
@@ -213,10 +376,12 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                {/* <Image alt="Features split 02" width={528} height={396} /> */}
+
               </div>
             </div>
           </div>
+
+                */}
         </div>
       </div>
     </section>

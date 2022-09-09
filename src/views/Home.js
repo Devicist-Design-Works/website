@@ -10,7 +10,9 @@ const Home = () => {
     <>
       <Hero />
       <Portfolio topDivider />
+
       <Process invertMobile topDivider />
+
       <Cta />
     </>
   );

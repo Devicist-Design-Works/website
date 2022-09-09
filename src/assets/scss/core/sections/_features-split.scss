@@ -24,3 +24,14 @@
 		}
 	}
 }
+
+@include media('<large') {
+	.processIcon {
+		margin-top: 22px !important;
+	}
+}
+
+.timeline-element{
+	margin-top: 0;
+	margin-bottom: 0;
+}

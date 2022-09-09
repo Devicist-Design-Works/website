@@ -34,11 +34,11 @@ const Intro = (IntroContent) => {
               {IntroContent.title}
             </h1>
             <div className="container-s">
-              <p className="m-0 mb-32 ta-l reveal-from-bottom">
+              <p className="m-0 ta-l reveal-from-bottom">
                 {IntroContent.description}
               </p>
 
-              <div className="reveal-from-bottom" data-reveal-delay="600">
+              <div className="reveal-from-bottom mt-32" data-reveal-delay="600">
                 <YoutubeEmbed embedId={IntroContent.youtubeUrl} />
               </div>
             </div>

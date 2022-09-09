@@ -11,7 +11,6 @@ import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 //import PortfolioMore from '../layout/partials/PortfolioMore';
 import ProjectModal from "./ProjectModal";
-import CaseStudyFlux from "../../views/CaseStudyFlux";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -137,20 +136,14 @@ const Portfolio = ({
     // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
-  const [openCS1, setOpenCS1] = useState(false);
-  const [openCS2, setOpenCS2] = useState(false);
   const [openP1, setOpenP1] = useState(false);
   const [openP2, setOpenP2] = useState(false);
   const [openP3, setOpenP3] = useState(false);
 
-  const onOpenModalCS1 = () => setOpenCS1(true);
-  const onOpenModalCS2 = () => setOpenCS2(true);
   const onOpenModalP1 = () => setOpenP1(true);
   const onOpenModalP2 = () => setOpenP2(true);
   const onOpenModalP3 = () => setOpenP3(true);
   const onCloseModal = () => {
-    setOpenCS1(false);
-    setOpenCS1(false);
     setOpenP1(false);
     setOpenP2(false);
     setOpenP3(false);
@@ -172,7 +165,10 @@ const Portfolio = ({
       <div className={innerClasses}>
         <div className="container">
           {/*this is a seperate .js file found in sections > partials*/}
-          <SectionHeader data={sectionHeader} className="center-content" />
+          <SectionHeader
+            data={sectionHeader}
+            className="center-content mt-64"
+          />
 
           <Link to="/CaseStudyFlux">
             <div className="reveal-from-bottom">
@@ -237,7 +233,7 @@ const Portfolio = ({
 
           <SectionHeader
             data={subHeader}
-            className="center-content pb-0 mt-32"
+            className="center-content pb-0 mt-64"
           />
           <div className={tilesClasses}>
             <div className="reveal-from-right projectGrid">
@@ -293,22 +289,6 @@ const Portfolio = ({
                 </Card>
               </button>
             </div>
-
-            <Modal
-              open={openCS1}
-              onClose={onCloseModal}
-              center
-              closeIcon={closeIcon}
-              classNames={{
-                modal: "projectModal",
-                overlay: "projectOverlay",
-                // modalAnimationIn: "customEnterModalAnimation",
-                // modalAnimationOut: "customLeaveModalAnimation",
-              }}
-              animationDuration={800}
-            >
-              <CaseStudyFlux />
-            </Modal>
 
             <Modal
               open={openP1}

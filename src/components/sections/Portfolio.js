@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "../elements/Button";
 import flux from "./../../assets/images/fluxCover.png";
-import wheel from "../../assets/images/brakingCover.png";
+import wheel from "../../assets/images/portfolio/braking/brakingCsCover.png";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 //import PortfolioMore from '../layout/partials/PortfolioMore';
@@ -243,7 +243,7 @@ const Portfolio = ({
               >
                 <Card className="bg-black projectCard">
                   <Card.Img
-                    src={require("./../../assets/images/portfolio/Snowflake/snowflake1.png")}
+                    src={require("./../../assets/images/portfolio/Snowflake/snowflakeCover.png")}
                   />
                   <Card.ImgOverlay className=" d-flex flex-column">
                     <Card.Body>
@@ -261,7 +261,7 @@ const Portfolio = ({
               >
                 <Card className="bg-black projectCard ">
                   <Card.Img
-                    src={require("./../../assets/images/portfolio/braking/wheelBuild.jpg")}
+                    src={require("./../../assets/images/portfolio/braking/brakingCover.png")}
                   />
                   <Card.ImgOverlay>
                     <Card.Body>
@@ -279,7 +279,7 @@ const Portfolio = ({
               >
                 <Card className="bg-black projectCard">
                   <Card.Img
-                    src={require("./../../assets/images/portfolio/nfc/feature_nfc_cropped.jpg")}
+                    src={require("./../../assets/images/portfolio/nfc/nfcCover.png")}
                   />
                   <Card.ImgOverlay>
                     <Card.Body>

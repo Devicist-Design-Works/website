@@ -183,9 +183,10 @@ const Portfolio = ({
                     Flux
                   </Card.Title>
                   <Card.Text className="caseStudyText">
-                    A large kinetic installation for Shopify. 40 metalic prisms
+                    A large-scale kinetic installation for Shopify. 
+                    {/* 40 metalic prisms
                     are rotated in coordinated patterns to create waves of
-                    refracted light.
+                    refracted light. */}
                   </Card.Text>
                   <Link to="/CaseStudyFlux">
                     <Button
@@ -211,11 +212,10 @@ const Portfolio = ({
                 />
                 <Card.ImgOverlay className=" d-flex flex-column">
                   <Card.Title className="mt-auto caseStudyTitle">
-                    Braking Demo
+                    Spin
                   </Card.Title>
                   <Card.Text className="caseStudyText">
-                    Created for KIA, car pedals control the wheel while
-                    battery-level is displayed on a simulated dashboard.
+                    An interactive regenerative braking demo For KIA.
                   </Card.Text>
                   <Link to="/CaseStudyBraking">
                     <Button

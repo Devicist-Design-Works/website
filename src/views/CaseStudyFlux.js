@@ -16,12 +16,12 @@ const IntroContent = {
 
 const FirstContactContent = {
   subject: "New Project",
-  greeting: "Hi Nick",
+  greeting: "Hey there,",
   body: "Long time no chat! There's an an opp we have coming down the line that I think would be in your wheelhouse...As you walk down the main path, an overhead canopy creates waves and casts light, providing surprise and delight.",
 };
 
 const DesignContent = {
-  body: "We created a set of mood boards drawing inspiration from other kinetic artworks and local lakes. We proposed a design that fit the parameters of the space, and fleshed it out into a detailed 3D model, and ultimately an animated simulation.",
+  body: "Drawing inspiration from other kinetic artworks and local lakes, we proposed a design that fit the parameters of the space, and fleshed it out into a detailed 3D model, and ultimately an animated simulation.",
   bgImage: require("./../assets/images/portfolio/flux/prismGraphic.png"),
   images: [
     {
@@ -43,7 +43,7 @@ const DesignContent = {
 };
 
 const BuildContent = {
-  body: "A prototype of the rotating module was engineered, and distributed to the fabricator for testing and integration. We provided a report to the ESA for certification. We sourced and acquired parts and assembled the pieces into fully functional units, then we tested full rig remotely for weeks before deployment.",
+  body: "A prototype of the rotating module was engineered, and distributed to the fabricator. A report was provided to the ESA for certification. Parts were sourced and assembled them into fully functional units. Then we tested full rig remotely for weeks before deployment.",
 
   images: [
     {
@@ -75,7 +75,7 @@ const BuildContent = {
 };
 
 const DeployContent = {
-  body: "The complete work refracts the ambient light of the room and to create shifting patterns that approximate the surface waves of a lake. Like a body of water it creates a calming atmosphere. It can draw in and transfix viewers, or it can melt into the background rather than demanding attention.",
+  body: "The complete work refracts ambient light in rolling patterns emulating the gentle waves of a lake. Like a lake, the installation can draw in and transfix viewers, or melt into the background rather than demanding attention.",
   images: [
     {
       src: require("./../assets/images/portfolio/flux/deployImage1.jpg"),

@@ -87,9 +87,9 @@ const FeaturesSplit = ({
             >
               <h3 className="vertical-timeline-element-title">Foundation</h3>
               <p>
-                With over 20 years' experience combining art, UX, and
-                engineering, we use our skills to take big ideas and make them
-                tangible, while mitigating risks.
+                20+ years building interactive exhibits.
+                We take big ideas and make them tangible, 
+                while mitigating risks.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -122,9 +122,8 @@ const FeaturesSplit = ({
             >
               <h3 className="vertical-timeline-element-title">Design</h3>
               <p>
-                We work closely with clients to clarify objectives, and iterate
-                through research, ideation, sourcing, modeling and detailing
-                until we arrive at the optimal design.
+                We research, ideate, source, model and detail
+                until the optimal design is reached.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -157,10 +156,9 @@ const FeaturesSplit = ({
             >
               <h3 className="vertical-timeline-element-title">Build</h3>
               <p>
-                We develop code, build electronics, fabricate objects, and
-                integrate components into the final pieces. Along the way, we
-                develop hands-on prototypes, simulations and tools that help
-                stakeholders sort out details.
+                We develop code, electronics, and mechanisms.
+                We fabricate and integrate components to completion. 
+                We build prototypes, simulations and tools for stakeholders.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -193,10 +191,9 @@ const FeaturesSplit = ({
             >
               <h3 className="vertical-timeline-element-title">Deploy</h3>
               <p>
-                Show time! This is the moment when the project goes live, and
-                public engagement begins. We are there to deliver and install
-                the project and ensure it is fully functional. We also study the
-                results to measure success.
+                Show time! We deliver and install the project
+                ensuring it surpasses expectations. Throughout the event, 
+                we can collect user metrics to measure results.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement

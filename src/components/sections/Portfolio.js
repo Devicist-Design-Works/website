@@ -80,15 +80,25 @@ const Portfolio = ({
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/braking/braking3.png"),
+        src: require("./../../assets/images/portfolio/braking/wheel_sim.gif"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/braking/wheelBuild2cropped.jpg"),
+        src: require("./../../assets/images/portfolio/braking/model.png"),
         width: 1,
         height: 1,
       },
+      {
+        src: require("./../../assets/images/portfolio/braking/wheelBuildCropped.jpg"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/portfolio/braking/kiosk_unfinished.jpg"),
+        width: 1,
+        height: 1,
+      }, 
       {
         src: require("./../../assets/images/portfolio/braking/wheelBuild.jpg"),
         width: 1,
@@ -127,7 +137,7 @@ const Portfolio = ({
 
   //edit section header content here
   const sectionHeader = {
-    title: "Case Studies",
+    title: "Case Study",
     // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
@@ -170,7 +180,7 @@ const Portfolio = ({
             className="center-content mt-64"
           />
 
-          <Link to="/CaseStudyFlux">
+          <Link to="/flux">
             <div className="reveal-from-bottom">
               <Card className="caseStudyCard">
                 <Card.Img
@@ -188,7 +198,7 @@ const Portfolio = ({
                     are rotated in coordinated patterns to create waves of
                     refracted light. */}
                   </Card.Text>
-                  <Link to="/CaseStudyFlux">
+                  <Link to="/flux">
                     <Button
                       className="caseStudyButton"
                       variant="primary"
@@ -202,7 +212,7 @@ const Portfolio = ({
             </div>
           </Link>
 
-          <Link to="/CaseStudyBraking">
+          {/* <Link to="/regen">
             <div className="reveal-from-bottom mt-32">
               <Card className="caseStudyCard" style={{ width: "100%" }}>
                 <Card.Img
@@ -217,7 +227,7 @@ const Portfolio = ({
                   <Card.Text className="caseStudyText">
                     An interactive regenerative braking demo For KIA.
                   </Card.Text>
-                  <Link to="/CaseStudyBraking">
+                  <Link to="/regen">
                     <Button
                       className="caseStudyButton"
                       variant="primary"
@@ -229,7 +239,7 @@ const Portfolio = ({
                 </Card.ImgOverlay>
               </Card>
             </div>
-          </Link>
+          </Link> */}
 
           <SectionHeader
             data={subHeader}

@@ -9,9 +9,9 @@ import Deploy from "../components/sections/CaseStudy/Deploy";
 const IntroContent = {
   title: "Regenerative Braking Demo",
   description:
-    "To promote KIA's regenerative braking technology, we developed an interactive demo. Pressing an accelerator pedal drives a car wheel. The brake both stops the wheel and recharges the virtual battery displayed on the dashboard. LED lighting reinforces the user interactions.",
+    "To promote KIA's regenerative braking technology, we developed an interactive demo. The accelerator pedal drives the car wheel. The brake both stops the wheel and recharges the virtual battery displayed on the dashboard.",
   imgSrc: require("./../assets/images/wheelOutlineBG.png"),
-  youtubeUrl: "o-eduqKUgx8",
+  youtubeUrl: "Dm9ksx5k4pc",
 };
 
 const FirstContactContent = {
@@ -21,16 +21,16 @@ const FirstContactContent = {
 };
 
 const DesignContent = {
-  body: "Our initial research ...",
+  body: "We researched a variety of approaches. Building from scratch was optimal. We developed a simulation to help the client decide on the top speed. We sourced components to handle the weight and forces, and created a detailed 3D model to distribute to stakeholders.",
   bgImage: require("./../assets/images/axleOutline.png"),
   images: [
     {
       src: require("./../assets/images/portfolio/braking/emailSketch.png"),
       width: 1,
       height: 1,
-    },
+    }, 
     {
-      src: require("./../assets/images/portfolio/braking/brakingSim.png"),
+      src: require("./../assets/images/portfolio/braking/wheel_sim.gif"),
       width: 1,
       height: 1,
     },
@@ -43,7 +43,7 @@ const DesignContent = {
 };
 
 const BuildContent = {
-  body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. ",
+  body: "Acquiring the parts, we fabricated the mechanisms. We coded and tested the interaction for hours on end. We delivered our work several weeks early to be integrated into the kiosk cabinet.",
   images: [
     {
       src: require("./../assets/images/portfolio/braking/gear_small.jpg"),
@@ -69,7 +69,7 @@ const BuildContent = {
 };
 
 const DeployContent = {
-  body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eratvolutpat.",
+  body: "The kiosk went on tour at Auto Shows across Canada in 2019, and held up to thousands of uses without downtime. Pleased, KIA redeployed the activation for a second year, and engaged us to add interactive lighting to the experience.",
   images: [
     {
       src: require("./../assets/images/portfolio/braking/kiosk.jpg"),

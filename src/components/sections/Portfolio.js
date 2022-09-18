@@ -5,8 +5,8 @@ import SectionHeader from "./partials/SectionHeader";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "../elements/Button";
-import flux from "./../../assets/images/fluxCover.png";
-import wheel from "../../assets/images/portfolio/braking/brakingCsCover.png";
+import flux from "./../../assets/images/portfolio/flux/flux_feature4.jpg";
+// import wheel from "../../assets/images/portfolio/braking/brakingCsCover.png";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 //import PortfolioMore from '../layout/partials/PortfolioMore';
@@ -44,7 +44,7 @@ const Portfolio = ({
   const Project1ModalContent = {
     title: "Frost",
     body: "We developed interactive LED lighting for studio F-Minus' 30 foot holiday sculpture. A large illuminated snowflake occupies the atrium of Brookfield Place in Toronto. Touching the surface causes the colors to shift",
-    youtubeUrl: "mMHe-GRaYqA",
+    videoUrl: "mMHe-GRaYqA",
     images: [
       {
         src: require("./../../assets/images/portfolio/Snowflake/snowflake1.png"),
@@ -72,7 +72,7 @@ const Portfolio = ({
   const Project2ModalContent = {
     title: "Regenerative Braking Demo",
     body: "To profile KIA's regenerative braking technology, we developed a working demo. Users press an accelerator pedal to drive a full size car wheel mounted in a kiosk. The brake both stops the wheel and recharges the battery represented on the virtual dashboard.",
-    youtubeUrl: "o-eduqKUgx8",
+    videoUrl: "o-eduqKUgx8",
     images: [
       {
         src: require("./../../assets/images/portfolio/braking/emailSketch.png"),
@@ -110,7 +110,7 @@ const Portfolio = ({
   const Project3ModalContent = {
     title: "NFC",
     body: "We built 30 networked NFC scanning stations for Intel at MWC. Visitors scan wristbands to collect coins that unlock prizes in a video game, a fun way to collect information about interests.",
-    youtubeUrl: "mMHe-GRaYqA",
+    videoUrl: "151659042",
     images: [
       {
         src: require("./../../assets/images/portfolio/nfc/feature_nfc_cropped.jpg"),
@@ -188,7 +188,7 @@ const Portfolio = ({
                   src={flux}
                   alt="Flux Cover Image"
                 />
-                <Card.ImgOverlay className=" d-flex flex-column">
+                <Card.ImgOverlay className="d-flex flex-column caseStudyImgGradient">
                   <Card.Title className="mt-auto caseStudyTitle">
                     Flux
                   </Card.Title>
@@ -212,35 +212,6 @@ const Portfolio = ({
             </div>
           </Link>
 
-          {/* <Link to="/regen">
-            <div className="reveal-from-bottom mt-32">
-              <Card className="caseStudyCard" style={{ width: "100%" }}>
-                <Card.Img
-                  src={wheel}
-                  alt="Braking Cover Image"
-                  className="caseStudyImg"
-                />
-                <Card.ImgOverlay className=" d-flex flex-column">
-                  <Card.Title className="mt-auto caseStudyTitle">
-                    Spin
-                  </Card.Title>
-                  <Card.Text className="caseStudyText">
-                    An interactive regenerative braking demo For KIA.
-                  </Card.Text>
-                  <Link to="/regen">
-                    <Button
-                      className="caseStudyButton"
-                      variant="primary"
-                      onClick={onOpenModalP2}
-                    >
-                      Learn more
-                    </Button>
-                  </Link>
-                </Card.ImgOverlay>
-              </Card>
-            </div>
-          </Link> */}
-
           <SectionHeader
             data={subHeader}
             className="center-content pb-0 mt-64"
@@ -253,7 +224,7 @@ const Portfolio = ({
               >
                 <Card className="bg-black projectCard">
                   <Card.Img
-                    src={require("./../../assets/images/portfolio/Snowflake/snowflakeCover.png")}
+                    src={require("./../../assets/images/portfolio/Snowflake/snowflake1.png")}
                   />
                   <Card.ImgOverlay className=" d-flex flex-column">
                     <Card.Body>
@@ -270,8 +241,8 @@ const Portfolio = ({
                 onClick={onOpenModalP2}
               >
                 <Card className="bg-black projectCard ">
-                  <Card.Img
-                    src={require("./../../assets/images/portfolio/braking/brakingCover.png")}
+                  <Card.Img className="tintMajor"
+                    src={require("./../../assets/images/portfolio/braking/wheelBuildCropped.jpg")}
                   />
                   <Card.ImgOverlay>
                     <Card.Body>
@@ -288,8 +259,8 @@ const Portfolio = ({
                 onClick={onOpenModalP3}
               >
                 <Card className="bg-black projectCard">
-                  <Card.Img
-                    src={require("./../../assets/images/portfolio/nfc/nfcCover.png")}
+                  <Card.Img className="tintMinor"
+                    src={require("./../../assets/images/portfolio/nfc/feature_nfc_cropped.jpg")}
                   />
                   <Card.ImgOverlay>
                     <Card.Body>

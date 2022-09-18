@@ -15,13 +15,13 @@ const IntroContent = {
 };
 
 const FirstContactContent = {
-  subject: "New Project",
-  greeting: "Hey there,",
+  subject: "Shopify Ceiling",
+  greeting: "Hi Guys,",
   body: "Long time no chat! There's an an opp we have coming down the line that I think would be in your wheelhouse...As you walk down the main path, an overhead canopy creates waves and casts light, providing surprise and delight.",
 };
 
 const DesignContent = {
-  body: "Drawing inspiration from other kinetic artworks and local lakes, we proposed a design that fit the parameters of the space, and fleshed it out into a detailed 3D model, and ultimately an animated simulation.",
+  body: "Inspired by kinetic artworks and local lakes, we proposed a design that filled out the long but low ceiling, and fleshed it out into a detailed 3D model, and ultimately an animated simulation.",
   bgImage: require("./../assets/images/portfolio/flux/prismGraphic.png"),
   images: [
     {
@@ -47,12 +47,12 @@ const BuildContent = {
 
   images: [
     {
-      src: require("./../assets/images/portfolio/flux/1.jpg"),
+      src: require("./../assets/images/portfolio/flux/many_in_progress.jpg"),
       width: 1,
       height: 1,
     },
     {
-      src: require("./../assets/images/portfolio/flux/many_in_progress.jpg"),
+      src: require("./../assets/images/portfolio/flux/1.jpg"),
       width: 1,
       height: 1,
     },

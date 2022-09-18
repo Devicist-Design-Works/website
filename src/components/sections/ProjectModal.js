@@ -4,6 +4,7 @@ import SectionHeader from "./partials/SectionHeader";
 import Gallery from 'react-photo-gallery';
 import Carousel, { Modal, ModalGateway } from "react-images";
 import YoutubeEmbed from "../elements/YoutubeEmbed";
+import VimeoEmbed from "../elements/VimeoEmbed";
 
 
 const ProjectModal = (ProjectModalContent) => {
@@ -30,7 +31,7 @@ const ProjectModal = (ProjectModalContent) => {
       <div className="container">
         <SectionHeader data={sectionHeader} className="center-content mt-32" />
         <div className="projectVideo">
-          <YoutubeEmbed embedId={ProjectModalContent.youtubeUrl} />
+          <YoutubeEmbed embedId={ProjectModalContent.videoUrl} />
         </div>
         <div className="gridWrapper">
           <Gallery

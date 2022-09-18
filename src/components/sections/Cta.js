@@ -48,10 +48,10 @@ const Cta = ({
         <div className={innerClasses}>
           <div className="cta-slogan">
             <h3 className="m-0">We'd love to chat, drop us a line!</h3>
-            <p>info@devicist.com</p>
+            <p><a href="mailto:info@devicist.com">info@devicist.com</a></p>
 
             <p>
-              On ocasion, we release news about the studio and articles on{" "}
+              Periodically, we release news about the studio and articles on{" "}
               <b>interaction design</b> and <b>fabrication</b>.<br/> Join our mailing list.
             </p>
           </div>

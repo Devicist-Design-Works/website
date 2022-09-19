@@ -1,22 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const VimeoEmbed = ({ embedId }) => (
+const VideoEmbed = ({ embedId }) => (
   <div className="video-responsive">
     <iframe
       width="528"
       height="396"
-      src={`https://player.vimeo.com/video/${embedId}`}
+      src={embedId}
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
-      title="Embedded youtube"
+      title="Embedded video"
     />
   </div>
 );
 
-VimeoEmbed.propTypes = {
+VideoEmbed.propTypes = {
   embedId: PropTypes.string.isRequired,
 };
 
-export default VimeoEmbed;
+export default VideoEmbed;

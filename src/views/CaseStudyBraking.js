@@ -11,7 +11,7 @@ const IntroContent = {
   description:
     "To promote KIA's regenerative braking technology, we developed an interactive demo. The accelerator pedal drives the car wheel. The brake both stops the wheel and recharges the virtual battery displayed on the dashboard.",
   imgSrc: require("./../assets/images/wheelOutlineBG.png"),
-  youtubeUrl: "Dm9ksx5k4pc",
+  videoUrl: "https://www.youtube.com/embed/o-eduqKUgx8",
 };
 
 const FirstContactContent = {
@@ -28,7 +28,7 @@ const DesignContent = {
       src: require("./../assets/images/portfolio/braking/emailSketch.png"),
       width: 1,
       height: 1,
-    }, 
+    },
     {
       src: require("./../assets/images/portfolio/braking/wheel_sim.gif"),
       width: 1,
@@ -49,7 +49,7 @@ const BuildContent = {
       src: require("./../assets/images/portfolio/braking/gear_small.jpg"),
       width: 1,
       height: 1,
-    },  
+    },
     {
       src: require("./../assets/images/portfolio/braking/axle_rework.jpg"),
       width: 1,
@@ -64,7 +64,7 @@ const BuildContent = {
       src: require("./../assets/images/portfolio/braking/kiosk_unfinished.jpg"),
       width: 1,
       height: 1,
-    },    
+    },
   ],
 };
 

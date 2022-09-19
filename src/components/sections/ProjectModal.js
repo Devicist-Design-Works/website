@@ -1,11 +1,9 @@
-import React, {useState, useCallback} from "react";
+import React, { useState, useCallback } from "react";
 
 import SectionHeader from "./partials/SectionHeader";
-import Gallery from 'react-photo-gallery';
+import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import YoutubeEmbed from "../elements/YoutubeEmbed";
-import VimeoEmbed from "../elements/VimeoEmbed";
-
+import VideoEmbed from "../elements/VideoEmbed";
 
 const ProjectModal = (ProjectModalContent) => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -31,7 +29,7 @@ const ProjectModal = (ProjectModalContent) => {
       <div className="container">
         <SectionHeader data={sectionHeader} className="center-content mt-32" />
         <div className="projectVideo">
-          <YoutubeEmbed embedId={ProjectModalContent.videoUrl} />
+          <VideoEmbed embedId={ProjectModalContent.videoUrl} />
         </div>
         <div className="gridWrapper">
           <Gallery

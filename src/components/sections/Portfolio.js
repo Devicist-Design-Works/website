@@ -44,7 +44,7 @@ const Portfolio = ({
   const Project1ModalContent = {
     title: "Frost",
     body: "We developed interactive LED lighting for studio F-Minus' 30 foot holiday sculpture. A large illuminated snowflake occupies the atrium of Brookfield Place in Toronto. Touching the surface causes the colors to shift",
-    videoUrl: "mMHe-GRaYqA",
+    videoUrl: "https://www.youtube.com/embed/mMHe-GRaYqA",
     images: [
       {
         src: require("./../../assets/images/portfolio/Snowflake/snowflake1.png"),
@@ -72,7 +72,7 @@ const Portfolio = ({
   const Project2ModalContent = {
     title: "Regenerative Braking Demo",
     body: "To profile KIA's regenerative braking technology, we developed a working demo. Users press an accelerator pedal to drive a full size car wheel mounted in a kiosk. The brake both stops the wheel and recharges the battery represented on the virtual dashboard.",
-    videoUrl: "o-eduqKUgx8",
+    videoUrl: "https://www.youtube.com/embed/o-eduqKUgx8",
     images: [
       {
         src: require("./../../assets/images/portfolio/braking/emailSketch.png"),
@@ -98,7 +98,7 @@ const Portfolio = ({
         src: require("./../../assets/images/portfolio/braking/kiosk_unfinished.jpg"),
         width: 1,
         height: 1,
-      }, 
+      },
       {
         src: require("./../../assets/images/portfolio/braking/wheelBuild.jpg"),
         width: 1,
@@ -110,7 +110,7 @@ const Portfolio = ({
   const Project3ModalContent = {
     title: "NFC",
     body: "We built 30 networked NFC scanning stations for Intel at MWC. Visitors scan wristbands to collect coins that unlock prizes in a video game, a fun way to collect information about interests.",
-    videoUrl: "151659042",
+    videoUrl: "https://player.vimeo.com/video/151659042?h=2514b0a369",
     images: [
       {
         src: require("./../../assets/images/portfolio/nfc/feature_nfc_cropped.jpg"),
@@ -193,7 +193,7 @@ const Portfolio = ({
                     Flux
                   </Card.Title>
                   <Card.Text className="caseStudyText">
-                    A large-scale kinetic installation for Shopify. 
+                    A large-scale kinetic installation for Shopify.
                     {/* 40 metalic prisms
                     are rotated in coordinated patterns to create waves of
                     refracted light. */}
@@ -241,7 +241,8 @@ const Portfolio = ({
                 onClick={onOpenModalP2}
               >
                 <Card className="bg-black projectCard ">
-                  <Card.Img className="tintMajor"
+                  <Card.Img
+                    className="tintMajor"
                     src={require("./../../assets/images/portfolio/braking/wheelBuildCropped.jpg")}
                   />
                   <Card.ImgOverlay>
@@ -259,7 +260,8 @@ const Portfolio = ({
                 onClick={onOpenModalP3}
               >
                 <Card className="bg-black projectCard">
-                  <Card.Img className="tintMinor"
+                  <Card.Img
+                    className="tintMinor"
                     src={require("./../../assets/images/portfolio/nfc/feature_nfc_cropped.jpg")}
                   />
                   <Card.ImgOverlay>

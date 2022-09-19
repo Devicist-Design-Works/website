@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import backArrow from "../../../assets/images/backArrow.svg";
 import { HashLink } from "react-router-hash-link";
-import YoutubeEmbed from "../../elements/YoutubeEmbed";
+import VideoEmbed from "../../elements/VideoEmbed";
 
 const Intro = (IntroContent) => {
   const outerClasses = classNames("cs-hero section center-content");
@@ -39,7 +39,7 @@ const Intro = (IntroContent) => {
               </p>
 
               <div className="reveal-from-bottom mt-32" data-reveal-delay="600">
-                <YoutubeEmbed embedId={IntroContent.youtubeUrl} />
+                <VideoEmbed embedId={IntroContent.videoUrl} />
               </div>
             </div>
           </div>

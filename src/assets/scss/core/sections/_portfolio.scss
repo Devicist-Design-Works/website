@@ -141,6 +141,7 @@
 	
 	@include media('<medium') {
 			height: 400px;
+			
 		}
 }
 
@@ -149,6 +150,7 @@
 	width: 100%;
 	@include media('<medium') {
 			height: 100%;
+			object-position: -300px;
 		}
 }
 .caseStudyImgGradient{

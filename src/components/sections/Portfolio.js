@@ -5,7 +5,8 @@ import SectionHeader from "./partials/SectionHeader";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "../elements/Button";
-import flux from "./../../assets/images/portfolio/flux/flux_feature4.jpg";
+import flux from "./../../assets/images/portfolio/flux/flux_feature.jpg";
+import companyLogos from "./../../assets/images/companyLogos.png";
 // import wheel from "../../assets/images/portfolio/braking/brakingCsCover.png";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
@@ -143,6 +144,11 @@ const Portfolio = ({
 
   const subHeader = {
     title: "More Projects",
+    // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
+  };
+
+  const subSubHeader = {
+    title: "And Many More",
     // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
@@ -319,6 +325,9 @@ const Portfolio = ({
               <ProjectModal {...Project3ModalContent} />
             </Modal>
           </div>
+
+          <h3 className="ta-c mt-64">And Many More</h3>
+          <img src={companyLogos} alt="Company Logos" />
         </div>
       </div>
     </section>

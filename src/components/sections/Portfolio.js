@@ -326,7 +326,7 @@ const Portfolio = ({
             </Modal>
           </div>
 
-          <h3 className="ta-c mt-64">And Many More</h3>
+          <h3 className="ta-c mt-128">And Many More</h3>
           <img src={companyLogos} alt="Company Logos" />
         </div>
       </div>

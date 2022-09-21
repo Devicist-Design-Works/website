@@ -9,7 +9,7 @@ import Deploy from "../components/sections/CaseStudy/Deploy";
 const IntroContent = {
   title: "Flux",
   description:
-    "We designed and built a 40 foot kinetic installation for Shopify's Offices in Toronto. 40 metallic prisms are rotated in coordinated patterns to create rolling waves of refracted light.",
+    "We designed and built a 40 foot kinetic installation for Shopify's Offices in Toronto. Metallic prisms are rotated in coordinated patterns to create rolling waves of refracted light.",
   imgSrc: require("./../assets/images/fluxOutline.png"),
   videoUrl: "https://www.youtube.com/embed/Z2o9WQWpmp4",
 };
@@ -17,11 +17,11 @@ const IntroContent = {
 const FirstContactContent = {
   subject: "Shopify Ceiling",
   greeting: "Hi Guys,",
-  body: "Long time no chat! There's an an opp we have coming down the line that I think would be in your wheelhouse...As you walk down the main path, an overhead canopy creates waves and casts light, providing surprise and delight.",
+  body: "There's an an opp we have coming down the line that I think would be in your wheelhouse...As you walk down the main path, an overhead canopy creates waves and casts light, providing surprise and delight.",
 };
 
 const DesignContent = {
-  body: "Inspired by kinetic artworks and local lakes, we proposed a design that filled out the long but low ceiling, and fleshed it out into a detailed 3D model, and ultimately an animated simulation.",
+  body: "Inspired by kinetic artworks and local lakes, we proposed a design to fill out the long and low ceiling, and detailed it into a 3D model and an animated simulation.",
   bgImage: require("./../assets/images/portfolio/flux/prismGraphic.png"),
   images: [
     {
@@ -43,7 +43,7 @@ const DesignContent = {
 };
 
 const BuildContent = {
-  body: "A prototype of the rotating module was engineered, and distributed to the fabricator. A report was provided to the ESA for certification. Parts were sourced and assembled them into fully functional units. Then we tested full rig remotely for weeks before deployment.",
+  body: "Prototypes of the rotating module were engineered, and distributed to stakeholders. A report was provided for ESA certification. Parts were sourced and assembled into the full rig and tested for weeks before deployment.",
 
   images: [
     {
@@ -75,7 +75,7 @@ const BuildContent = {
 };
 
 const DeployContent = {
-  body: "The complete work refracts ambient light in rolling patterns emulating the gentle waves of a lake. Like a lake, the installation can draw in and transfix viewers, or melt into the background rather than demanding attention.",
+  body: "The complete work refracts ambient light in rolling wave patterns. Like a lake, viewers can be transfixed by the rhythms, or it can melt into the background.",
   images: [
     {
       src: require("./../assets/images/portfolio/flux/deployImage1.jpg"),

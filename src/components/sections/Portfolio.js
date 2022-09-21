@@ -72,7 +72,7 @@ const Portfolio = ({
 
   const Project2ModalContent = {
     title: "Regenerative Braking Demo",
-    body: "To profile KIA's regenerative braking technology, we developed a working demo. Users press an accelerator pedal to drive a full size car wheel mounted in a kiosk. The brake both stops the wheel and recharges the battery represented on the virtual dashboard.",
+    body: "To profile KIA's regenerative braking technology, we developed an interactive demo. Users press car pedals to drive and brake a full size car wheel mounted in a kiosk. The brake also recharges a virtual battery displayed on the dashboard.",
     videoUrl: "https://www.youtube.com/embed/o-eduqKUgx8",
     images: [
       {
@@ -110,7 +110,7 @@ const Portfolio = ({
 
   const Project3ModalContent = {
     title: "NFC",
-    body: "We built 30 networked NFC scanning stations for Intel at MWC. Visitors scan wristbands to collect coins that unlock prizes in a video game, a fun way to collect information about interests.",
+    body: "We made dozens of networked NFC scanning stations for Intel at MWC. Visitors scan wristbands to collect coins that unlock prizes in a video game, a fun way to collect information about interests.",
     videoUrl: "https://player.vimeo.com/video/151659042?h=2514b0a369",
     images: [
       {
@@ -147,10 +147,10 @@ const Portfolio = ({
     // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
-  const subSubHeader = {
-    title: "And Many More",
-    // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
-  };
+  // const subSubHeader = {
+  //   title: "And Many More",
+  //   // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
+  // };
 
   const [openP1, setOpenP1] = useState(false);
   const [openP2, setOpenP2] = useState(false);

@@ -28,6 +28,11 @@
 	}
 }
 
+.text-block {
+	display: inline-block;
+	white-space:pre;
+}
+
 @include media( '<=medium' ) {
 
 	.hero {

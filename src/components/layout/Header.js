@@ -132,7 +132,7 @@ const Header = ({
                         duration={500}
                         onClick={closeMenu}
                       >
-                        Process
+                        About
                       </Link>
                     </li>
                   </ul>

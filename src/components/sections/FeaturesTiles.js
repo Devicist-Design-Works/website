@@ -40,16 +40,19 @@ const FeaturesTiles = ({
   const tilesClasses = classNames("tiles-wrap ", pushLeft && "push-left");
 
   const sectionHeader = {
-    title: "Build up the whole picture",
-    paragraph:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
+    title: "The Team",
+    //paragraph:
+    //"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
   };
 
   return (
     <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} />
+          <SectionHeader
+            data={sectionHeader}
+            className="pt-32 center-content"
+          />
           <div className={tilesClasses}>
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
@@ -64,7 +67,7 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Foundation</h4>
+                  <h4 className="mt-0 mb-8">Nick Stedman</h4>
                   <p className="m-0 text-sm">
                     With over 20 years' experience combining art, UX, and
                     engineering, we use our skills to take big ideas and make
@@ -90,7 +93,7 @@ const FeaturesTiles = ({
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">Design</h4>
+                  <h4 className="mt-0 mb-8">Devlin Macpherson</h4>
                   <p className="m-0 text-sm">
                     We work closely with clients to clarify objectives, and
                     iterate through research, ideation, sourcing, modeling and

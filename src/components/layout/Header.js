@@ -126,13 +126,24 @@ const Header = ({
 
                     <li>
                       <Link
-                        to="process"
+                        to="about"
                         spy={true}
                         smooth={true}
                         duration={500}
                         onClick={closeMenu}
                       >
                         About
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="process"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        onClick={closeMenu}
+                      >
+                        Process
                       </Link>
                     </li>
                   </ul>

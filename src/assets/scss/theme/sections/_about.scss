@@ -1,10 +1,8 @@
-
-
 .headshot{
-	border-radius: 20px;
+	border-radius: 50%;
 	display: flex;
 	float: left;
-	margin-right: 20px;
+	margin-right: 40px;
 	margin-bottom: 20px;
 	@include media('<medium') {
 		width: 70% !important;

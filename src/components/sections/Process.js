@@ -7,6 +7,8 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { Card } from "react-bootstrap";
+import CardGroup from "react-bootstrap/CardGroup";
 
 const propTypes = {
   ...SectionSplitProps.types,
@@ -87,9 +89,8 @@ const FeaturesSplit = ({
             >
               <h3 className="vertical-timeline-element-title">Foundation</h3>
               <p>
-                20+ years building interactive exhibits.
-                We take big ideas and make them tangible, 
-                while mitigating risks.
+                20+ years building interactive exhibits. We take big ideas and
+                make them tangible, while mitigating risks.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -122,8 +123,8 @@ const FeaturesSplit = ({
             >
               <h3 className="vertical-timeline-element-title">Design</h3>
               <p>
-                We research, ideate, source, model and detail
-                until the optimal design is reached.
+                We research, ideate, source, model and detail until the optimal
+                design is reached.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -156,9 +157,9 @@ const FeaturesSplit = ({
             >
               <h3 className="vertical-timeline-element-title">Build</h3>
               <p>
-                We develop code, electronics, and mechanisms.
-                We fabricate and integrate components to completion. 
-                We build prototypes, simulations and tools for stakeholders.
+                We develop code, electronics, and mechanisms. We fabricate and
+                integrate components to completion. We build prototypes,
+                simulations and tools for stakeholders.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -191,9 +192,9 @@ const FeaturesSplit = ({
             >
               <h3 className="vertical-timeline-element-title">Deploy</h3>
               <p>
-                Show time! We deliver and install the project
-                ensuring it surpasses expectations. Throughout the event, 
-                we can collect user metrics to measure results.
+                Show time! We deliver and install the project ensuring it
+                surpasses expectations. Throughout the event, we can collect
+                user metrics to measure results.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -233,152 +234,37 @@ const FeaturesSplit = ({
               </p>
             </VerticalTimelineElement>
           </VerticalTimeline>
-
-          {/*
-          
-          
-          <div className={splitClasses}>
-            <div className="split-item">
-              <div
-                className="split-item-content center-content-mobile reveal-from-right"
-                data-reveal-container=".split-item"
-              >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  <Image
-                    src={require("./../../assets/images/FoundationIcon-white.svg")}
-                    alt="design icon"
-                    width={50}
-                    height={32}
-                  />
-                </div>
-                <h3 className="mt-0 mb-12">Foundation</h3>
-                <p className="m-0">
-                  With over 20 years' experience combining art, UX, and
-                  engineering, we use our skills to take big ideas and make them
-                  tangible, while mitigating risks.
-                </p>
-              </div>
-            </div>
-
-            <div className="split-item">
-              <div
-                className="split-item-content center-content-mobile reveal-from-left"
-                data-reveal-container=".split-item"
-              >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  <Image
-                    src={require("./../../assets/images/DesignIcon-white.svg")}
-                    alt="design icon"
-                    width={50}
-                    height={50}
-                  />
-                </div>
-                <h3 className="mt-0 mb-12">Design</h3>
-                <p className="m-0">
-                  We work closely with clients to clarify objectives, and
-                  iterate through research, ideation, sourcing, modeling and
-                  detailing until we arrive at the optimal design.
-                </p>
-              </div>
-            </div>
-
-            <div className="split-item">
-              <div
-                className="split-item-content center-content-mobile reveal-from-right"
-                data-reveal-container=".split-item"
-              >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  <Image
-                    src={require("./../../assets/images/PrototypeIcon-white.svg")}
-                    alt="design icon"
-                    width={50}
-                    height={32}
-                  />
-                </div>
-                <h3 className="mt-0 mb-12">Build</h3>
-                <p className="m-0">
-                  We develop code, build electronics, fabricate objects, and
-                  integrate components into the final pieces. Along the way, we
-                  develop hands-on prototypes, simulations and tools that help
-                  stakeholders sort out details.
-                </p>
-              </div>
-              <div
-                className={classNames(
-                  "split-item-image center-content-mobile reveal-from-bottom",
-                  imageFill && "split-item-image-fill"
-                )}
-                data-reveal-container=".split-item"
-              >
-
-              </div>
-            </div>
-
-            <div className="split-item">
-              <div
-                className="split-item-content center-content-mobile reveal-from-left"
-                data-reveal-container=".split-item"
-              >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  <Image
-                    src={require("./../../assets/images/DeployIcon-white.svg")}
-                    alt="design icon"
-                    width={50}
-                    height={32}
-                  />
-                </div>
-                <h3 className="mt-0 mb-12">Deploy</h3>
-                <p className="m-0">
-                  Show time! This is the moment when the project goes live, and
-                  public engagement begins. We are there to deliver and install
-                  the project and ensure it is fully functional. We also study
-                  the results to measure success.
-                </p>
-              </div>
-              <div
-                className={classNames(
-                  "split-item-image center-content-mobile reveal-from-bottom",
-                  imageFill && "split-item-image-fill"
-                )}
-                data-reveal-container=".split-item"
-              >
-                {" "}
-              </div>
-            </div>
-            <div className="split-item">
-              <div
-                className="split-item-content center-content-mobile reveal-from-right"
-                data-reveal-container=".split-item"
-              >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  <Image
-                    src={require("./../../assets/images/SupportIcon-white.svg")}
-                    alt="design icon"
-                    width={50}
-                    height={32}
-                  />
-                </div>
-                <h3 className="mt-0 mb-12">Support</h3>
-                <p className="m-0">
-                  Obsessed with reliability, we engineer simple, robust and
-                  modular solutions. We maintain the project over it's lifetime
-                  through in-person and remote support, and can push updates to
-                  keep the content fresh.
-                </p>
-              </div>
-              <div
-                className={classNames(
-                  "split-item-image center-content-mobile reveal-from-bottom",
-                  imageFill && "split-item-image-fill"
-                )}
-                data-reveal-container=".split-item"
-              >
-
-              </div>
-            </div>
+        </div>
+        <div className="center-content mb-64">
+          <h2> Testimonials</h2>
+          <div className="testimonial reveal-from-right">
+            <h1 className="m-0 ta-l">"</h1>
+            <p>
+              Vitae aliquet nec ullamcorper sit amet risus nullam eget felis
+              semper quis lectus nulla at volutpat diam ut venenatis tellus—in
+              ornare.
+            </p>
+            <h1 className="m-0 ta-r">"</h1>
           </div>
 
-                */}
+          <div className="testimonial reveal-from-bottom">
+            <h1 className="m-0 ta-l">"</h1>
+            <p>
+              Vitae aliquet nec ullamcorper sit amet risus nullam eget felis
+              semper quis lectus nulla at volutpat diam ut venenatis tellus—in
+              ornare.
+            </p>
+            <h1 className="m-0 ta-r">"</h1>
+          </div>
+          <div className="testimonial reveal-from-left">
+            <h1 className="m-0 ta-l">"</h1>
+            <p>
+              Vitae aliquet nec ullamcorper sit amet risus nullam eget felis
+              semper quis lectus nulla at volutpat diam ut venenatis tellus—in
+              ornare.
+            </p>
+            <h1 className="m-0 ta-r">"</h1>
+          </div>
         </div>
       </div>
     </section>

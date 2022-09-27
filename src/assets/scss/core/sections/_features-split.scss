@@ -35,3 +35,18 @@
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+.testimonial{
+	display: inline-block;
+	
+	margin: 10px 10px 120px 10px;
+	padding: 40px;
+	width: 30%;
+	border-radius: 20px;
+	background-color: get-color(secondary, 3);
+	@include media('<large') {
+			width: 100%;
+			margin:10px auto 10px auto;
+		}
+}
+

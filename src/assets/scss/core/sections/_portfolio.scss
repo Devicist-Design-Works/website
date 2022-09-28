@@ -128,10 +128,10 @@
 	}
 }
 
-.projectButton{
+.project-button{
 	background-color: transparent;
-	
 	cursor: pointer;
+	
 }
 
 .caseStudyCard{
@@ -205,4 +205,17 @@
 				@include media('<=medium') {
 					font-size: 1rem;
 				}
+}
+
+.modal-close-icon{
+	padding: 5px;
+	@include media('<medium') {
+			background-color: black;
+				border-radius: 10px;
+				
+				position: fixed;
+				right: 15px;
+	
+		}
+	
 }

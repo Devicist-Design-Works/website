@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
@@ -164,13 +165,15 @@ const Portfolio = ({
     setOpenP2(false);
     setOpenP3(false);
   };
+
   const closeIcon = (
     <svg
       fill="#FFFFFF"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      width="24px"
-      height="24px"
+      width="50px"
+      height="50px"
+      className="modal-close-icon"
     >
       <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z" />
     </svg>
@@ -222,10 +225,11 @@ const Portfolio = ({
             data={subHeader}
             className="center-content pb-0 mt-64"
           />
+
           <div className={tilesClasses}>
             <div className="reveal-from-right projectGrid">
               <button
-                className="projectButton border-0"
+                className="project-button border-0"
                 onClick={onOpenModalP1}
               >
                 <Card className="bg-black projectCard">
@@ -243,7 +247,7 @@ const Portfolio = ({
 
             <div className="reveal-from-bottom projectGrid">
               <button
-                className="projectButton border-0"
+                className="project-button border-0"
                 onClick={onOpenModalP2}
               >
                 <Card className="bg-black projectCard ">
@@ -262,7 +266,7 @@ const Portfolio = ({
 
             <div className="reveal-from-left projectGrid">
               <button
-                className="projectButton border-0"
+                className="project-button border-0"
                 onClick={onOpenModalP3}
               >
                 <Card className="bg-black projectCard">
@@ -292,7 +296,9 @@ const Portfolio = ({
               }}
               animationDuration={800}
             >
-              <ProjectModal {...Project1ModalContent} />
+              <div id="Frost">
+                <ProjectModal {...Project1ModalContent} />
+              </div>
             </Modal>
             <Modal
               open={openP2}

@@ -5,7 +5,7 @@ import SectionHeader from "./partials/SectionHeader";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "../elements/Button";
-import flux from "./../../assets/images/portfolio/flux/flux_feature.jpg";
+import flux from "./../../assets/images/portfolio/fluxCover.gif";
 import companyLogos from "./../../assets/images/companyLogos.png";
 // import wheel from "../../assets/images/portfolio/braking/brakingCsCover.png";
 import { Modal } from "react-responsive-modal";

@@ -1,19 +1,21 @@
-import React from 'react';
-import classNames from 'classnames';
+import React from "react";
+import classNames from "classnames";
 
-const FooterSocial = ({
-  className,
-  ...props
-}) => {
-
-  const classes = classNames(
-    'footer-social',
-    className
-  );
+const FooterSocial = ({ className, ...props }) => {
+  const classes = classNames("footer-social", className);
 
   return (
     <div {...props} className={classes}>
       <ul className="list-reset">
+        <li>
+          <a href="mailto:info@devicist.com" rel="noopener noreferrer">
+            <img
+              src={require("./../../../assets/images/emailIcon.png")}
+              alt="email icon"
+              width="24px"
+            />
+          </a>
+        </li>
         <li>
           <a
             href="https://hackaday.io/nsted"
@@ -59,6 +61,6 @@ const FooterSocial = ({
       </ul>
     </div>
   );
-}
+};
 
 export default FooterSocial;

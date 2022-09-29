@@ -25,6 +25,33 @@ const Build = (BuildContent) => {
               srcset: x.srcSet,
               caption: x.title,
             }))}
+            styles={{
+              navigationNext: (base) => ({
+                ...base,
+                backgroundColor: "#000000B3",
+
+                ":hover": {
+                  backgroundColor: "#000000FF",
+                },
+                ":active": {
+                  backgroundColor: "#FFFFFFB3",
+                  transform: "translateY(2px)",
+                },
+              }),
+
+              navigationPrev: (base) => ({
+                ...base,
+                backgroundColor: "#000000B3",
+
+                ":hover": {
+                  backgroundColor: "#000000FF",
+                },
+                ":active": {
+                  backgroundColor: "#FFFFFFB3",
+                  transform: "translateY(2px)",
+                },
+              }),
+            }}
           />
         </div>
       </div>

@@ -17,7 +17,7 @@ const IntroContent = {
 const FirstContactContent = {
   subject: "Shopify Ceiling",
   greeting: "Hi Guys,",
-  body: "There's an an opp we have coming down the line that I think would be in your wheelhouse...As you walk down the main path, an overhead canopy creates waves and casts light, providing surprise and delight.",
+  body: "There's an opportunity that would be in your wheelhouse...As you walk down the main path, an overhead canopy creates waves and casts light, providing surprise and delight.",
 };
 
 const DesignContent = {

@@ -73,7 +73,7 @@ const Portfolio = ({
   const Project2ModalContent = {
     title: "Regenerative Braking Demo",
     body: "To profile KIA's regenerative braking technology, we developed an interactive demo. Users press car pedals to drive and brake a full size car wheel mounted in a kiosk. The brake also recharges a virtual battery displayed on the dashboard.",
-    videoUrl: "https://www.youtube.com/embed/o-eduqKUgx8",
+    videoUrl: "https://www.youtube.com/embed/Dm9ksx5k4pc",
     images: [
       {
         src: require("./../../assets/images/portfolio/braking/emailSketch.png"),

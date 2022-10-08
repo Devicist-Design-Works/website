@@ -12,7 +12,7 @@ import CaseStudyLayout from "./layouts/CaseStudyLayout";
 // Views
 import Home from "./views/Home";
 import CaseStudyBraking from "./views/CaseStudyBraking";
-import CaseStudyFlux from "./views/CaseStudyFlux";
+import Flux from "./views/Flux";
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -50,9 +50,10 @@ const App = () => {
             <AppRoute
               exact
               path="/flux"
-              component={CaseStudyFlux}
+              component={Flux}
               layout={CaseStudyLayout}
             />
+            <AppRoute path="*" component={Flux} layout={CaseStudyLayout} />
           </Switch>
         )}
       />

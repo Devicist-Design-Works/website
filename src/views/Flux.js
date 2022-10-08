@@ -100,7 +100,7 @@ const DeployContent = {
   ],
 };
 
-const CaseStudyFlux = () => {
+const Flux = () => {
   return (
     <>
       <Intro {...IntroContent} />
@@ -112,4 +112,4 @@ const CaseStudyFlux = () => {
   );
 };
 
-export default CaseStudyFlux;
+export default Flux;

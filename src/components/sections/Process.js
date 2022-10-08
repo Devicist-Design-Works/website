@@ -87,9 +87,8 @@ const FeaturesSplit = ({
             >
               <h3 className="vertical-timeline-element-title">Foundation</h3>
               <p>
-                20+ years building interactive exhibits.
-                We take big ideas and make them tangible, 
-                while mitigating risks.
+                20+ years building interactive exhibits. We take big ideas and
+                make them tangible, while mitigating risks.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -122,8 +121,8 @@ const FeaturesSplit = ({
             >
               <h3 className="vertical-timeline-element-title">Design</h3>
               <p>
-                We research, ideate, source, model and detail
-                until the optimal design is reached.
+                We research, ideate, source, model and detail until the optimal
+                design is reached.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -156,9 +155,9 @@ const FeaturesSplit = ({
             >
               <h3 className="vertical-timeline-element-title">Build</h3>
               <p>
-                We develop code, electronics, and mechanisms.
-                We fabricate and integrate components to completion. 
-                We build prototypes, simulations and tools for stakeholders.
+                We develop code, electronics, and mechanisms. We fabricate and
+                integrate components to completion. We build prototypes,
+                simulations and tools for stakeholders.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -191,9 +190,9 @@ const FeaturesSplit = ({
             >
               <h3 className="vertical-timeline-element-title">Deploy</h3>
               <p>
-                Show time! We deliver and install the project
-                ensuring it surpasses expectations. Throughout the event, 
-                we can collect user metrics to measure results.
+                Show time! We deliver and install the project ensuring it
+                surpasses expectations. We can collect user metrics to measure
+                results.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement

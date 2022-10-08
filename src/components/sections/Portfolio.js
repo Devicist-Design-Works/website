@@ -110,7 +110,7 @@ const Portfolio = ({
 
   const Project3ModalContent = {
     title: "NFC",
-    body: "We made dozens of networked NFC scanning stations for Intel at MWC. Visitors scan wristbands to collect coins that unlock prizes in a video game, a fun way to collect information about interests.",
+    body: "We made dozens of networked NFC scanning stations for Intel at MWC with Globacore Interactive. Visitors scan wristbands to collect coins that unlock prizes in a video game, a fun way to collect information about interests.",
     videoUrl: "https://player.vimeo.com/video/151659042?h=2514b0a369",
     images: [
       {

@@ -45,7 +45,7 @@ const Portfolio = ({
   const Project1ModalContent = {
     title: "Frost",
     body: "We developed interactive LED lighting for studio F-Minus' 30 foot holiday sculpture. A large illuminated snowflake occupies the atrium of Brookfield Place in Toronto. Touching the surface causes the colors to shift",
-    videoUrl: "https://www.youtube.com/embed/mMHe-GRaYqA",
+    videoUrl: "https://www.youtube.com/embed/PIIAb1LgT60",
     images: [
       {
         src: require("./../../assets/images/portfolio/Snowflake/snowflake1.png"),
@@ -136,6 +136,34 @@ const Portfolio = ({
     ],
   };
 
+  const Project4ModalContent = {
+    title: "Brain",
+    body: "We made dozens of networked NFC scanning stations for Intel at MWC with Globacore Interactive. Visitors scan wristbands to collect coins that unlock prizes in a video game, a fun way to collect information about interests.",
+    videoUrl: "https://www.youtube.com/embed/w5rAcHXQWz4",
+    images: [
+      {
+        src: require("./../../assets/images/portfolio/brain/brain1.png"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/portfolio/brain/brain2.png"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/portfolio/brain/brain3.png"),
+        width: 1,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/portfolio/brain/brain4.png"),
+        width: 1,
+        height: 1,
+      },
+    ],
+  };
+
   //edit section header content here
   const sectionHeader = {
     title: "Case Study",
@@ -155,14 +183,17 @@ const Portfolio = ({
   const [openP1, setOpenP1] = useState(false);
   const [openP2, setOpenP2] = useState(false);
   const [openP3, setOpenP3] = useState(false);
+  const [openP4, setOpenP4] = useState(false);
 
   const onOpenModalP1 = () => setOpenP1(true);
   const onOpenModalP2 = () => setOpenP2(true);
   const onOpenModalP3 = () => setOpenP3(true);
+  const onOpenModalP4 = () => setOpenP4(true);
   const onCloseModal = () => {
     setOpenP1(false);
     setOpenP2(false);
     setOpenP3(false);
+    setOpenP4(false);
   };
   const closeIcon = (
     <svg
@@ -231,7 +262,7 @@ const Portfolio = ({
               >
                 <Card className="bg-black projectCard">
                   <Card.Img
-                    src={require("./../../assets/images/portfolio/Snowflake/snowflake1.png")}
+                    src={require("./../../assets/images/portfolio/Snowflake/snowflakeNew.png")}
                   />
                   <Card.ImgOverlay className=" d-flex flex-column">
                     <Card.Body>
@@ -255,6 +286,25 @@ const Portfolio = ({
                   <Card.ImgOverlay>
                     <Card.Body>
                       <Card.Title className="projectTitle">Braking</Card.Title>
+                    </Card.Body>
+                  </Card.ImgOverlay>
+                </Card>
+              </button>
+            </div>
+
+            <div className="reveal-from-bottom projectGrid">
+              <button
+                className="projectButton border-0"
+                onClick={onOpenModalP4}
+              >
+                <Card className="bg-black projectCard">
+                  <Card.Img
+                    className="tintMinor"
+                    src={require("./../../assets/images/portfolio/brain/brainCropped.png")}
+                  />
+                  <Card.ImgOverlay>
+                    <Card.Body>
+                      <Card.Title className="projectTitle">Brain</Card.Title>
                     </Card.Body>
                   </Card.ImgOverlay>
                 </Card>
@@ -324,6 +374,22 @@ const Portfolio = ({
               animationDuration={800}
             >
               <ProjectModal {...Project3ModalContent} />
+            </Modal>
+
+            <Modal
+              open={openP4}
+              onClose={onCloseModal}
+              center
+              closeIcon={closeIcon}
+              classNames={{
+                modal: "projectModal",
+                overlay: "projectOverlay",
+                //modalAnimationIn: "customEnterModalAnimation",
+                //modalAnimationOut: "customLeaveModalAnimation",
+              }}
+              animationDuration={800}
+            >
+              <ProjectModal {...Project4ModalContent} />
             </Modal>
           </div>
 

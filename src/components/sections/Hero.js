@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
-import videoBg from "../../assets/videos/videoBg.mp4";
+import videoBg from "../../assets/videos/videoBg-newFootage.mp4";
 import Image from "../elements/Image";
 
 const propTypes = {

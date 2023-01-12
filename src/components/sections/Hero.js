@@ -56,7 +56,7 @@ const Hero = ({
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              The built world brought to life
+              Brought to Life
             </h1>
             <div className="container-s">
               <p
@@ -74,7 +74,7 @@ const Hero = ({
                 <span className="text-block">to build</span>
                 <br />
                 <span className="text-block">
-                  dynamic interactive exhibits.
+                  tangible interactive exhibits.
                 </span>
               </p>
 

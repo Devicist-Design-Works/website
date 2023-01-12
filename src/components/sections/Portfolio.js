@@ -109,36 +109,8 @@ const Portfolio = ({
   };
 
   const Project3ModalContent = {
-    title: "NFC",
-    body: "We made dozens of networked NFC scanning stations for Intel at MWC with Globacore Interactive. Visitors scan wristbands to collect coins that unlock prizes in a video game, a fun way to collect information about interests.",
-    videoUrl: "https://player.vimeo.com/video/151659042?h=2514b0a369",
-    images: [
-      {
-        src: require("./../../assets/images/portfolio/nfc/feature_nfc_cropped.jpg"),
-        width: 1,
-        height: 1,
-      },
-      {
-        src: require("./../../assets/images/portfolio/nfc/register_cropped.jpg"),
-        width: 1,
-        height: 1,
-      },
-      {
-        src: require("./../../assets/images/portfolio/nfc/booth_cropped.jpg"),
-        width: 1,
-        height: 1,
-      },
-      {
-        src: require("./../../assets/images/portfolio/nfc/feature_nfc2_cropped.jpg"),
-        width: 1,
-        height: 1,
-      },
-    ],
-  };
-
-  const Project4ModalContent = {
     title: "Brain",
-    body: "We made dozens of networked NFC scanning stations for Intel at MWC with Globacore Interactive. Visitors scan wristbands to collect coins that unlock prizes in a video game, a fun way to collect information about interests.",
+    body: "Interactive model of a brain that responds to user input, displaying various patterns",
     videoUrl: "https://www.youtube.com/embed/w5rAcHXQWz4",
     images: [
       {
@@ -276,26 +248,7 @@ const Portfolio = ({
             <div className="reveal-from-bottom projectGrid">
               <button
                 className="projectButton border-0"
-                onClick={onOpenModalP2}
-              >
-                <Card className="bg-black projectCard ">
-                  <Card.Img
-                    className="tintMajor"
-                    src={require("./../../assets/images/portfolio/braking/wheelBuildCropped.jpg")}
-                  />
-                  <Card.ImgOverlay>
-                    <Card.Body>
-                      <Card.Title className="projectTitle">Braking</Card.Title>
-                    </Card.Body>
-                  </Card.ImgOverlay>
-                </Card>
-              </button>
-            </div>
-
-            <div className="reveal-from-bottom projectGrid">
-              <button
-                className="projectButton border-0"
-                onClick={onOpenModalP4}
+                onClick={onOpenModalP3}
               >
                 <Card className="bg-black projectCard">
                   <Card.Img
@@ -314,16 +267,16 @@ const Portfolio = ({
             <div className="reveal-from-left projectGrid">
               <button
                 className="projectButton border-0"
-                onClick={onOpenModalP3}
+                onClick={onOpenModalP2}
               >
-                <Card className="bg-black projectCard">
+                <Card className="bg-black projectCard ">
                   <Card.Img
-                    className="tintMinor"
-                    src={require("./../../assets/images/portfolio/nfc/feature_nfc_cropped.jpg")}
+                    className="tintMajor"
+                    src={require("./../../assets/images/portfolio/braking/kioskCropped.jpg")}
                   />
                   <Card.ImgOverlay>
                     <Card.Body>
-                      <Card.Title className="projectTitle">Scanners</Card.Title>
+                      <Card.Title className="projectTitle">Braking</Card.Title>
                     </Card.Body>
                   </Card.ImgOverlay>
                 </Card>
@@ -374,22 +327,6 @@ const Portfolio = ({
               animationDuration={800}
             >
               <ProjectModal {...Project3ModalContent} />
-            </Modal>
-
-            <Modal
-              open={openP4}
-              onClose={onCloseModal}
-              center
-              closeIcon={closeIcon}
-              classNames={{
-                modal: "projectModal",
-                overlay: "projectOverlay",
-                //modalAnimationIn: "customEnterModalAnimation",
-                //modalAnimationOut: "customLeaveModalAnimation",
-              }}
-              animationDuration={800}
-            >
-              <ProjectModal {...Project4ModalContent} />
             </Modal>
           </div>
 

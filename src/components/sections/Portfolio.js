@@ -53,7 +53,7 @@ const Portfolio = ({
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/Snowflake/circuit.jpg"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake2.png"),
         width: 1,
         height: 1,
       },
@@ -63,7 +63,7 @@ const Portfolio = ({
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/Snowflake/handsOn.jpg"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake4.png"),
         width: 1,
         height: 1,
       },

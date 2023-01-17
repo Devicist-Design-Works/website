@@ -45,7 +45,7 @@ const Portfolio = ({
   const Project1ModalContent = {
     title: "Frost",
     body: "We developed interactive LED lighting for studio F-Minus' 30 foot holiday sculpture. A large illuminated snowflake occupies the atrium of Brookfield Place in Toronto. Touching the surface causes the colors to shift",
-    videoUrl: "https://www.youtube.com/embed/PIIAb1LgT60",
+    videoUrl: "https://www.youtube.com/embed/6XjAppauBe8",
     images: [
       {
         src: require("./../../assets/images/portfolio/Snowflake/snowflake1.png"),
@@ -110,8 +110,8 @@ const Portfolio = ({
 
   const Project3ModalContent = {
     title: "Brain",
-    body: "Interactive model of a brain that responds to user input, displaying various patterns",
-    videoUrl: "https://www.youtube.com/embed/w5rAcHXQWz4",
+    body: "Interactive model of a brain that responds to touch, displaying various patterns. Produced in collaboration with Globacore Interactive for Dassault's Digital Twin exhibit at CES 2023.",
+    videoUrl: "https://www.youtube.com/embed/8-0N9WPRqLs",
     images: [
       {
         src: require("./../../assets/images/portfolio/brain/brain1.png"),
@@ -227,24 +227,6 @@ const Portfolio = ({
             className="center-content pb-0 mt-64"
           />
           <div className={tilesClasses}>
-            <div className="reveal-from-right projectGrid">
-              <button
-                className="projectButton border-0"
-                onClick={onOpenModalP1}
-              >
-                <Card className="bg-black projectCard">
-                  <Card.Img
-                    src={require("./../../assets/images/portfolio/Snowflake/snowflakeNew.png")}
-                  />
-                  <Card.ImgOverlay className=" d-flex flex-column">
-                    <Card.Body>
-                      <Card.Title className="projectTitle">Frost</Card.Title>
-                    </Card.Body>
-                  </Card.ImgOverlay>
-                </Card>
-              </button>
-            </div>
-
             <div className="reveal-from-bottom projectGrid">
               <button
                 className="projectButton border-0"
@@ -277,6 +259,24 @@ const Portfolio = ({
                   <Card.ImgOverlay>
                     <Card.Body>
                       <Card.Title className="projectTitle">Braking</Card.Title>
+                    </Card.Body>
+                  </Card.ImgOverlay>
+                </Card>
+              </button>
+            </div>
+
+            <div className="reveal-from-right projectGrid">
+              <button
+                className="projectButton border-0"
+                onClick={onOpenModalP1}
+              >
+                <Card className="bg-black projectCard">
+                  <Card.Img
+                    src={require("./../../assets/images/portfolio/Snowflake/snowflakeNew.png")}
+                  />
+                  <Card.ImgOverlay className=" d-flex flex-column">
+                    <Card.Body>
+                      <Card.Title className="projectTitle">Frost</Card.Title>
                     </Card.Body>
                   </Card.ImgOverlay>
                 </Card>

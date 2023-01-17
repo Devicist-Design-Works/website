@@ -71,7 +71,7 @@ const Hero = ({
                 <span className="text-block">
                   we combine art, UX and engineering&nbsp;
                 </span>
-                <span className="text-block">to build</span>
+                <span className="text-block">to create</span>
                 <br />
                 <span className="text-block">
                   tangible interactive exhibits.

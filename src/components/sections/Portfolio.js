@@ -235,7 +235,7 @@ const Portfolio = ({
                 <Card className="bg-black projectCard">
                   <Card.Img
                     className="tintMinor"
-                    src={require("./../../assets/images/portfolio/brain/brainCropped.png")}
+                    src={require("./../../assets/images/portfolio/brain/brainCover.png")}
                   />
                   <Card.ImgOverlay>
                     <Card.Body>

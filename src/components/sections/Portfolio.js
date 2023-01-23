@@ -12,6 +12,7 @@ import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 //import PortfolioMore from '../layout/partials/PortfolioMore';
 import ProjectModal from "./ProjectModal";
+import Gallery from "react-photo-gallery";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -136,6 +137,42 @@ const Portfolio = ({
     ],
   };
 
+  const MoreProjects = {
+    images: [
+      {
+        src: require("./../../assets/images/portfolio/more/more1.png"),
+        width: 1.5,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/portfolio/more/more2.png"),
+        width: 2,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/portfolio/more/more6.png"),
+        width: 2,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/portfolio/more/more4.png"),
+        width: 2.5,
+        height: 1,
+      },
+      {
+        src: require("./../../assets/images/portfolio/more/more5.png"),
+        width: 1.5,
+        height: 1,
+      },
+
+      {
+        src: require("./../../assets/images/portfolio/more/more3.png"),
+        width: 1.5,
+        height: 1,
+      },
+    ],
+  };
+
   //edit section header content here
   const sectionHeader = {
     title: "Case Study",
@@ -155,17 +192,15 @@ const Portfolio = ({
   const [openP1, setOpenP1] = useState(false);
   const [openP2, setOpenP2] = useState(false);
   const [openP3, setOpenP3] = useState(false);
-  const [openP4, setOpenP4] = useState(false);
 
   const onOpenModalP1 = () => setOpenP1(true);
   const onOpenModalP2 = () => setOpenP2(true);
   const onOpenModalP3 = () => setOpenP3(true);
-  const onOpenModalP4 = () => setOpenP4(true);
+
   const onCloseModal = () => {
     setOpenP1(false);
     setOpenP2(false);
     setOpenP3(false);
-    setOpenP4(false);
   };
   const closeIcon = (
     <svg
@@ -329,9 +364,17 @@ const Portfolio = ({
               <ProjectModal {...Project3ModalContent} />
             </Modal>
           </div>
+          <div className="container-sm reveal-from-bottom">
+            <h3 className="ta-c mt-128">And Many More</h3>
 
-          <h3 className="ta-c mt-128">And Many More</h3>
-          <img src={companyLogos} alt="Company Logos" />
+            <Gallery
+              photos={MoreProjects.images}
+              targetRowHeight={160}
+              margin={6}
+            />
+
+            <img src={companyLogos} alt="Company Logos" className="mt-32" />
+          </div>
         </div>
       </div>
     </section>

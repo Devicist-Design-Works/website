@@ -78,22 +78,22 @@ const DeployContent = {
   body: "The complete work refracts ambient light in rolling wave patterns. Like a lake, viewers can be transfixed by the rhythms, or it can melt into the background.",
   images: [
     {
-      src: require("./../assets/images/portfolio/flux/deployImage1.jpg"),
+      src: require("./../assets/images/portfolio/flux/deployImage1_1.jpg"),
       width: 2,
       height: 1,
     },
     {
-      src: require("./../assets/images/portfolio/flux/deployImage2.jpg"),
+      src: require("./../assets/images/portfolio/flux/deployImage2_2.jpg"),
       width: 1,
       height: 1,
     },
     {
-      src: require("./../assets/images/portfolio/flux/deployImage3.jpg"),
+      src: require("./../assets/images/portfolio/flux/deployImage3_3.jpg"),
       width: 1,
       height: 1,
     },
     {
-      src: require("./../assets/images/portfolio/flux/deployImage4.jpg"),
+      src: require("./../assets/images/portfolio/flux/deployImage4_4.jpg"),
       width: 3,
       height: 1,
     },
@@ -103,7 +103,7 @@ const DeployContent = {
 const Flux = () => {
   return (
     <>
-      <Intro {...IntroContent} />
+      <Intro {...IntroContent} />\
       <FirstContact {...FirstContactContent} />
       <Design {...DesignContent} />
       <Build {...BuildContent} />

@@ -6,13 +6,11 @@ import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "../elements/Button";
 import flux from "./../../assets/images/portfolio/fluxCover.gif";
-import companyLogos from "./../../assets/images/companyLogos.png";
 // import wheel from "../../assets/images/portfolio/braking/brakingCsCover.png";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 //import PortfolioMore from '../layout/partials/PortfolioMore';
 import ProjectModal from "./ProjectModal";
-import Gallery from "react-photo-gallery";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -363,17 +361,6 @@ const Portfolio = ({
             >
               <ProjectModal {...Project3ModalContent} />
             </Modal>
-          </div>
-          <div className="container-sm reveal-from-bottom">
-            <h3 className="ta-c mt-128">And Many More</h3>
-
-            <Gallery
-              photos={MoreProjects.images}
-              targetRowHeight={160}
-              margin={6}
-            />
-
-            <img src={companyLogos} alt="Company Logos" className="mt-32" />
           </div>
         </div>
       </div>

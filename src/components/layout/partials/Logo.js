@@ -9,12 +9,7 @@ const Logo = ({ className, ...props }) => {
   return (
     <div {...props} className={classes}>
       <Link to="/">
-        <Image
-          src={require("./../../../assets/images/headerLogo.png")}
-          alt="Devicist Logo"
-          width={150}
-          className="mt-16"
-        />
+        <h4>Devicist</h4>
       </Link>
     </div>
   );

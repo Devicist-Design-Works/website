@@ -103,7 +103,7 @@ const DeployContent = {
 const Flux = () => {
   return (
     <>
-      <Intro {...IntroContent} />\
+      <Intro {...IntroContent} />
       <FirstContact {...FirstContactContent} />
       <Design {...DesignContent} />
       <Build {...BuildContent} />

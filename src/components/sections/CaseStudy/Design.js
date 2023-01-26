@@ -24,7 +24,7 @@ const Design = (DesignContent) => {
           <h3 className="reveal-from-bottom">
             <img
               src={DesignContent.bgImage}
-              alt="outline of axle design"
+              alt="outline"
               width={175}
               className="ft-r ml-32 cs-bgImage"
             />

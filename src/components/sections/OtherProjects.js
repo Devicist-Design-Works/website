@@ -88,7 +88,9 @@ const OtherProjects = ({
   return (
     <section id="work">
       <div className="container-sm reveal-from-bottom">
+        <br />
         <h3 className="ta-c">And Many More</h3>
+        <img src={companyLogos} alt="Company Logos" className="mt-32" />
         <div className=" container-sm cs-gridWrapper reveal-from-bottom">
           <Gallery
             photos={gallery.images}
@@ -125,8 +127,6 @@ const OtherProjects = ({
             }))}
           />
         </div>
-
-        <img src={companyLogos} alt="Company Logos" className="mt-32" />
       </div>
     </section>
   );

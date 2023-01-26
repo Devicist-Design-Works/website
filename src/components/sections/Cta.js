@@ -1,19 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import { SectionProps } from '../../utils/SectionProps';
-import Mailchimp from 'react-mailchimp-form';
+import React from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
+import { SectionProps } from "../../utils/SectionProps";
+import Mailchimp from "react-mailchimp-form";
 
 const propTypes = {
   ...SectionProps.types,
-  split: PropTypes.bool
-}
+  split: PropTypes.bool,
+};
 
 const defaultProps = {
   ...SectionProps.defaults,
-  split: false
-}
-
+  split: false,
+};
 
 const Cta = ({
   className,
@@ -26,21 +25,20 @@ const Cta = ({
   split,
   ...props
 }) => {
-
   const outerClasses = classNames(
-    'cta section center-content-mobile reveal-from-bottom',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    
+    "cta section center-content-mobile reveal-from-bottom",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+
     className
   );
 
   const innerClasses = classNames(
-    'cta-inner section-inner',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider',
-    split && 'cta-split'
-  );  
+    "cta-inner section-inner",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider",
+    split && "cta-split"
+  );
 
   return (
     <section {...props} className={outerClasses} id="contact">
@@ -48,11 +46,14 @@ const Cta = ({
         <div className={innerClasses}>
           <div className="cta-slogan">
             <h3 className="m-0">We'd love to chat, drop us a line!</h3>
-            <p><a href="mailto:info@devicist.com">info@devicist.com</a></p>
+            <h5>
+              <a href="mailto:info@devicist.com">info@devicist.com</a>
+            </h5>
 
             <p>
               Periodically, we release news about the studio and articles on{" "}
-              <b>interaction design</b> and <b>fabrication</b>.<br/> Join our mailing list.
+              <b>interaction design</b> and <b>fabrication</b>.<br /> Join our
+              mailing list.
             </p>
           </div>
           <div>
@@ -87,7 +88,7 @@ const Cta = ({
       </div>
     </section>
   );
-}
+};
 
 Cta.propTypes = propTypes;
 Cta.defaultProps = defaultProps;

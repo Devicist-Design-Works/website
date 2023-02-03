@@ -44,7 +44,7 @@ const Portfolio = ({
   const Project1ModalContent = {
     title: "Frost",
     body: "We developed interactive LED lighting for studio F-Minus' 30 foot holiday sculpture. A large illuminated snowflake occupies the atrium of Brookfield Place in Toronto. Touching the surface causes the colors to shift",
-    videoUrl: "https://www.youtube.com/embed/6XjAppauBe8",
+    videoUrl: "https://www.youtube.com/embed/cyy3FVcJ6sU",
     images: [
       {
         src: require("./../../assets/images/portfolio/Snowflake/snowflake1.png"),
@@ -110,7 +110,7 @@ const Portfolio = ({
   const Project3ModalContent = {
     title: "Brain",
     body: "Interactive model of a brain that responds to touch, displaying various patterns. Produced in collaboration with Globacore Interactive for Dassault's Digital Twin exhibit at CES 2023.",
-    videoUrl: "https://www.youtube.com/embed/8-0N9WPRqLs",
+    videoUrl: "https://www.youtube.com/embed/NIznK_WQr6A",
     images: [
       {
         src: require("./../../assets/images/portfolio/brain/brain1.png"),

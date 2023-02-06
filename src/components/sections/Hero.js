@@ -69,12 +69,12 @@ const Hero = ({
                 <span className="text-block">large-scale installations,</span>
                 <br />
                 <span className="text-block">
-                  we combine art, UX and engineering&nbsp;
+                  we combine art and technology&nbsp;
                 </span>
                 <span className="text-block">to create</span>
                 <br />
                 <span className="text-block">
-                  tangible interactive exhibits.
+                  stunning interactive exhibits.
                 </span>
               </p>
 

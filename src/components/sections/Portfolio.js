@@ -5,7 +5,7 @@ import SectionHeader from "./partials/SectionHeader";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "../elements/Button";
-import flux from "./../../assets/images/portfolio/fluxCover.gif";
+import flux from "./../../assets/images/portfolio/fluxCoverNew.mp4";
 // import wheel from "../../assets/images/portfolio/braking/brakingCsCover.png";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
@@ -226,11 +226,9 @@ const Portfolio = ({
           <Link to="/flux">
             <div className="reveal-from-bottom">
               <Card className="caseStudyCard">
-                <Card.Img
-                  className="caseStudyImg"
-                  src={flux}
-                  alt="Flux Cover Image"
-                />
+                <video className="caseStudyImg" autoPlay loop muted playsInline>
+                  <source src={flux} type="video/mp4" />
+                </video>
                 <Card.ImgOverlay className="d-flex flex-column caseStudyImgGradient">
                   <Card.Title className="mt-auto caseStudyTitle">
                     Flux
@@ -287,7 +285,7 @@ const Portfolio = ({
                 <Card className="bg-black projectCard ">
                   <Card.Img
                     className="tintMajor"
-                    src={require("./../../assets/images/portfolio/braking/kioskCropped.jpg")}
+                    src={require("./../../assets/images/portfolio/braking/kioskCroppedCover.jpg")}
                   />
                   <Card.ImgOverlay>
                     <Card.Body>
@@ -305,7 +303,7 @@ const Portfolio = ({
               >
                 <Card className="bg-black projectCard">
                   <Card.Img
-                    src={require("./../../assets/images/portfolio/Snowflake/snowflakeNew.png")}
+                    src={require("./../../assets/images/portfolio/Snowflake/snowflakeNewCover.png")}
                   />
                   <Card.ImgOverlay className=" d-flex flex-column">
                     <Card.Body>

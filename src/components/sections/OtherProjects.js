@@ -40,35 +40,35 @@ const OtherProjects = ({
   const gallery = {
     images: [
       {
-        src: require("./../../assets/images/portfolio/more/more1.png"),
+        src: require("./../../assets/images/portfolio/more/more1.jpg"),
         width: 2,
         height: 1,
         //title:
         // "This is a caption description of what the image above depicts. Text would go here to give context about the details of this image",
       },
       {
-        src: require("./../../assets/images/portfolio/more/more2.png"),
+        src: require("./../../assets/images/portfolio/more/more2.jpg"),
         width: 2,
         height: 1,
         //title:
         // "This is a caption description of what the image above depicts. Text would go here to give context about the details of this image",
       },
       {
-        src: require("./../../assets/images/portfolio/more/more5.png"),
+        src: require("./../../assets/images/portfolio/more/more5.jpg"),
         width: 2,
         height: 2,
         //title:
         // "This is a caption description of what the image above depicts. Text would go here to give context about the details of this image",
       },
       {
-        src: require("./../../assets/images/portfolio/more/more6.png"),
+        src: require("./../../assets/images/portfolio/more/more6.jpg"),
         width: 1,
         height: 1,
         //title:
         // "This is a caption description of what the image above depicts. Text would go here to give context about the details of this image",
       },
       {
-        src: require("./../../assets/images/portfolio/more/more4.png"),
+        src: require("./../../assets/images/portfolio/more/more4.jpg"),
         width: 2,
         height: 1,
         //title:
@@ -76,7 +76,7 @@ const OtherProjects = ({
       },
 
       {
-        src: require("./../../assets/images/portfolio/more/more3.png"),
+        src: require("./../../assets/images/portfolio/more/more3.jpg"),
         width: 1,
         height: 1,
         //title:

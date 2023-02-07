@@ -47,12 +47,12 @@ const Portfolio = ({
     videoUrl: "https://www.youtube.com/embed/cyy3FVcJ6sU",
     images: [
       {
-        src: require("./../../assets/images/portfolio/Snowflake/snowflake1.png"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake1.jpg"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/Snowflake/snowflake2.png"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake2.jpg"),
         width: 1,
         height: 1,
       },
@@ -62,7 +62,7 @@ const Portfolio = ({
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/Snowflake/snowflake4.png"),
+        src: require("./../../assets/images/portfolio/Snowflake/snowflake4.jpg"),
         width: 1,
         height: 1,
       },
@@ -113,22 +113,22 @@ const Portfolio = ({
     videoUrl: "https://www.youtube.com/embed/NIznK_WQr6A",
     images: [
       {
-        src: require("./../../assets/images/portfolio/brain/brain1.png"),
+        src: require("./../../assets/images/portfolio/brain/brain1.jpg"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/brain/brain2.png"),
+        src: require("./../../assets/images/portfolio/brain/brain2.jpg"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/brain/brain3.png"),
+        src: require("./../../assets/images/portfolio/brain/brain3.jpg"),
         width: 1,
         height: 1,
       },
       {
-        src: require("./../../assets/images/portfolio/brain/brain4.png"),
+        src: require("./../../assets/images/portfolio/brain/brain4.jpg"),
         width: 1,
         height: 1,
       },

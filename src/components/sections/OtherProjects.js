@@ -40,14 +40,14 @@ const OtherProjects = ({
   const gallery = {
     images: [
       {
-        src: require("./../../assets/images/portfolio/more/more1.jpg"),
+        src: require("./../../assets/images/portfolio/more/more2.jpg"),
         width: 2,
         height: 1,
         //title:
         // "This is a caption description of what the image above depicts. Text would go here to give context about the details of this image",
       },
       {
-        src: require("./../../assets/images/portfolio/more/more2.jpg"),
+        src: require("./../../assets/images/portfolio/more/more1.jpg"),
         width: 2,
         height: 1,
         //title:
@@ -61,7 +61,7 @@ const OtherProjects = ({
         // "This is a caption description of what the image above depicts. Text would go here to give context about the details of this image",
       },
       {
-        src: require("./../../assets/images/portfolio/more/more6.jpg"),
+        src: require("./../../assets/images/portfolio/more/more3.jpg"),
         width: 1,
         height: 1,
         //title:
@@ -76,7 +76,7 @@ const OtherProjects = ({
       },
 
       {
-        src: require("./../../assets/images/portfolio/more/more3.jpg"),
+        src: require("./../../assets/images/portfolio/more/more6.jpg"),
         width: 1,
         height: 1,
         //title:
@@ -88,7 +88,6 @@ const OtherProjects = ({
   return (
     <section id="work">
       <div className="container-sm reveal-from-bottom">
-        <br />
         <h3 className="ta-c">And Many More</h3>
         <img src={companyLogos} alt="Company Logos" className="mt-32" />
         <div className=" container-sm cs-gridWrapper reveal-from-bottom">

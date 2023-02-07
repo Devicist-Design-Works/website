@@ -46,7 +46,7 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: "The Process",
+    title: "Process",
     // paragraph: "We",
   };
 

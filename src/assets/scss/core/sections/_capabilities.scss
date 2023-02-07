@@ -1,0 +1,18 @@
+.capabilities-list {
+    column-count: 2;
+    margin: auto;
+}
+
+.capabilities-note {
+    position: relative;
+    top: 2em;
+    margin: auto;
+    text-align: center;
+}
+
+@include media( '>medium' ) {
+    .capabilities-list {
+        width: 70%;
+        margin-left: 20%;
+    }
+}

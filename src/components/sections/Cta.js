@@ -45,7 +45,7 @@ const Cta = ({
       <div className="container">
         <div className={innerClasses}>
           <div className="cta-slogan">
-            <h3 className="m-0">We'd love to chat, drop us a line!</h3>
+            <h3 className="m-0">Let's talk</h3>
             <h5>
               <a href="mailto:info@devicist.com">info@devicist.com</a>
             </h5>

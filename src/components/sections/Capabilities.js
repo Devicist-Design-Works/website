@@ -57,24 +57,22 @@ const Capabilities = ({
           <div className="capabilities-list">
             <ul>
               <li>Interaction Design</li>
-              <li>Electronics</li>
-              <li>Rapid Prototyping</li>
               <li>LED Displays</li>
               <li>Kinetic Displays</li>
               <li>Robotics</li>
+              <li>Rapid Prototyping</li>
               <li>Computer Vision</li>
               <li>Projection Mapping</li>
               <li>Apps and Software</li>
-              <li>User Research</li>
-              <li>User Metrics</li>
               <li>Simulation</li>
               <li>Installation</li>
               <li>Remote Monitoring</li>
+              <li>User Metrics</li>
             </ul>
           </div>
-          <div className="capabilities-note">
+          {/* <div className="capabilities-note">
             <p>* Additional services available with our partners</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 .capabilities-list {
-    column-count: 2;
+    column-count: 1;
     margin: auto;
 }
 
@@ -12,6 +12,7 @@
 
 @include media( '>medium' ) {
     .capabilities-list {
+        column-count: 2;
         width: 70%;
         margin-left: 20%;
     }

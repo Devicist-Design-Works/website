@@ -4,6 +4,7 @@ import Hero from "../components/sections/Hero";
 import Process from "../components/sections/Process";
 import Portfolio from "../components/sections/Portfolio";
 import Capabilities from "../components/sections/Capabilities";
+import Concepts from "../components/sections/Concepts";
 import OtherProjects from "../components/sections/OtherProjects";
 import Cta from "../components/sections/Cta";
 
@@ -14,7 +15,9 @@ const Home = () => {
       <Portfolio topDivider />
       <OtherProjects />
       <Capabilities />
-      <Process invertMobile topDivider />
+      <Concepts />
+      //
+      {/* <Process invertMobile topDivider /> */}
       <Cta />
     </>
   );
